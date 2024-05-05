@@ -1,5 +1,6 @@
 package pos.pageobjects.productspage;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +30,20 @@ public class CategoryPage extends AbstractComponents {
 	@FindBy(css = "button[type='submit']")
 	WebElement createCategoryButton;
 
+	@FindBy(xpath = "//*[@id=\"delete\"]")
+	WebElement deleteButton;
+	
+	
+	//Message
+	@FindBy(xpath = "")
+	WebElement createSuccessMessage;
+	
+//	@FindBy(xpath = "")
+//	WebElement updateSuccessMessage;
+	
+	@FindBy(xpath = "//*[@id=\"swal2-title\"]")
+	WebElement deleteSuccessMessage;
+
 	public void openAddCategoryModal() {
 		addCategoryButton.click();
 	}
@@ -44,7 +59,24 @@ public class CategoryPage extends AbstractComponents {
 		createCategoryButton.click();
 	}
 
-	// Navigation to Categories Page
+	public void deleteCategory() {
+		deleteButton.click();
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
+	}
+	
+	public String getCreateSuccessMessage() {
+		return createSuccessMessage.getText();
+	}
+	
+//	public String updateCreateSuccessMessage() {
+//		return updateSuccessMessage.getText();
+//	}
+	
+	public String getDeleteSuccessMessage() {
+		return deleteSuccessMessage.getText();
+	}
+
 	public void goTo() {
 		driver.get("http://localhost:8000/product-categories");
 	}

@@ -5,9 +5,8 @@
     <classes>
       <class name="pos.tests.products.CreateCategoryTest">
         <methods>
-          <include name="initializePages"/>
           <include name="launchApplication"/>
-          <include name="loginAndCreateCategoryTest" invocation-numbers="0"/>
+          <include name="loginAndCreateCategoryTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- pos.tests.products.CreateCategoryTest -->
