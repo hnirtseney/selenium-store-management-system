@@ -5,8 +5,14 @@
     <classes>
       <class name="pos.tests.products.product.CreateProductTest">
         <methods>
+<<<<<<< HEAD
           <include name="createProductTest"/>
           <include name="launchApplication"/>
+=======
+          <include name="launchApplication"/>
+          <include name="loginAndCreateCategoryTest"/>
+          <include name="tearDown"/>
+>>>>>>> ffadb6bfbea27ba15fb250764e4abb8192ed5961
         </methods>
       </class> <!-- pos.tests.products.product.CreateProductTest -->
     </classes>

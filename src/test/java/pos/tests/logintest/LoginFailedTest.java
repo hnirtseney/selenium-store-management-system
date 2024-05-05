@@ -20,6 +20,7 @@ public class LoginFailedTest extends BaseTest {
 				.toArray(Object[][]::new);
 	}
 
+<<<<<<< HEAD
 	@Test(dataProvider = "loginFailureData")
 	public void loginFailureTest(String email, String password, String expectedError) {
 		loginPage.goToLoginPage();
@@ -27,4 +28,13 @@ public class LoginFailedTest extends BaseTest {
 		String actualError = loginPage.getErrorMessage();
 		Assert.assertEquals(actualError, expectedError, "Error message does not match expected.");
 	}
+=======
+    @Test(dataProvider = "loginFailureData")
+    public void loginFailureTest(String email, String password, String expectedError) {
+        loginPage.goToLoginPage();
+        loginPage.login(email, password);
+        String actualError = loginPage.getErrorMessage();
+        Assert.assertEquals(actualError, expectedError, "Error message does not match expected.");
+    }
+>>>>>>> ffadb6bfbea27ba15fb250764e4abb8192ed5961
 }
