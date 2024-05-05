@@ -1,7 +1,5 @@
 package pos.testcomponents;
 
-import org.testng.annotations.AfterMethod;
-
 import java.io.File;
 import java.io.FileInputStream;
 //import java.io.FileNotFoundException;
@@ -21,7 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-//import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -104,8 +102,8 @@ public class BaseTest {
 		return loginPage;
 	}
 
-//	@AfterMethod(alwaysRun = true)
-//	public void tearDown() {
-//		driver.close();
-//	}
+	@AfterMethod(alwaysRun = true)
+	public void tearDown() {
+		driver.close();
+	}
 }

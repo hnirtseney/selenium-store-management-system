@@ -32,7 +32,6 @@ public class CategoryPage extends AbstractComponents {
 
 	@FindBy(xpath = "//*[@id=\"delete\"]")
 	WebElement deleteButton;
-<<<<<<< HEAD
 
 	// Message
 	@FindBy(xpath = "")
@@ -40,18 +39,7 @@ public class CategoryPage extends AbstractComponents {
 
 	@FindBy(xpath = "")
 	WebElement updateSuccessMessage;
-
-=======
 	
-	
-	//Message
-	@FindBy(xpath = "")
-	WebElement createSuccessMessage;
-	
-//	@FindBy(xpath = "")
-//	WebElement updateSuccessMessage;
-	
->>>>>>> ffadb6bfbea27ba15fb250764e4abb8192ed5961
 	@FindBy(xpath = "//*[@id=\"swal2-title\"]")
 	WebElement deleteSuccessMessage;
 
@@ -75,7 +63,6 @@ public class CategoryPage extends AbstractComponents {
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 	}
-<<<<<<< HEAD
 
 	public String getCreateSuccessMessage() {
 		return createSuccessMessage.getText();
@@ -84,18 +71,7 @@ public class CategoryPage extends AbstractComponents {
 	public String updateCreateSuccessMessage() {
 		return updateSuccessMessage.getText();
 	}
-
-=======
 	
-	public String getCreateSuccessMessage() {
-		return createSuccessMessage.getText();
-	}
-	
-//	public String updateCreateSuccessMessage() {
-//		return updateSuccessMessage.getText();
-//	}
-	
->>>>>>> ffadb6bfbea27ba15fb250764e4abb8192ed5961
 	public String getDeleteSuccessMessage() {
 		return deleteSuccessMessage.getText();
 	}
