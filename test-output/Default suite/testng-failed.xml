@@ -3,18 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pos.tests.products.product.CreateProductTest">
+      <class name="pos.tests.products.product.DeleteProductTest">
         <methods>
-<<<<<<< HEAD
-          <include name="createProductTest"/>
           <include name="launchApplication"/>
-=======
-          <include name="launchApplication"/>
-          <include name="loginAndCreateCategoryTest"/>
+          <include name="deleteProduct"/>
           <include name="tearDown"/>
->>>>>>> ffadb6bfbea27ba15fb250764e4abb8192ed5961
         </methods>
-      </class> <!-- pos.tests.products.product.CreateProductTest -->
+      </class> <!-- pos.tests.products.product.DeleteProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

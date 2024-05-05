@@ -69,10 +69,10 @@ public class CreateProductPage extends AbstractComponents {
 	@FindBy(xpath = "//*[@id=\"product-form\"]/div/div[1]/div/button")
 	WebElement createProductButton;
 
-	public void fillProductForm(String productName, String productCode, 
+	public void fillProductForm(String productName, String productCode,
 //			String productCategory, 
-			String productCost,
-			String productPrice, String productQuantity, String productStockAlert, String productOrderTax) {
+			String productCost, String productPrice, String productQuantity, String productStockAlert,
+			String productOrderTax) {
 
 		productNameField.clear();
 		productNameField.sendKeys(productName);

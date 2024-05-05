@@ -28,6 +28,9 @@ public class AbstractComponents {
 	
 	@FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[2]/a")
 	WebElement productBtn;
+	
+	@FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[3]/a")
+	WebElement allProductsBtn;
 
 	public void waitForElementToAppear(By findBy) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -69,6 +72,13 @@ public class AbstractComponents {
 		productBtn.click();
 		CreateProductPage createProductPage = new CreateProductPage(driver);
 		return createProductPage;
+	}
+	
+	public AllProductsPage goToAllProductsPage() {
+		productsBtn.click();
+		allProductsBtn.click();
+		AllProductsPage allProductsPage = new AllProductsPage(driver);
+		return allProductsPage;
 	}
 
 }
