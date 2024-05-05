@@ -19,6 +19,7 @@ public class AbstractComponents {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+
 	@FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/a")
 	WebElement productsBtn;
 
@@ -42,15 +43,15 @@ public class AbstractComponents {
 	}
 
 	// Expand Sidebar
-//	public void expandSidebar() {
-//		WebElement sidebar = driver.findElement(By.id("sidebar"));
-//		// Kiểm tra nếu sidebar đang có class 'c-sidebar-minimized'
-//		if (sidebar.getAttribute("class").contains("c-sidebar-minimized")) {
-//			// Tìm nút toggle để mở rộng sidebar
-//			WebElement sidebarToggler = driver.findElement(By.cssSelector(".c-sidebar-minimizer"));
-//			sidebarToggler.click();
-//		}
-//	}
+	public void expandSidebar() {
+		WebElement sidebar = driver.findElement(By.id("sidebar"));
+		// Kiểm tra nếu sidebar đang có class 'c-sidebar-minimized'
+		if (sidebar.getAttribute("class").contains("c-sidebar-minimized")) {
+			// Tìm nút toggle để mở rộng sidebar
+			WebElement sidebarToggler = driver.findElement(By.cssSelector(".c-sidebar-minimizer"));
+			sidebarToggler.click();
+		}
+	}
 
 	// Go to Category Page
 	public CategoryPage goToCategoryPage() {

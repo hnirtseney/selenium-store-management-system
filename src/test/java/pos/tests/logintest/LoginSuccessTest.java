@@ -1,6 +1,5 @@
 package pos.tests.logintest;
 
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -21,7 +20,7 @@ public class LoginSuccessTest extends BaseTest {
 
 	@Test(dataProvider = "loginSuccessData")
 	public void loginSuccessTest(String email, String password) {
-		loginPage.goTo();
+		loginPage.goToLoginPage();
 		loginPage.login(email, password);
 	}
 }

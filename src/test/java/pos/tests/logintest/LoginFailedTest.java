@@ -20,7 +20,7 @@ public class LoginFailedTest extends BaseTest {
 
     @Test(dataProvider = "loginFailureData")
     public void loginFailureTest(String email, String password, String expectedError) {
-        loginPage.goTo();
+        loginPage.goToLoginPage();
         loginPage.login(email, password);
         String actualError = loginPage.getErrorMessage();
         Assert.assertEquals(actualError, expectedError, "Error message does not match expected.");

@@ -20,13 +20,13 @@ public class CreateCategoryTest extends BaseTest {
 				System.getProperty("user.dir") + "//src//test//java//pos//data//logindata//LoginSuccess.json");
 		List<HashMap<String, String>> categoryData = getJsonDataToMap(
 				System.getProperty("user.dir") + "//src//test//java//pos//data//products//Category.json");
-		return new Object[][] { { loginData.get(0), categoryData.get(0) }, {loginData.get(0), categoryData.get(1)}};
+		return new Object[][] { { loginData.get(0), categoryData.get(0) }, { loginData.get(0), categoryData.get(1) }, { loginData.get(0), categoryData.get(2) } };
 	}
 
 	@Test(dataProvider = "loginAndCategoryData")
 	public void loginAndCreateCategoryTest(HashMap<String, String> loginInfo, HashMap<String, String> categoryInfo) {
 		// Login
-		loginPage.goTo();
+		loginPage.goToLoginPage();
 		DashboardPage dashboardPage = loginPage.login(loginInfo.get("email"), loginInfo.get("password"));
 
 		// Navigate to Category Page through Dashboard
@@ -34,7 +34,7 @@ public class CreateCategoryTest extends BaseTest {
 
 		// Create Category
 		categoryPage.openAddCategoryModal();
-		categoryPage.fillCategoryForm(categoryInfo.get("code"), categoryInfo.get("name"));
+		categoryPage.fillCategoryForm(categoryInfo.get("category_code"), categoryInfo.get("category_name"));
 		categoryPage.createCategory();
 	}
 }

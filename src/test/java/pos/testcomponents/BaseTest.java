@@ -4,7 +4,7 @@ import org.testng.annotations.AfterMethod;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
@@ -21,7 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
+//import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -100,7 +100,7 @@ public class BaseTest {
 	{
 		driver = initializeDriver();
 		loginPage = new LoginPage(driver);
-		loginPage.goTo();
+		loginPage.goToLoginPage();
 		return loginPage;
 	}
 	
