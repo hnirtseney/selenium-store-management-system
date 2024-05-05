@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pos.pageobjects.productspage.CategoryPage;
+import pos.pageobjects.productspage.*;
 
 public class AbstractComponents {
 	WebDriver driver;
@@ -25,6 +25,9 @@ public class AbstractComponents {
 
 	@FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[1]/a")
 	WebElement categoryBtn;
+	
+	@FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[2]/a")
+	WebElement productBtn;
 
 	public void waitForElementToAppear(By findBy) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -59,6 +62,13 @@ public class AbstractComponents {
 		categoryBtn.click();
 		CategoryPage categoryPage = new CategoryPage(driver);
 		return categoryPage;
+	}
+	
+	public CreateProductPage goToCreateProductPage() {
+		productsBtn.click();
+		productBtn.click();
+		CreateProductPage createProductPage = new CreateProductPage(driver);
+		return createProductPage;
 	}
 
 }
