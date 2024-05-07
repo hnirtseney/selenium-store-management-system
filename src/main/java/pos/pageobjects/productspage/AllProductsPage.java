@@ -27,8 +27,11 @@ public class AllProductsPage {
 	@FindBy(xpath = "//*[@id=\"delete\"]")
 	WebElement deleteProductButton;
 	
+	@FindBy(xpath ="//*[@id=\"product-table\"]/tbody/tr[1]/td[8]/a[1]")
+	WebElement updateProductButton;
+	
 	@FindBy(xpath = "//*[@id=\"swal2-title\"]")
-	WebElement deleteSuccessMessage;
+	WebElement successMessage;
 
     // Page Methods
     public void goToCreateProduct() {
@@ -43,14 +46,20 @@ public class AllProductsPage {
         searchInput.sendKeys(productName);
     }
     
-	public String getDeleteSuccessMessage() {
-		return deleteSuccessMessage.getText();
+	public String getSuccessMessage() {
+		return successMessage.getText();
 	}
     
 	public void deleteProduct() {
 		deleteProductButton.click();
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
+	}
+	
+	public ProductPage goToUpdateProductPage() {
+		updateProductButton.click();
+		ProductPage updateProductPage = new ProductPage(driver);
+		return updateProductPage;
 	}
 
     // Navigation

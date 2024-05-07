@@ -8,11 +8,11 @@ import org.openqa.selenium.support.ui.Select;
 
 import pos.abstractcomponents.AbstractComponents;
 
-public class CreateProductPage extends AbstractComponents {
+public class ProductPage extends AbstractComponents {
 
 	WebDriver driver;
 
-	public CreateProductPage(WebDriver driver) {
+	public ProductPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -67,8 +67,8 @@ public class CreateProductPage extends AbstractComponents {
 
 	// button
 	@FindBy(xpath = "//*[@id=\"product-form\"]/div/div[1]/div/button")
-	WebElement createProductButton;
-
+	WebElement createUpdateProductButton;
+	
 	public void fillProductForm(String productName, String productCode,
 //			String productCategory, 
 			String productCost, String productPrice, String productQuantity, String productStockAlert,
@@ -111,9 +111,12 @@ public class CreateProductPage extends AbstractComponents {
 //		productNoteArea.sendKeys(productNote);
 	}
 
-	public void clickSubmitCreateProduct() {
-		createProductButton.click();
+	public AllProductsPage clickSubmitCreateUpdateProduct() {
+		createUpdateProductButton.click();
+		AllProductsPage allProductsPage = new AllProductsPage(driver);
+		return allProductsPage;
 	}
+	
 
 	public void goTo() {
 		driver.get("http://127.0.0.1:8000/products/create");

@@ -67,11 +67,11 @@ public class AbstractComponents {
 		return categoryPage;
 	}
 	
-	public CreateProductPage goToCreateProductPage() {
+	public ProductPage goToCreateProductPage() {
 		productsBtn.click();
 		productBtn.click();
-		CreateProductPage createProductPage = new CreateProductPage(driver);
-		return createProductPage;
+		ProductPage productPage = new ProductPage(driver);
+		return productPage;
 	}
 	
 	public AllProductsPage goToAllProductsPage() {

@@ -1,20 +1,137 @@
 [
-	{
-		"product_name": "Treatment Set T45",
-		"product_code": "US-HA",
-		"product_cost": "47",
-		"product_price": "47",
-		"product_quantity": "95",
-		"product_alert_quantity": "12",
-		"product_tax": "22"
-	},
-	{
-		"product_name": "ECHINACEA ANGUSTIFOLIA",
-		"product_code": "BR-PK",
-		"product_cost": "1061",
-		"product_price": "1061",
-		"product_quantity": "9",
-		"product_alert_quantity": "32",
-		"product_tax": "44"
-	}
+    {
+        "product_name": "Product 01 - Fashion Item - Summer 2024",
+        "product_code": "PR-01",
+        "product_cost": "1767",
+        "product_price": "2650",
+        "product_quantity": "130",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 02 - Fashion Item - Summer 2024",
+        "product_code": "PR-02",
+        "product_cost": "245",
+        "product_price": "367",
+        "product_quantity": "85",
+        "product_alert_quantity": "10",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 03 - Fashion Item - Summer 2024",
+        "product_code": "PR-03",
+        "product_cost": "1798",
+        "product_price": "2697",
+        "product_quantity": "73",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 04 - Fashion Item - Summer 2024",
+        "product_code": "PR-04",
+        "product_cost": "1995",
+        "product_price": "2992",
+        "product_quantity": "70",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 05 - Fashion Item - Summer 2024",
+        "product_code": "PR-05",
+        "product_cost": "1255",
+        "product_price": "1882",
+        "product_quantity": "104",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 06 - Fashion Item - Summer 2024",
+        "product_code": "PR-06",
+        "product_cost": "1769",
+        "product_price": "2653",
+        "product_quantity": "51",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 07 - Fashion Item - Summer 2024",
+        "product_code": "PR-07",
+        "product_cost": "553",
+        "product_price": "829",
+        "product_quantity": "121",
+        "product_alert_quantity": "10",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 08 - Fashion Item - Summer 2024",
+        "product_code": "PR-08",
+        "product_cost": "577",
+        "product_price": "865",
+        "product_quantity": "148",
+        "product_alert_quantity": "10",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 09 - Fashion Item - Summer 2024",
+        "product_code": "PR-09",
+        "product_cost": "160",
+        "product_price": "240",
+        "product_quantity": "121",
+        "product_alert_quantity": "10",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 10 - Fashion Item - Summer 2024",
+        "product_code": "PR-10",
+        "product_cost": "795",
+        "product_price": "1192",
+        "product_quantity": "115",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 11 - Fashion Item - Summer 2024",
+        "product_code": "PR-11",
+        "product_cost": "569",
+        "product_price": "853",
+        "product_quantity": "108",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 12 - Fashion Item - Summer 2024",
+        "product_code": "PR-12",
+        "product_cost": "1177",
+        "product_price": "1765",
+        "product_quantity": "81",
+        "product_alert_quantity": "10",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 13 - Fashion Item - Summer 2024",
+        "product_code": "PR-13",
+        "product_cost": "1053",
+        "product_price": "1579",
+        "product_quantity": "63",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 14 - Fashion Item - Summer 2024",
+        "product_code": "PR-14",
+        "product_cost": "680",
+        "product_price": "1020",
+        "product_quantity": "128",
+        "product_alert_quantity": "5",
+        "product_tax": "20"
+    },
+    {
+        "product_name": "Product 15 - Fashion Item - Summer 2024",
+        "product_code": "PR-15",
+        "product_cost": "577",
+        "product_price": "865",
+        "product_quantity": "76",
+        "product_alert_quantity": "10",
+        "product_tax": "20"
+    }
 ]

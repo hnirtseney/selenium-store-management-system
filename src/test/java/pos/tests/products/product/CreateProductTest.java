@@ -4,12 +4,14 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
+import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pos.pageobjects.DashboardPage;
+import pos.pageobjects.productspage.AllProductsPage;
 //import pos.pageobjects.productspage.CategoryPage;
-import pos.pageobjects.productspage.CreateProductPage;
+import pos.pageobjects.productspage.ProductPage;
 import pos.testcomponents.BaseTest;
 
 public class CreateProductTest extends BaseTest {
@@ -32,12 +34,17 @@ public class CreateProductTest extends BaseTest {
 		DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
 
 		// Navigate to Create Product Page through Dashboard
-		CreateProductPage createProductPage = dashboardPage.goToCreateProductPage();
+		ProductPage productPage = dashboardPage.goToCreateProductPage();
 
 		// Create Product
-		createProductPage.fillProductForm(productName, productCode, productCost, productPrice, productQuantity,
+		productPage.fillProductForm(productName, productCode, productCost, productPrice, productQuantity,
 				productStockAlert, productOrderTax);
-		createProductPage.clickSubmitCreateProduct();
+		AllProductsPage allProductsPage = productPage.clickSubmitCreateUpdateProduct();
+
+		String expectUpdateSuccessMessage = allProductsPage.getSuccessMessage();
+		String actualUpdateSuccessMessage = "Product Created!";
+
+		AssertJUnit.assertTrue(actualUpdateSuccessMessage.equalsIgnoreCase(expectUpdateSuccessMessage));
 	}
 
 }

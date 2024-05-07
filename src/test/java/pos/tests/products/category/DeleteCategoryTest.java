@@ -19,5 +19,4 @@ public class DeleteCategoryTest extends BaseTest {
 		String deleteMessageActual = categoryPage.getDeleteSuccessMessage();
 		AssertJUnit.assertTrue(deleteMessageActual.equalsIgnoreCase(deleteMessageExpect));
 	}
-
 }
