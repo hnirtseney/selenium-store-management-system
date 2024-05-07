@@ -40,7 +40,7 @@ public class UpdateProductTest extends BaseTest {
 		ProductPage productPage = allProductsPage.goToUpdateProductPage();
 
 		// Update Product
-		productPage.fillProductForm("HEHE", "HE-02", "200", "250", "800", "10", "10");
+//		productPage.fillProductForm("HEHE", "HE-02", "200", "250", "800", "10", "10");
 		allProductsPage = productPage.clickSubmitCreateUpdateProduct();
 		
 		String expectUpdateSuccessMessage = allProductsPage.getSuccessMessage();

@@ -70,9 +70,9 @@ public class ProductPage extends AbstractComponents {
 	WebElement createUpdateProductButton;
 	
 	public void fillProductForm(String productName, String productCode,
-//			String productCategory, 
+			String productCategory, String productBarCode,
 			String productCost, String productPrice, String productQuantity, String productStockAlert,
-			String productOrderTax) {
+			String productOrderTax, String productTaxType, String productUnit) {
 
 		productNameField.clear();
 		productNameField.sendKeys(productName);
@@ -81,10 +81,10 @@ public class ProductPage extends AbstractComponents {
 		productCodeField.sendKeys(productCode);
 
 		Select categoryDropdown = new Select(categorySelect);
-		categoryDropdown.selectByVisibleText("Automotive");
+		categoryDropdown.selectByVisibleText(productCategory);
 
 		Select barcodeSymbologyDropdown = new Select(barcodeSymbologySelect);
-		barcodeSymbologyDropdown.selectByVisibleText("EAN-13");
+		barcodeSymbologyDropdown.selectByVisibleText(productBarCode);
 
 		productCostField.clear();
 		productCostField.sendKeys(productCost);
@@ -102,10 +102,10 @@ public class ProductPage extends AbstractComponents {
 		productOrderTaxField.sendKeys(productOrderTax);
 
 		Select taxTypeDropdown = new Select(taxTypeSelect);
-		taxTypeDropdown.selectByVisibleText("Exclusive");
+		taxTypeDropdown.selectByVisibleText(productTaxType);
 
 		Select unitDropdown = new Select(productUnitSelect);
-		unitDropdown.selectByVisibleText("Piece | PC");
+		unitDropdown.selectByVisibleText(productUnit);
 
 //		productNoteArea.clear();
 //		productNoteArea.sendKeys(productNote);

@@ -20,15 +20,17 @@ public class CreateProductTest extends BaseTest {
 		List<HashMap<String, String>> data = getJsonDataToMap(
 				System.getProperty("user.dir") + "//src//test//java//pos//data//products//Product.json");
 		return data.stream()
-				.map(d -> new Object[] { d.get("product_name"), d.get("product_code"), d.get("product_cost"),
+				.map(d -> new Object[] { d.get("product_name"), d.get("product_code"), d.get("product_category"), d.get("product_barcode"), d.get("product_cost"),
 						d.get("product_price"), d.get("product_quantity"), d.get("product_alert_quantity"),
-						d.get("product_tax"), })
+						d.get("product_tax"), d.get("product_taxType"), d.get("product_unit") })
 				.toArray(Object[][]::new);
 	}
 
 	@Test(dataProvider = "productData")
-	public void createProductTest(String productName, String productCode, String productCost, String productPrice,
-			String productQuantity, String productStockAlert, String productOrderTax) {
+	public void createProductTest(String productName, String productCode,
+								  String productCategory, String productBarCode,
+								  String productCost, String productPrice, String productQuantity, String productStockAlert,
+								  String productOrderTax, String productTaxType, String productUnit) {
 		// Login
 		loginPage.goToLoginPage();
 		DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
@@ -37,8 +39,10 @@ public class CreateProductTest extends BaseTest {
 		ProductPage productPage = dashboardPage.goToCreateProductPage();
 
 		// Create Product
-		productPage.fillProductForm(productName, productCode, productCost, productPrice, productQuantity,
-				productStockAlert, productOrderTax);
+		productPage.fillProductForm(productName, productCode,
+				productCategory, productBarCode,
+				productCost, productPrice, productQuantity, productStockAlert,
+				productOrderTax, productTaxType, productUnit);
 		AllProductsPage allProductsPage = productPage.clickSubmitCreateUpdateProduct();
 
 		String expectUpdateSuccessMessage = allProductsPage.getSuccessMessage();
