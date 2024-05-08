@@ -10,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pos.pageobjects.adjustmentspage.AdjustmentPage;
+import pos.pageobjects.adjustmentspage.AllAdjustmentsPage;
 import pos.pageobjects.productspage.*;
 
 public class AbstractComponents {
@@ -31,6 +33,16 @@ public class AbstractComponents {
 	
 	@FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[3]/a")
 	WebElement allProductsBtn;
+
+	@FindBy(xpath = "//a[contains(.,'Stock Adjustments')]")
+	WebElement stockAdjustmentsBtn;
+
+	@FindBy(linkText = "Create Adjustment")
+	WebElement createAdjustmentBtn;
+
+	@FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[3]/ul/li[2]/a")
+	WebElement allAdjustmentsBtn;
+
 
 	public void waitForElementToAppear(By findBy) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -66,19 +78,37 @@ public class AbstractComponents {
 		CategoryPage categoryPage = new CategoryPage(driver);
 		return categoryPage;
 	}
-	
+
+	// Go to Create Product Page
 	public ProductPage goToCreateProductPage() {
 		productsBtn.click();
 		productBtn.click();
 		ProductPage productPage = new ProductPage(driver);
 		return productPage;
 	}
-	
+
+	// Go to All Product Page
 	public AllProductsPage goToAllProductsPage() {
 		productsBtn.click();
 		allProductsBtn.click();
 		AllProductsPage allProductsPage = new AllProductsPage(driver);
 		return allProductsPage;
+	}
+
+	// Go to Create Adjustment Page
+	public AdjustmentPage goToAdjustmentPage() {
+		stockAdjustmentsBtn.click();
+		createAdjustmentBtn.click();
+		AdjustmentPage adjustmentPage = new AdjustmentPage(driver);
+		return adjustmentPage;
+	}
+
+	public AllAdjustmentsPage goToAllAdjustmentsPage() {
+		stockAdjustmentsBtn.click();
+		allAdjustmentsBtn.click();
+		allAdjustmentsBtn.click();
+		AllAdjustmentsPage allAdjustmentsPage = new AllAdjustmentsPage(driver);
+		return allAdjustmentsPage;
 	}
 
 }
