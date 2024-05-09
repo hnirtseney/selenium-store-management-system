@@ -37,8 +37,7 @@ public class LoginPage extends AbstractComponents {
 		emailField.sendKeys(email);
 		passwordField.sendKeys(password);
 		submitButton.click();
-		DashboardPage dashboardPage = new DashboardPage(driver);
-		return dashboardPage;
+		return new DashboardPage(driver);
 	}
 
 	// Phương thức lấy thông báo lỗi

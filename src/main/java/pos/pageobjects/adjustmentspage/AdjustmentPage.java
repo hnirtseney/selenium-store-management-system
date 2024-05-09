@@ -52,8 +52,7 @@ public class AdjustmentPage extends AbstractComponents {
 
     public AllAdjustmentsPage clickCreateSuccess () {
         createAdjustmentButton.click();
-        AllAdjustmentsPage allAdjustmentsPage = new AllAdjustmentsPage(driver);
-        return allAdjustmentsPage;
+        return new AllAdjustmentsPage(driver);
     }
 
 }

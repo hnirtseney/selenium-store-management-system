@@ -1,0 +1,82 @@
+[
+  {
+    "customer_name": "Jisoo",
+    "customer_mail": "jisoo@blackpink.com",
+    "customer_phone": "+821012345678",
+    "customer_city": "Seoul",
+    "customer_country": "Korea",
+    "customer_address": "123 Hannam-daero, Yongsan-gu, Seoul, Korea"
+  },
+  {
+    "customer_name": "Jennie",
+    "customer_mail": "jennie@blackpink.com",
+    "customer_phone": "+821087654321",
+    "customer_city": "Incheon",
+    "customer_country": "Korea",
+    "customer_address": "456 Songdo-dong, Yeonsu-gu, Incheon, Korea"
+  },
+  {
+    "customer_name": "Rosé",
+    "customer_mail": "rose@blackpink.com",
+    "customer_phone": "+821098765432",
+    "customer_city": "Gwangju",
+    "customer_country": "Korea",
+    "customer_address": "789 Gwangju-daero, Gwangsan-gu, Gwangju, Korea"
+  },
+  {
+    "customer_name": "Lisa",
+    "customer_mail": "lisa@blackpink.com",
+    "customer_phone": "+821009876543",
+    "customer_city": "Bucheon",
+    "customer_country": "Korea",
+    "customer_address": "1011 Bucheon-ro, Wonmi-gu, Bucheon, Korea"
+  },
+  {
+    "customer_name": "V",
+    "customer_mail": "v@bts.com",
+    "customer_phone": "+821011234567",
+    "customer_city": "Daegu",
+    "customer_country": "Korea",
+    "customer_address": "1213 Daegu-daero, Jung-gu, Daegu, Korea"
+  },
+  {
+    "customer_name": "Jungkook",
+    "customer_mail": "jungkook@bts.com",
+    "customer_phone": "+821012345678",
+    "customer_city": "Busan",
+    "customer_country": "Korea",
+    "customer_address": "1415 Busan-daero, Seo-gu, Busan, Korea"
+  },
+  {
+    "customer_name": "Jimin",
+    "customer_mail": "jimin@bts.com",
+    "customer_phone": "+821012345678",
+    "customer_city": "Incheon",
+    "customer_country": "Korea",
+    "customer_address": "1617 Songdo-dong, Yeonsu-gu, Incheon, Korea"
+  },
+  {
+    "customer_name": "Suga",
+    "customer_mail": "suga@bts.com",
+    "customer_phone": "+821012345678",
+    "customer_city": "Daegu",
+    "customer_country": "Korea",
+    "customer_address": "1819 Daegu-daero, Jung-gu, Daegu, Korea"
+  },
+  {
+    "customer_name": "J-Hope",
+    "customer_mail": "jhope@bts.com",
+    "customer_phone": "+821012345678",
+    "customer_city": "Gwangju",
+    "customer_country": "Korea",
+    "customer_address": "2021 Gwangju-daero, Gwangsan-gu, Gwangju, Korea"
+  },
+  {
+    "customer_name": "Kai",
+    "customer_mail": "kai@exo.com",
+    "customer_phone": "+821012345678",
+    "customer_city": "Seoul",
+    "customer_country": "Korea",
+    "customer_address": "2021 Gwangju-daero, Gwangsan-gu, Gwangju, Korea"
+  }
+]

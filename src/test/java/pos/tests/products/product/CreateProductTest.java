@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 import pos.pageobjects.DashboardPage;
 import pos.pageobjects.productspage.AllProductsPage;
-//import pos.pageobjects.productspage.CategoryPage;
 import pos.pageobjects.productspage.ProductPage;
 import pos.testcomponents.BaseTest;
 
