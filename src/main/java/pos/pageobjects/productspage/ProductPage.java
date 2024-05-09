@@ -61,10 +61,6 @@ public class ProductPage extends AbstractComponents {
 	@FindBy(id = "product_unit")
 	WebElement productUnitSelect;
 
-	// text-field
-	@FindBy(name = "product_note")
-	WebElement productNoteArea;
-
 	// button
 	@FindBy(xpath = "//*[@id=\"product-form\"]/div/div[1]/div/button")
 	WebElement createUpdateProductButton;
@@ -106,19 +102,10 @@ public class ProductPage extends AbstractComponents {
 
 		Select unitDropdown = new Select(productUnitSelect);
 		unitDropdown.selectByVisibleText(productUnit);
-
-//		productNoteArea.clear();
-//		productNoteArea.sendKeys(productNote);
 	}
 
 	public AllProductsPage clickSubmitCreateUpdateProduct() {
 		createUpdateProductButton.click();
-		AllProductsPage allProductsPage = new AllProductsPage(driver);
-		return allProductsPage;
-	}
-	
-
-	public void goTo() {
-		driver.get("http://127.0.0.1:8000/products/create");
+		return new AllProductsPage(driver);
 	}
 }
