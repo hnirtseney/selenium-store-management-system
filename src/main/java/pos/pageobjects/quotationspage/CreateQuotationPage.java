@@ -1,5 +1,6 @@
 package pos.pageobjects.quotationspage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,7 +21,7 @@ public class CreateQuotationPage extends AbstractComponents {
     WebElement searchBox;
     @FindBy(name = "customer_id")
     WebElement customersSelect;
-    @FindBy(xpath = "/html/body/div[2]/div/main/div/div[1]/div/div/div[4]/div/ul/li")
+    @FindBy(xpath = "/html/body/div[2]/div/main/div/div[1]/div/div/div[4]/div/ul/li[1]/a")
     WebElement searchedProduct;
     @FindBy(xpath = "//*[@id=\"quotation-form\"]/div[2]/div[1]/div/table/tbody/tr/td[4]/div/input")
     WebElement productQuantity;
@@ -38,17 +39,17 @@ public class CreateQuotationPage extends AbstractComponents {
     WebElement createQuotationButton;
 
 
-    public void fillQuotationForm(String product_name, String customer, String product_quantity, String quotation_tax, String quotation_discount, String quotation_shipping, String quotation_status) {
+    public void fillQuotationForm(String product_code, String customer, String product_quantity, String quotation_tax, String quotation_discount, String quotation_shipping, String quotation_status) throws InterruptedException {
         searchBox.clear();
-        searchBox.sendKeys(product_name);
+        searchBox.sendKeys(product_code);
         searchedProduct.click();
-
-        Select customersDropdown = new Select(customersSelect);
-        customersDropdown.selectByVisibleText(customer);
 
         productQuantity.clear();
         productQuantity.sendKeys(product_quantity);
         submitQuantityProduct.click();
+
+        Select customersDropdown = new Select(customersSelect);
+        customersDropdown.selectByVisibleText(customer);
 
         quotationTax.clear();
         quotationTax.sendKeys(quotation_tax);
@@ -63,7 +64,7 @@ public class CreateQuotationPage extends AbstractComponents {
         statusDropdown.selectByVisibleText(quotation_status);
     }
 
-    public AllQuotationsPage allQuotationsPage() {
+    public AllQuotationsPage clickSubmitCreateQuotation() {
         createQuotationButton.click();
         return new AllQuotationsPage(driver);
     }

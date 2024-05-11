@@ -1,25 +1,373 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-07T17:49:44 ICT" name="Default suite" finished-at="2024-05-07T17:50:01 ICT" duration-ms="16998">
+  <suite started-at="2024-05-11T02:49:07 ICT" name="Default suite" finished-at="2024-05-11T02:51:02 ICT" duration-ms="115428">
     <groups>
     </groups>
-    <test started-at="2024-05-07T17:49:44 ICT" name="Default test" finished-at="2024-05-07T17:50:01 ICT" duration-ms="16998">
-      <class name="pos.tests.products.product.DeleteProductTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.DeleteProductTest@323b36e0]" started-at="2024-05-07T17:49:44 ICT" name="launchApplication" finished-at="2024-05-07T17:49:47 ICT" duration-ms="3793" status="PASS">
+    <test started-at="2024-05-11T02:49:07 ICT" name="Default test" finished-at="2024-05-11T02:51:02 ICT" duration-ms="115428">
+      <class name="pos.tests.products.category.CreateCategoryTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:07 ICT" name="launchApplication" finished-at="2024-05-11T02:49:09 ICT" duration-ms="2206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="deleteProduct()[pri:0, instance:pos.tests.products.product.DeleteProductTest@323b36e0]" started-at="2024-05-07T17:49:47 ICT" name="deleteProduct" finished-at="2024-05-07T17:50:00 ICT" duration-ms="13058" status="PASS">
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:09 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:49:17 ICT" duration-ms="7781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WBD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Automotive]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.DeleteProductTest@323b36e0]" started-at="2024-05-07T17:50:00 ICT" name="tearDown" finished-at="2024-05-07T17:50:01 ICT" duration-ms="114" status="PASS">
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:17 ICT" name="tearDown" finished-at="2024-05-11T02:49:17 ICT" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.products.product.DeleteProductTest -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:17 ICT" name="launchApplication" finished-at="2024-05-11T02:49:19 ICT" duration-ms="1928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:19 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:49:25 ICT" duration-ms="6095" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CBG]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Health]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:25 ICT" name="tearDown" finished-at="2024-05-11T02:49:25 ICT" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:25 ICT" name="launchApplication" finished-at="2024-05-11T02:49:27 ICT" duration-ms="1780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:27 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:49:32 ICT" duration-ms="5219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MTH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Toys]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:32 ICT" name="tearDown" finished-at="2024-05-11T02:49:33 ICT" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:33 ICT" name="launchApplication" finished-at="2024-05-11T02:49:34 ICT" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:34 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:49:40 ICT" duration-ms="5333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GXX]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Books]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:40 ICT" name="tearDown" finished-at="2024-05-11T02:49:40 ICT" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:40 ICT" name="launchApplication" finished-at="2024-05-11T02:49:42 ICT" duration-ms="1955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:42 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:49:47 ICT" duration-ms="5711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BUN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:47 ICT" name="tearDown" finished-at="2024-05-11T02:49:47 ICT" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:47 ICT" name="launchApplication" finished-at="2024-05-11T02:49:49 ICT" duration-ms="1806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:49 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:49:55 ICT" duration-ms="5407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PON]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clothing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:55 ICT" name="tearDown" finished-at="2024-05-11T02:49:55 ICT" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:55 ICT" name="launchApplication" finished-at="2024-05-11T02:49:56 ICT" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:49:56 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:50:02 ICT" duration-ms="6229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LMP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shoes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:02 ICT" name="tearDown" finished-at="2024-05-11T02:50:03 ICT" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:03 ICT" name="launchApplication" finished-at="2024-05-11T02:50:04 ICT" duration-ms="1708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:04 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:50:10 ICT" duration-ms="5511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BHS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Music]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:10 ICT" name="tearDown" finished-at="2024-05-11T02:50:10 ICT" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:10 ICT" name="launchApplication" finished-at="2024-05-11T02:50:12 ICT" duration-ms="1793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:12 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:50:17 ICT" duration-ms="5401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CZU]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tools]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:17 ICT" name="tearDown" finished-at="2024-05-11T02:50:17 ICT" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:17 ICT" name="launchApplication" finished-at="2024-05-11T02:50:19 ICT" duration-ms="1942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:19 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:50:25 ICT" duration-ms="5522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LLK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kids]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:25 ICT" name="tearDown" finished-at="2024-05-11T02:50:25 ICT" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:25 ICT" name="launchApplication" finished-at="2024-05-11T02:50:26 ICT" duration-ms="1720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:26 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:50:32 ICT" duration-ms="5664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ZQN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baby]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:32 ICT" name="tearDown" finished-at="2024-05-11T02:50:32 ICT" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:32 ICT" name="launchApplication" finished-at="2024-05-11T02:50:34 ICT" duration-ms="1748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:34 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:50:40 ICT" duration-ms="5711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WWT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Movies]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:40 ICT" name="tearDown" finished-at="2024-05-11T02:50:40 ICT" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:40 ICT" name="launchApplication" finished-at="2024-05-11T02:50:42 ICT" duration-ms="2188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:42 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:50:47 ICT" duration-ms="5499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HSV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:47 ICT" name="tearDown" finished-at="2024-05-11T02:50:48 ICT" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:48 ICT" name="launchApplication" finished-at="2024-05-11T02:50:49 ICT" duration-ms="1926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:49 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:50:55 ICT" duration-ms="5530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OSW]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Computers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:55 ICT" name="tearDown" finished-at="2024-05-11T02:50:55 ICT" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:55 ICT" name="launchApplication" finished-at="2024-05-11T02:50:57 ICT" duration-ms="1815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginAndCreateCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:50:57 ICT" name="loginAndCreateCategoryTest" data-provider="categoryData" finished-at="2024-05-11T02:51:02 ICT" duration-ms="5487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SZI]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCreateCategoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@4fb0f2b9]" started-at="2024-05-11T02:51:02 ICT" name="tearDown" finished-at="2024-05-11T02:51:02 ICT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pos.tests.products.category.CreateCategoryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

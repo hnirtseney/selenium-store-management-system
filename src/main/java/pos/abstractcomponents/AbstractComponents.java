@@ -2,6 +2,7 @@ package pos.abstractcomponents;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,6 +15,8 @@ import pos.pageobjects.adjustmentspage.AllAdjustmentsPage;
 import pos.pageobjects.parties.customerspage.CustomersPage;
 import pos.pageobjects.parties.supplierspage.SuppliersPage;
 import pos.pageobjects.productspage.*;
+import pos.pageobjects.quotationspage.AllQuotationsPage;
+import pos.pageobjects.quotationspage.CreateQuotationPage;
 
 public class AbstractComponents {
 	WebDriver driver;
@@ -47,23 +50,32 @@ public class AbstractComponents {
 	@FindBy(xpath = "//a[contains(.,'Parties')]")
 	WebElement partiesBtn;
 
-	@FindBy (linkText = "Customers")
+	@FindBy (xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[1]/a")
 	WebElement customersBtn;
 
-	@FindBy (linkText = "Suppliers")
+	@FindBy (xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[2]/a")
 	WebElement suppliersBtn;
 
+	@FindBy (xpath = "//*[@id=\"sidebar\"]/ul/li[4]/a")
+	WebElement quotationsBtn;
 
-//	public void waitForElementToAppear(By findBy) {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
-//	}
-//
+	@FindBy (xpath = "//*[@id=\"sidebar\"]/ul/li[4]/ul/li[1]/a")
+	WebElement createQuotationBtn;
+
+	@FindBy (xpath = "//*[@id=\"sidebar\"]/ul/li[4]/ul/li[2]/a")
+	WebElement allQuotationsBtn;
+
+
+	public void waitForElementToAppear(By findBy) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+	}
+
 	public void waitForWebElementToAppear(WebElement findBy) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(findBy));
 	}
-//
+
 //	public void waitForElementToDisappear(WebElement ele) throws InterruptedException {
 ////		Thread.sleep(1000);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -123,6 +135,18 @@ public class AbstractComponents {
 		partiesBtn.click();
 		suppliersBtn.click();
 		return new SuppliersPage(driver);
+	}
+
+	public CreateQuotationPage goToCreateQuotationPage() {
+		quotationsBtn.click();
+		createQuotationBtn.click();
+		return new CreateQuotationPage(driver);
+	}
+
+	public AllQuotationsPage goToAllQuotationsPage() {
+		quotationsBtn.click();
+		allQuotationsBtn.click();
+		return new AllQuotationsPage(driver);
 	}
 
 }
