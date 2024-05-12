@@ -49,5 +49,4 @@ public class CreateProductTest extends BaseTest {
 
 		AssertJUnit.assertTrue(actualUpdateSuccessMessage.equalsIgnoreCase(expectUpdateSuccessMessage));
 	}
-
 }

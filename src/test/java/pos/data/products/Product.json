@@ -1,7 +1,7 @@
 [
   {
     "product_name": "Product 1 - Casual Spring 2024",
-    "product_code": "PR-01",
+    "product_code": "PR3-01",
     "product_category": "Tools",
     "product_barcode": "Code 128",
     "product_cost": "1351",
@@ -14,7 +14,7 @@
   },
   {
     "product_name": "Product 2 - Fashion Spring 2025",
-    "product_code": "PR-02",
+    "product_code": "PR3-02",
     "product_category": "Toys",
     "product_barcode": "Code 128",
     "product_cost": "2084",
@@ -27,7 +27,7 @@
   },
   {
     "product_name": "Product 3 - Casual Summer 2025",
-    "product_code": "PR-03",
+    "product_code": "PR3-03",
     "product_category": "Automotive",
     "product_barcode": "UPC-E",
     "product_cost": "2843",
@@ -40,7 +40,7 @@
   },
   {
     "product_name": "Product 4 - Casual Winter 2025",
-    "product_code": "PR-04",
+    "product_code": "PR3-04",
     "product_category": "Toys",
     "product_barcode": "UPC-A",
     "product_cost": "1684",
@@ -53,7 +53,7 @@
   },
   {
     "product_name": "Product 5 - Sporty Winter 2024",
-    "product_code": "PR-05",
+    "product_code": "PR3-05",
     "product_category": "Health",
     "product_barcode": "EAN-13",
     "product_cost": "775",
@@ -66,7 +66,7 @@
   },
   {
     "product_name": "Product 6 - Sporty Winter 2024",
-    "product_code": "PR-06",
+    "product_code": "PR3-06",
     "product_category": "Music",
     "product_barcode": "UPC-E",
     "product_cost": "1676",
@@ -79,7 +79,7 @@
   },
   {
     "product_name": "Product 7 - Fashion Autumn 2024",
-    "product_code": "PR-07",
+    "product_code": "PR3-07",
     "product_category": "Electronics",
     "product_barcode": "Code 39",
     "product_cost": "233",
@@ -92,7 +92,7 @@
   },
   {
     "product_name": "Product 8 - Elegant Autumn 2024",
-    "product_code": "PR-08",
+    "product_code": "PR3-08",
     "product_category": "Home",
     "product_barcode": "UPC-A",
     "product_cost": "3546",
@@ -105,7 +105,7 @@
   },
   {
     "product_name": "Product 9 - Fashion Summer 2025",
-    "product_code": "PR-09",
+    "product_code": "PR3-09",
     "product_category": "Shoes",
     "product_barcode": "EAN-8",
     "product_cost": "4362",
@@ -118,7 +118,7 @@
   },
   {
     "product_name": "Product 10 - Casual Winter 2024",
-    "product_code": "PR-10",
+    "product_code": "PR3-10",
     "product_category": "Books",
     "product_barcode": "UPC-E",
     "product_cost": "1247",
@@ -131,7 +131,7 @@
   },
   {
     "product_name": "Product 11 - Casual Autumn 2025",
-    "product_code": "PR-11",
+    "product_code": "PR3-11",
     "product_category": "Health",
     "product_barcode": "Code 39",
     "product_cost": "397",
@@ -144,7 +144,7 @@
   },
   {
     "product_name": "Product 12 - Fashion Autumn 2025",
-    "product_code": "PR-12",
+    "product_code": "PR3-12",
     "product_category": "Computers",
     "product_barcode": "Code 39",
     "product_cost": "3600",
@@ -157,7 +157,7 @@
   },
   {
     "product_name": "Product 13 - Casual Spring 2025",
-    "product_code": "PR-13",
+    "product_code": "PR3-13",
     "product_category": "Health",
     "product_barcode": "Code 39",
     "product_cost": "2437",
@@ -170,7 +170,7 @@
   },
   {
     "product_name": "Product 14 - Elegant Winter 2024",
-    "product_code": "PR-14",
+    "product_code": "PR3-14",
     "product_category": "Clothing",
     "product_barcode": "EAN-13",
     "product_cost": "1826",
@@ -183,7 +183,7 @@
   },
   {
     "product_name": "Product 15 - Fashion Winter 2025",
-    "product_code": "PR-15",
+    "product_code": "PR3-15",
     "product_category": "Toys",
     "product_barcode": "UPC-A",
     "product_cost": "1135",
@@ -196,7 +196,7 @@
   },
   {
     "product_name": "Product 16 - Sporty Summer 2025",
-    "product_code": "PR-16",
+    "product_code": "PR3-16",
     "product_category": "Movies",
     "product_barcode": "EAN-8",
     "product_cost": "2837",
@@ -209,7 +209,7 @@
   },
   {
     "product_name": "Product 17 - Fashion Spring 2025",
-    "product_code": "PR-17",
+    "product_code": "PR3-17",
     "product_category": "Toys",
     "product_barcode": "UPC-A",
     "product_cost": "2938",
@@ -222,7 +222,7 @@
   },
   {
     "product_name": "Product 18 - Casual Autumn 2024",
-    "product_code": "PR-18",
+    "product_code": "PR3-18",
     "product_category": "Books",
     "product_barcode": "UPC-A",
     "product_cost": "1462",
@@ -235,7 +235,7 @@
   },
   {
     "product_name": "Product 19 - Casual Summer 2024",
-    "product_code": "PR-19",
+    "product_code": "PR3-19",
     "product_category": "Books",
     "product_barcode": "UPC-A",
     "product_cost": "1462",
@@ -248,7 +248,7 @@
   },
   {
     "product_name": "Product 20 - Casual Spring 2024",
-    "product_code": "PR-20",
+    "product_code": "PR3-20",
     "product_category": "Books",
     "product_barcode": "UPC-A",
     "product_cost": "1462",

@@ -13,16 +13,6 @@ public class AllProductsPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
-    // Web Elements
-//    @FindBy(xpath = "//a[contains(@href, '/products/create')]")
-//    private WebElement addButton;
-//
-//    @FindBy(id = "product-table")
-//    private WebElement productsTable;
-//
-//    @FindBy(css = "div.dataTables_filter input")
-//    private WebElement searchInput;
     
 	@FindBy(xpath = "//*[@id=\"delete\"]")
 	WebElement deleteProductBtn;
@@ -32,19 +22,6 @@ public class AllProductsPage {
 	
 	@FindBy(xpath = "//*[@id=\"swal2-title\"]")
 	WebElement successMessage;
-
-    // Page Methods
-//    public void goToCreateProduct() {
-//        addButton.click();
-//    }
-//
-//    public boolean isProductTableVisible() {
-//        return productsTable.isDisplayed();
-//    }
-//
-//    public void searchForProduct(String productName) {
-//        searchInput.sendKeys(productName);
-//    }
     
 	public String getSuccessMessage() {
 		return successMessage.getText();

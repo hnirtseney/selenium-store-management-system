@@ -67,6 +67,7 @@ public class CreateQuotationPage extends AbstractComponents {
 
     public AllQuotationsPage clickSubmitCreateQuotation() {
         createQuotationButton.click();
+        createQuotationButton.click();
         return new AllQuotationsPage(driver);
     }
 }

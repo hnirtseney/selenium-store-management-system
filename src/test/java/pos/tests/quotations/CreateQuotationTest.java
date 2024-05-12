@@ -18,7 +18,7 @@ public class CreateQuotationTest extends BaseTest {
     @DataProvider(name = "quotationsData")
     public Object[][] getProductData() throws IOException {
         List<HashMap<String, String>> data = getJsonDataToMap(
-                System.getProperty("user.dir") + "//src//test//java//pos//data//quotations//Quotations.json");
+                System.getProperty("user.dir") + "//src//test//java//pos//data//quotations//Quotations1.json");
         return data.stream()
                 .map(d -> new Object[] {
                         d.get("quotation_productCode"),
@@ -42,19 +42,17 @@ public class CreateQuotationTest extends BaseTest {
             String quotation_shipping,
             String quotation_status
             ) throws InterruptedException {
-        // Login
+
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
-
         CreateQuotationPage createQuotationPage = dashboardPage.goToCreateQuotationPage();
 
         createQuotationPage.fillQuotationForm(quotation_productCode, quotation_customer, quotation_quantity, quotation_tax, quotation_discount, quotation_shipping, quotation_status);
         AllQuotationsPage allQuotationsPage = createQuotationPage.clickSubmitCreateQuotation();
 
         String expectSuccessMessage = allQuotationsPage.getSuccessMessage();
-        System.out.println(expectSuccessMessage);
-//        String actualSuccessMessage = "Quotation Created!";
+        String actualSuccessMessage = "Quotation Created!";
 
-//        AssertJUnit.assertTrue(actualSuccessMessage.equalsIgnoreCase(expectSuccessMessage));
+        AssertJUnit.assertTrue(actualSuccessMessage.equalsIgnoreCase(expectSuccessMessage));
     }
 }

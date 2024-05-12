@@ -101,9 +101,9 @@ public class BaseTest {
 		loginPage.goToLoginPage();
 		return loginPage;
 	}
-
-	@AfterMethod(alwaysRun = true)
-	public void tearDown() {
-		driver.close();
-	}
+//
+//	@AfterMethod(alwaysRun = true)
+//	public void tearDown() {
+//		driver.close();
+//	}
 }
