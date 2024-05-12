@@ -1,0 +1,11 @@
+[
+  {
+    "quotation_productCode" : "PR-15",
+    "quotation_customer" : "Lisa",
+    "quotation_quantity" : "40",
+    "quotation_tax" : "40",
+    "quotation_discount" : "20",
+    "quotation_shipping" : "0",
+    "quotation_status" : "Pending"
+  }
+]

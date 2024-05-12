@@ -15,7 +15,7 @@ public class AllQuotationsPage extends AbstractComponents {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@id=\"swal2-title\"]")
+    @FindBy(xpath = "/html/body/div[3]/div")
     WebElement successMessage;
 
     public String getSuccessMessage() {

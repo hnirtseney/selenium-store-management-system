@@ -31,12 +31,13 @@ public class CreateQuotationPage extends AbstractComponents {
     WebElement quotationTax;
     @FindBy(name = "discount_percentage")
     WebElement quotationDiscount;
-    @FindBy(name = "shipping_amount")
+    @FindBy(xpath = "//*[@id=\"quotation-form\"]/div[2]/div[3]/div[3]/div/input")
     WebElement quotationShipping;
     @FindBy(name = "status")
     WebElement quotationStatus;
     @FindBy(xpath = "//*[@id=\"quotation-form\"]/div[5]/button")
     WebElement createQuotationButton;
+
 
 
     public void fillQuotationForm(String product_code, String customer, String product_quantity, String quotation_tax, String quotation_discount, String quotation_shipping, String quotation_status) throws InterruptedException {
