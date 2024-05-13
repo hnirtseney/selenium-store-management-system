@@ -4,10 +4,8 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pos.pageobjects.DashboardPage;
-import pos.pageobjects.adjustmentspage.AdjustmentPage;
-import pos.pageobjects.adjustmentspage.AllAdjustmentsPage;
 import pos.pageobjects.quotationspage.AllQuotationsPage;
-import pos.pageobjects.quotationspage.CreateQuotationPage;
+import pos.pageobjects.quotationspage.QuotationPage;
 import pos.testcomponents.BaseTest;
 
 import java.io.IOException;
@@ -45,10 +43,10 @@ public class CreateQuotationTest extends BaseTest {
 
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
-        CreateQuotationPage createQuotationPage = dashboardPage.goToCreateQuotationPage();
+        QuotationPage createQuotationPage = dashboardPage.goToCreateQuotationPage();
 
         createQuotationPage.fillQuotationForm(quotation_productCode, quotation_customer, quotation_quantity, quotation_tax, quotation_discount, quotation_shipping, quotation_status);
-        AllQuotationsPage allQuotationsPage = createQuotationPage.clickSubmitCreateQuotation();
+        AllQuotationsPage allQuotationsPage = createQuotationPage.clickSubmitQuotation();
 
         String expectSuccessMessage = allQuotationsPage.getSuccessMessage();
         String actualSuccessMessage = "Quotation Created!";

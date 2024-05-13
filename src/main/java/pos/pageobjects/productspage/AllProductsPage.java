@@ -26,13 +26,13 @@ public class AllProductsPage {
 	public String getSuccessMessage() {
 		return successMessage.getText();
 	}
-    
+
 	public void deleteProduct() {
 		deleteProductBtn.click();
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 	}
-	
+
 	public ProductPage goToUpdateProductPage() {
 		updateProductBtn.click();
 		return new ProductPage(driver);

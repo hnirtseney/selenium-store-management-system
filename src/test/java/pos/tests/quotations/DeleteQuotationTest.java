@@ -14,7 +14,8 @@ public class DeleteQuotationTest extends BaseTest {
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
         AllQuotationsPage allQuotationsPage = dashboardPage.goToAllQuotationsPage();
-        allQuotationsPage.clickDeleteQuotationButton();
+        allQuotationsPage.expandSetting();
+        allQuotationsPage.deleteQuotation();
 
         String expectDeleteSuccessMessage = "Quotation Deleted!";
         String actualDeleteSuccessMessage = allQuotationsPage.getSuccessMessage();

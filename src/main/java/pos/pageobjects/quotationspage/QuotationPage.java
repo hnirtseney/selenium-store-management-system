@@ -1,17 +1,18 @@
 package pos.pageobjects.quotationspage;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import pos.abstractcomponents.AbstractComponents;
+import pos.pageobjects.salespage.AllSalesPage;
 
-public class CreateQuotationPage extends AbstractComponents {
+public class QuotationPage extends AbstractComponents {
     WebDriver driver;
+    Select selectDropdown;
 
-    public CreateQuotationPage(WebDriver driver) {
+    public QuotationPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -35,12 +36,17 @@ public class CreateQuotationPage extends AbstractComponents {
     WebElement quotationShipping;
     @FindBy(name = "status")
     WebElement quotationStatus;
+    @FindBy(xpath = "//*[@id=\"getTotalAmount\"]")
+    WebElement totalAmountBtn;
     @FindBy(xpath = "//*[@id=\"quotation-form\"]/div[5]/button")
-    WebElement createQuotationButton;
+    WebElement submitButton;
+    @FindBy(xpath = "//*[@id=\"sale-form\"]/div[5]/button")
+    WebElement createSaleBtn;
 
 
 
-    public void fillQuotationForm(String product_code, String customer, String product_quantity, String quotation_tax, String quotation_discount, String quotation_shipping, String quotation_status) throws InterruptedException {
+
+    public void fillQuotationForm(String product_code, String customer, String product_quantity, String quotation_tax, String quotation_discount, String quotation_shipping, String quotation_status){
         searchBox.clear();
         searchBox.sendKeys(product_code);
         searchedProduct.click();
@@ -49,8 +55,8 @@ public class CreateQuotationPage extends AbstractComponents {
         productQuantity.sendKeys(product_quantity);
         submitQuantityProduct.click();
 
-        Select customersDropdown = new Select(customersSelect);
-        customersDropdown.selectByVisibleText(customer);
+        selectDropdown = new Select(customersSelect);
+        selectDropdown.selectByVisibleText(customer);
 
         quotationTax.clear();
         quotationTax.sendKeys(quotation_tax);
@@ -61,13 +67,22 @@ public class CreateQuotationPage extends AbstractComponents {
         quotationShipping.clear();
         quotationShipping.sendKeys(quotation_shipping);
 
-        Select statusDropdown = new Select(quotationStatus);
-        statusDropdown.selectByVisibleText(quotation_status);
+        selectDropdown = new Select(quotationStatus);
+        selectDropdown.selectByVisibleText(quotation_status);
     }
 
-    public AllQuotationsPage clickSubmitCreateQuotation() {
-        createQuotationButton.click();
-        createQuotationButton.click();
+    public void clickTotalAmount() {
+        totalAmountBtn.click();
+        totalAmountBtn.click();
+    }
+
+    public AllQuotationsPage clickSubmitQuotation() {
+        submitButton.click();
         return new AllQuotationsPage(driver);
+    }
+
+    public AllSalesPage clickCreateSale() {
+        createSaleBtn.click();
+        return new AllSalesPage(driver);
     }
 }

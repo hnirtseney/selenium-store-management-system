@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pos.abstractcomponents.AbstractComponents;
 
-public class AllQuotationsPage{
+public class AllQuotationsPage extends AbstractComponents {
     WebDriver driver;
 
     public AllQuotationsPage (WebDriver driver) {
-//        super(driver);
+        super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -23,15 +23,26 @@ public class AllQuotationsPage{
     WebElement expandOption;
 
     @FindBy(xpath = "//*[@id=\"delete\"]")
-    WebElement deleteButton;
+    WebElement deleteBtn;
+
+    @FindBy(xpath = "//*[@id=\"sales-table\"]/tbody/tr[1]/td[6]/div/div/a[1]")
+    WebElement makeSaleBtn;
 
     public String getSuccessMessage() {
         return successMessage.getText();
     }
 
-    public void clickDeleteQuotationButton() {
+    public void expandSetting() {
         expandOption.click();
-        deleteButton.click();
+    }
+
+    public QuotationPage makeSaleQuotation() {
+        makeSaleBtn.click();
+        return new QuotationPage(driver);
+    }
+
+    public void deleteQuotation() {
+        deleteBtn.click();
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }

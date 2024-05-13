@@ -2,7 +2,6 @@ package pos.abstractcomponents;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,7 +15,7 @@ import pos.pageobjects.parties.customerspage.CustomersPage;
 import pos.pageobjects.parties.supplierspage.SuppliersPage;
 import pos.pageobjects.productspage.*;
 import pos.pageobjects.quotationspage.AllQuotationsPage;
-import pos.pageobjects.quotationspage.CreateQuotationPage;
+import pos.pageobjects.quotationspage.QuotationPage;
 
 public class AbstractComponents {
 	WebDriver driver;
@@ -65,11 +64,11 @@ public class AbstractComponents {
 	@FindBy (xpath = "//*[@id=\"sidebar\"]/ul/li[4]/ul/li[2]/a")
 	WebElement allQuotationsBtn;
 
-
-	public void waitForElementToAppear(By findBy) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
-	}
+//
+//	public void waitForElementToAppear(By findBy) {
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+//	}
 
 	public void waitForWebElementToAppear(WebElement findBy) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -85,8 +84,8 @@ public class AbstractComponents {
 //	public void expandSidebar() {
 //		WebElement sidebar = driver.findElement(By.id("sidebar"));
 //		if (sidebar.getAttribute("class").contains("c-sidebar-minimized")) {
-//			WebElement sidebarToggler = driver.findElement(By.cssSelector(".c-sidebar-minimizer"));
-//			sidebarToggler.click();
+//			WebElement sidebarToggle = driver.findElement(By.cssSelector(".c-sidebar-minimizer"));
+//			sidebarToggle.click();
 //		}
 //	}
 
@@ -137,10 +136,10 @@ public class AbstractComponents {
 		return new SuppliersPage(driver);
 	}
 
-	public CreateQuotationPage goToCreateQuotationPage() {
+	public QuotationPage goToCreateQuotationPage() {
 		quotationsBtn.click();
 		createQuotationBtn.click();
-		return new CreateQuotationPage(driver);
+		return new QuotationPage(driver);
 	}
 
 	public AllQuotationsPage goToAllQuotationsPage() {
