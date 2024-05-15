@@ -30,9 +30,15 @@ public class CreateCustomerTest extends BaseTest {
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
 
         CustomersPage customersPage = dashboardPage.goToCustomersPage();
-
         CreateCustomerPage createCustomerPage = customersPage.gotoCreateCustomerPage();
-        createCustomerPage.fillCustomerInfo(customer_name, customer_mail, customer_phone, customer_city, customer_country, customer_address);
+
+        createCustomerPage.inputCustomerName(customer_name);
+        createCustomerPage.inputCustomerMail(customer_mail);
+        createCustomerPage.inputCustomerPhone(customer_phone);
+        createCustomerPage.inputCustomerCity(customer_city);
+        createCustomerPage.inputCustomerCountry(customer_country);
+        createCustomerPage.inputCustomerAddress(customer_address);
+
         CustomersPage createdCustomersPage = createCustomerPage.clickSubmitCreateCustomer();
 
         String expectSuccessMessage = "Customer Created!";

@@ -30,24 +30,34 @@ public class CreateSupplierPage extends AbstractComponents {
     @FindBy(xpath = "/html/body/div[2]/div/main/div/form/div/div[1]/div/button")
     WebElement createSupplierBtn;
 
-    public void fillSupplierInfo (String Supplier_name, String Supplier_mail, String Supplier_phone, String Supplier_city, String Supplier_country, String Supplier_address) {
+    public void inputSupplierName(String supplier_name) {
         SupplierName.clear();
-        SupplierName.sendKeys(Supplier_name);
+        SupplierName.sendKeys(supplier_name);
+    }
 
+    public void inputSupplierMail(String supplier_mail) {
         SupplierMail.clear();
-        SupplierMail.sendKeys(Supplier_mail);
+        SupplierMail.sendKeys(supplier_mail);
+    }
 
+    public void inputSupplierPhone(String supplier_phone) {
         SupplierPhone.clear();
-        SupplierPhone.sendKeys(Supplier_phone);
+        SupplierPhone.sendKeys(supplier_phone);
+    }
 
+    public void inputSupplierCity(String supplier_city) {
         SupplierCity.clear();
-        SupplierCity.sendKeys(Supplier_city);
+        SupplierCity.sendKeys(supplier_city);
+    }
 
+    public void inputSupplierCountry(String supplier_country) {
         SupplierCountry.clear();
-        SupplierCountry.sendKeys(Supplier_country);
+        SupplierCountry.sendKeys(supplier_country);
+    }
 
+    public void inputSupplierAddress(String supplier_address) {
         SupplierAddress.clear();
-        SupplierAddress.sendKeys(Supplier_address);
+        SupplierAddress.sendKeys(supplier_address);
     }
 
     public SuppliersPage clickSubmitCreateSupplier () {

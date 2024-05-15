@@ -11,6 +11,7 @@ import pos.abstractcomponents.AbstractComponents;
 public class ProductPage extends AbstractComponents {
 
 	WebDriver driver;
+	Select dropdownSelect;
 
 	public ProductPage(WebDriver driver) {
 		super(driver);
@@ -64,44 +65,60 @@ public class ProductPage extends AbstractComponents {
 	// button
 	@FindBy(xpath = "//*[@id=\"product-form\"]/div/div[1]/div/button")
 	WebElement createUpdateProductButton;
-	
-	public void fillProductForm(String productName, String productCode,
-			String productCategory, String productBarCode,
-			String productCost, String productPrice, String productQuantity, String productStockAlert,
-			String productOrderTax, String productTaxType, String productUnit) {
 
+	public void inputProductName(String productName) {
 		productNameField.clear();
 		productNameField.sendKeys(productName);
+	}
 
+	public void inputProductCode(String productCode) {
 		productCodeField.clear();
 		productCodeField.sendKeys(productCode);
+	}
 
-		Select categoryDropdown = new Select(categorySelect);
-		categoryDropdown.selectByVisibleText(productCategory);
+	public void selectCategory(String productCategory) {
+		dropdownSelect = new Select(categorySelect);
+		dropdownSelect.selectByVisibleText(productCategory);
+	}
 
-		Select barcodeSymbologyDropdown = new Select(barcodeSymbologySelect);
-		barcodeSymbologyDropdown.selectByVisibleText(productBarCode);
+	public void selectBarcodeSymbology(String productBarCode) {
+		dropdownSelect = new Select(barcodeSymbologySelect);
+		dropdownSelect.selectByVisibleText(productBarCode);
+	}
 
+	public void inputProductCost(String productCost) {
 		productCostField.clear();
 		productCostField.sendKeys(productCost);
+	}
 
+	public void inputProductPrice(String productPrice) {
 		productPriceField.clear();
 		productPriceField.sendKeys(productPrice);
+	}
 
+	public void inputProductQuantity(String productQuantity) {
 		productQuantityField.clear();
 		productQuantityField.sendKeys(productQuantity);
+	}
 
+	public void inputProductStockAlert(String productStockAlert) {
 		productStockAlertField.clear();
 		productStockAlertField.sendKeys(productStockAlert);
+	}
 
+	public void inputProductOrderTax(String productOrderTax) {
 		productOrderTaxField.clear();
 		productOrderTaxField.sendKeys(productOrderTax);
+	}
 
-		Select taxTypeDropdown = new Select(taxTypeSelect);
-		taxTypeDropdown.selectByVisibleText(productTaxType);
+	public void selectTaxType(String productTaxType) {
+		dropdownSelect = new Select(taxTypeSelect);
+		dropdownSelect.selectByVisibleText(productTaxType);
+	}
 
-		Select unitDropdown = new Select(productUnitSelect);
-		unitDropdown.selectByVisibleText(productUnit);
+	public void selectProductUnit(String productUnit) {
+		dropdownSelect = new Select(productUnitSelect);
+		dropdownSelect.selectByVisibleText(productUnit);
 	}
 
 	public AllProductsPage clickSubmitCreateUpdateProduct() {

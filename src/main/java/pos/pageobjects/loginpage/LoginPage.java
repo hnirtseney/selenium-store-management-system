@@ -46,7 +46,6 @@ public class LoginPage extends AbstractComponents {
 		return errorMessage.getText();
 	}
 
-	// Điều hướng đến trang đăng nhập
 	public void goToLoginPage() {
 		driver.get("http://127.0.0.1:8000/login");
 	}

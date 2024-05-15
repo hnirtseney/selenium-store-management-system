@@ -38,10 +38,18 @@ public class CreateProductTest extends BaseTest {
 		ProductPage productPage = dashboardPage.goToCreateProductPage();
 
 		// Create Product
-		productPage.fillProductForm(productName, productCode,
-				productCategory, productBarCode,
-				productCost, productPrice, productQuantity, productStockAlert,
-				productOrderTax, productTaxType, productUnit);
+		productPage.inputProductName(productName);
+		productPage.inputProductCode(productCode);
+		productPage.selectCategory(productCategory);
+		productPage.selectBarcodeSymbology(productBarCode);
+		productPage.inputProductCost(productCost);
+		productPage.inputProductPrice(productPrice);
+		productPage.inputProductQuantity(productQuantity);
+		productPage.inputProductStockAlert(productStockAlert);
+		productPage.inputProductOrderTax(productOrderTax);
+		productPage.selectTaxType(productTaxType);
+		productPage.selectProductUnit(productUnit);
+
 		AllProductsPage allProductsPage = productPage.clickSubmitCreateUpdateProduct();
 
 		String expectUpdateSuccessMessage = allProductsPage.getSuccessMessage();

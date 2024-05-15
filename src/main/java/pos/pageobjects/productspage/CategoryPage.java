@@ -33,12 +33,18 @@ public class CategoryPage extends AbstractComponents {
 	@FindBy(xpath = "//*[@id=\"delete\"]")
 	WebElement deleteButton;
 
-	// Message
-	@FindBy(xpath = "")
-	WebElement createSuccessMessage;
+	@FindBy(xpath = "//*[@id=\"product_categories-table\"]/tbody/tr[1]/td[4]/a")
+	WebElement updateCategoryButton;
 
-	@FindBy(xpath = "")
-	WebElement updateSuccessMessage;
+	@FindBy(id = "product_categories-table")
+	public WebElement productCategoriesTable;
+
+	// Message
+	@FindBy(xpath = "//*[@id=\"swal2-title\"]")
+	WebElement successMessage;
+
+	@FindBy(xpath = "/html/body/div[2]/div/main/div[1]/div/div/div[1]/div/span")
+	WebElement failedMessage;
 	
 	@FindBy(xpath = "//*[@id=\"swal2-title\"]")
 	WebElement deleteSuccessMessage;
@@ -47,9 +53,12 @@ public class CategoryPage extends AbstractComponents {
 		addCategoryButton.click();
 	}
 
-	public void fillCategoryForm(String categoryCode, String categoryName) {
+	public void inputCategoryCode(String categoryCode) {
 		categoryCodeField.clear();
 		categoryCodeField.sendKeys(categoryCode);
+	}
+
+	public void inputCategoryName(String categoryName) {
 		categoryNameField.clear();
 		categoryNameField.sendKeys(categoryName);
 	}
@@ -64,19 +73,24 @@ public class CategoryPage extends AbstractComponents {
 		alert.accept();
 	}
 
-	public String getCreateSuccessMessage() {
-		return createSuccessMessage.getText();
+	public String getSuccessMessage() {
+		return successMessage.getText();
+	}
+
+	public String getFailedMessage() {
+		return failedMessage.getText();
 	}
 
 	public String updateCreateSuccessMessage() {
-		return updateSuccessMessage.getText();
+		return successMessage.getText();
 	}
 	
 	public String getDeleteSuccessMessage() {
 		return deleteSuccessMessage.getText();
 	}
 
-	public void goTo() {
-		driver.get("http://localhost:8000/product-categories");
+	public DetailCategoryPage clickUpdateCategoryButton() {
+		updateCategoryButton.click();
+		return new DetailCategoryPage(driver);
 	}
 }

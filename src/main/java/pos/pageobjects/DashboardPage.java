@@ -67,8 +67,4 @@ public class DashboardPage extends AbstractComponents {
 		logoutLink.click();
 	}
 
-	// Navigation to HomePage
-	public void goToDashboardPage() {
-		driver.get("http://localhost:8000/home");
-	}
 }

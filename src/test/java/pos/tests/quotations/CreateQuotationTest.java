@@ -1,3 +1,5 @@
+// Đang có lỗi không lấy được locator Message
+
 package pos.tests.quotations;
 
 import org.testng.AssertJUnit;
@@ -39,13 +41,20 @@ public class CreateQuotationTest extends BaseTest {
             String quotation_discount,
             String quotation_shipping,
             String quotation_status
-            ) throws InterruptedException {
+            ) {
 
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
         QuotationPage createQuotationPage = dashboardPage.goToCreateQuotationPage();
 
-        createQuotationPage.fillQuotationForm(quotation_productCode, quotation_customer, quotation_quantity, quotation_tax, quotation_discount, quotation_shipping, quotation_status);
+        createQuotationPage.inputProductCode(quotation_productCode);
+        createQuotationPage.selectCustomer(quotation_customer);
+        createQuotationPage.inputProductQuantity(quotation_quantity);
+        createQuotationPage.inputQuantationTax(quotation_tax);
+        createQuotationPage.inputQuotationDiscount(quotation_discount);
+        createQuotationPage.inputQuotationShipping(quotation_shipping);
+        createQuotationPage.selectQuotationStatus(quotation_status);
+
         AllQuotationsPage allQuotationsPage = createQuotationPage.clickSubmitQuotation();
 
         String expectSuccessMessage = allQuotationsPage.getSuccessMessage();

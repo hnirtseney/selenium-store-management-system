@@ -29,22 +29,32 @@ public class CreateCustomerPage {
     @FindBy(xpath = "/html/body/div[2]/div/main/div/form/div/div[1]/div/button")
     WebElement createCustomerBtn;
 
-    public void fillCustomerInfo (String customer_name, String customer_mail, String customer_phone, String customer_city, String customer_country, String customer_address) {
+    public void inputCustomerName (String customer_name) {
         customerName.clear();
         customerName.sendKeys(customer_name);
+    }
 
+    public void inputCustomerMail (String customer_mail) {
         customerMail.clear();
         customerMail.sendKeys(customer_mail);
+    }
 
+    public void inputCustomerPhone (String customer_phone) {
         customerPhone.clear();
         customerPhone.sendKeys(customer_phone);
+    }
 
+    public void inputCustomerCity (String customer_city) {
         customerCity.clear();
         customerCity.sendKeys(customer_city);
+    }
 
+    public void inputCustomerCountry (String customer_country) {
         customerCountry.clear();
         customerCountry.sendKeys(customer_country);
+    }
 
+    public void inputCustomerAddress (String customer_address) {
         customerAddress.clear();
         customerAddress.sendKeys(customer_address);
     }

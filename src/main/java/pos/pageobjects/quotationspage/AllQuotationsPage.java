@@ -36,9 +36,9 @@ public class AllQuotationsPage extends AbstractComponents {
         expandOption.click();
     }
 
-    public QuotationPage makeSaleQuotation() {
+    public MakeSalePage makeSaleQuotation() {
         makeSaleBtn.click();
-        return new QuotationPage(driver);
+        return new MakeSalePage(driver);
     }
 
     public void deleteQuotation() {

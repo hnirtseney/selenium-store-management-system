@@ -2,6 +2,7 @@ package pos.abstractcomponents;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -64,11 +65,11 @@ public class AbstractComponents {
 	@FindBy (xpath = "//*[@id=\"sidebar\"]/ul/li[4]/ul/li[2]/a")
 	WebElement allQuotationsBtn;
 
-//
-//	public void waitForElementToAppear(By findBy) {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
-//	}
+
+	public void waitForElementToAppear(By findBy) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+	}
 
 	public void waitForWebElementToAppear(WebElement findBy) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
