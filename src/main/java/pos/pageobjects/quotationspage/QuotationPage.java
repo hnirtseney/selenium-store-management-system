@@ -9,14 +9,8 @@ import pos.abstractcomponents.AbstractComponents;
 
 public class QuotationPage extends AbstractComponents {
     WebDriver driver;
+    //    Actions action;
     Select selectDropdown;
-
-    public QuotationPage(WebDriver driver) {
-        super(driver);
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
-
     @FindBy(xpath = "/html/body/div[2]/div/main/div/div[1]/div/div/div[1]/div/div/div/input")
     WebElement searchBox;
     @FindBy(name = "customer_id")
@@ -38,6 +32,12 @@ public class QuotationPage extends AbstractComponents {
     @FindBy(xpath = "//*[@id=\"quotation-form\"]/div[5]/button")
     WebElement submitButton;
 
+    public QuotationPage(WebDriver driver) {
+        super(driver);
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
     public void inputProductCode(String product_code) {
         searchBox.clear();
         searchBox.sendKeys(product_code);
@@ -55,7 +55,7 @@ public class QuotationPage extends AbstractComponents {
         selectDropdown.selectByVisibleText(customer_name);
     }
 
-    public void inputQuantationTax(String quotation_tax) {
+    public void inputQuotationTax(String quotation_tax) {
         quotationTax.clear();
         quotationTax.sendKeys(quotation_tax);
     }
@@ -70,7 +70,7 @@ public class QuotationPage extends AbstractComponents {
         quotationShipping.sendKeys(quotation_shipping);
     }
 
-    public void selectQuotationStatus(String quotation_status){
+    public void selectQuotationStatus(String quotation_status) {
         selectDropdown = new Select(quotationStatus);
         selectDropdown.selectByVisibleText(quotation_status);
     }
@@ -78,5 +78,9 @@ public class QuotationPage extends AbstractComponents {
     public AllQuotationsPage clickSubmitQuotation() {
         submitButton.click();
         return new AllQuotationsPage(driver);
+    }
+
+    public String getValidationMessage() {
+        return quotationTax.getAttribute("validationMessage");
     }
 }

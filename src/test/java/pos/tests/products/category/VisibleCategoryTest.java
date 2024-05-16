@@ -1,11 +1,9 @@
 package pos.tests.products.category;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pos.pageobjects.DashboardPage;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.productspage.CategoryPage;
 import pos.testcomponents.BaseTest;
 

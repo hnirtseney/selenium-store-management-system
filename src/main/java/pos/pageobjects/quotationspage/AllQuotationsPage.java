@@ -8,25 +8,23 @@ import org.openqa.selenium.support.PageFactory;
 import pos.abstractcomponents.AbstractComponents;
 
 public class AllQuotationsPage extends AbstractComponents {
+    @FindBy(id = "sales-table_wrapper")
+    public WebElement allQuotationsTable;
     WebDriver driver;
+    @FindBy(xpath = "//*[@id=\"swal2-title\"]")
+    WebElement successMessage;
+    @FindBy(xpath = "//*[@id=\"sales-table\"]/tbody/tr[1]/td[6]/div/button")
+    WebElement expandOption;
+    @FindBy(xpath = "//*[@id=\"delete\"]")
+    WebElement deleteBtn;
+    @FindBy(xpath = "//*[@id=\"sales-table\"]/tbody/tr[1]/td[6]/div/div/a[1]")
+    WebElement makeSaleBtn;
 
-    public AllQuotationsPage (WebDriver driver) {
+    public AllQuotationsPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
-    @FindBy(xpath = "//*[@id=\"swal2-title\"]")
-    WebElement successMessage;
-
-    @FindBy(xpath = "//*[@id=\"sales-table\"]/tbody/tr[1]/td[6]/div/button")
-    WebElement expandOption;
-
-    @FindBy(xpath = "//*[@id=\"delete\"]")
-    WebElement deleteBtn;
-
-    @FindBy(xpath = "//*[@id=\"sales-table\"]/tbody/tr[1]/td[6]/div/div/a[1]")
-    WebElement makeSaleBtn;
 
     public String getSuccessMessage() {
         return successMessage.getText();

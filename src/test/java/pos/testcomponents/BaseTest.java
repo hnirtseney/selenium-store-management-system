@@ -14,7 +14,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pos.pageobjects.DashboardPage;
+import org.testng.annotations.DataProvider;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.loginpage.LoginPage;
 import pos.pageobjects.productspage.CategoryPage;
 
@@ -87,6 +88,15 @@ public class BaseTest {
         File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
         FileUtils.copyFile(source, file);
         return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+    }
+
+    @DataProvider(name = "testAccount")
+    public Object[][] getProductData() throws IOException {
+        List<HashMap<String, String>> data = getJsonDataToMap(
+                System.getProperty("user.dir") + "//src//test//java//pos//data//generaldata//TestAccount.json");
+        return data.stream()
+                .map(d -> new Object[]{d.get("username"), d.get("password")})
+                .toArray(Object[][]::new);
     }
 
     @BeforeMethod(alwaysRun = true)

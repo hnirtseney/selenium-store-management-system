@@ -1,18 +1,16 @@
 package pos.tests.quotations;
 
-import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-
-import pos.pageobjects.DashboardPage;
-import pos.pageobjects.productspage.AllProductsPage;
+import org.testng.annotations.Test;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.quotationspage.AllQuotationsPage;
 import pos.testcomponents.BaseTest;
 
 public class DeleteQuotationTest extends BaseTest {
-    @Test
-    public void deleteProduct() {
+    @Test(dataProvider = "testAccount")
+    public void deleteProduct(String username, String password) {
         loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = loginPage.login(username, password);
         AllQuotationsPage allQuotationsPage = dashboardPage.goToAllQuotationsPage();
         allQuotationsPage.expandSetting();
         allQuotationsPage.deleteQuotation();

@@ -2,16 +2,16 @@ package pos.tests.parties.supplierstest;
 
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
-import pos.pageobjects.DashboardPage;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.parties.supplierspage.SuppliersPage;
 import pos.testcomponents.BaseTest;
 
 public class DeleteSupplierTest extends BaseTest {
-    @Test
-    public void deleteSupplierTest() {
+    @Test(dataProvider = "testAccount")
+    public void deleteSupplierTest(String username, String password) {
         // Login
         loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = loginPage.login(username, password);
         SuppliersPage suppliersPage = dashboardPage.goToSuppliersPage();
 
         suppliersPage.deleteCustomer();

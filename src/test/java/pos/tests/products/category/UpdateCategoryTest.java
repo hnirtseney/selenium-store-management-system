@@ -6,7 +6,7 @@ import com.google.gson.JsonParser;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.pageobjects.DashboardPage;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.productspage.CategoryPage;
 import pos.pageobjects.productspage.DetailCategoryPage;
 import pos.testcomponents.BaseTest;

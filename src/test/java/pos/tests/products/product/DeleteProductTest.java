@@ -1,9 +1,8 @@
 package pos.tests.products.product;
 
-import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-
-import pos.pageobjects.DashboardPage;
+import org.testng.annotations.Test;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.productspage.AllProductsPage;
 import pos.testcomponents.BaseTest;
 

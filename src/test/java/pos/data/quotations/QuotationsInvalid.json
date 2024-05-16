@@ -1,0 +1,32 @@
+[
+  {
+    "quotation_productCode": "PR-10",
+    "quotation_customer": "V",
+    "quotation_quantity": "5",
+    "quotation_tax": "400",
+    "quotation_discount": "20",
+    "quotation_shipping": "0",
+    "quotation_status": "Sent",
+    "quotation_message": "Input product please!"
+  },
+  {
+    "quotation_productCode": "PR-03",
+    "quotation_customer": "Kai",
+    "quotation_quantity": "10",
+    "quotation_tax": "400",
+    "quotation_discount": "20",
+    "quotation_shipping": "0",
+    "quotation_status": "Sent",
+    "quotation_message": "Value must be less than or equal to 100."
+  },
+  {
+    "quotation_productCode": "PR-10",
+    "quotation_customer": "Jimin",
+    "quotation_quantity": "2",
+    "quotation_tax": "10",
+    "quotation_discount": "300",
+    "quotation_shipping": "0",
+    "quotation_status": "Pending",
+    "quotation_message": "Value must be less than or equal to 100."
+  }
+]

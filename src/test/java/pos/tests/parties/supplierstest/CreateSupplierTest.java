@@ -1,17 +1,16 @@
 package pos.tests.parties.supplierstest;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
-
-import pos.pageobjects.DashboardPage;
+import org.testng.annotations.Test;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.parties.supplierspage.CreateSupplierPage;
 import pos.pageobjects.parties.supplierspage.SuppliersPage;
 import pos.testcomponents.BaseTest;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 public class CreateSupplierTest extends BaseTest {
     @DataProvider(name = "suppliersData")

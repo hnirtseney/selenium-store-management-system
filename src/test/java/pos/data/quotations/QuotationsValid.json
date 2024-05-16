@@ -1,0 +1,22 @@
+[
+  {
+    "quotation_productCode": "PR-09",
+    "quotation_customer": "V",
+    "quotation_quantity": "4",
+    "quotation_tax": "10",
+    "quotation_discount": "20",
+    "quotation_shipping": "10",
+    "quotation_status": "Pending",
+    "quotation_message": "Quotation Created!"
+  },
+  {
+    "quotation_productCode": "PR-13",
+    "quotation_customer": "V",
+    "quotation_quantity": "4",
+    "quotation_tax": "10",
+    "quotation_discount": "20",
+    "quotation_shipping": "10",
+    "quotation_status": "Sent",
+    "quotation_message": "Quotation Created!"
+  }
+]

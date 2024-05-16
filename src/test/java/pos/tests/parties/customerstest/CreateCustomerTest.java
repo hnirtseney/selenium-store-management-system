@@ -1,17 +1,16 @@
 package pos.tests.parties.customerstest;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
-
-import pos.pageobjects.DashboardPage;
+import org.testng.annotations.Test;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.parties.customerspage.CreateCustomerPage;
 import pos.pageobjects.parties.customerspage.CustomersPage;
 import pos.testcomponents.BaseTest;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 public class CreateCustomerTest extends BaseTest {
     @DataProvider(name = "customersData")
