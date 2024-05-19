@@ -1,7 +1,7 @@
 [
   {
     "product_name": "Product 1 - Casual Spring 2024",
-    "product_code": "PR3-01",
+    "product_code": "PR3-0111",
     "product_category": "Tools",
     "product_barcode": "Code 128",
     "product_cost": "1351",
@@ -9,12 +9,12 @@
     "product_quantity": "52",
     "product_alert_quantity": "9",
     "product_tax": "15",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
     "product_name": "Product 2 - Fashion Spring 2025",
-    "product_code": "PR3-02",
+    "product_code": "PR3-02111",
     "product_category": "Toys",
     "product_barcode": "Code 128",
     "product_cost": "2084",
@@ -22,12 +22,12 @@
     "product_quantity": "44",
     "product_alert_quantity": "10",
     "product_tax": "9",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
     "product_name": "Product 3 - Casual Summer 2025",
-    "product_code": "PR3-03",
+    "product_code": "PR3-03111",
     "product_category": "Automotive",
     "product_barcode": "UPC-E",
     "product_cost": "2843",
@@ -35,12 +35,12 @@
     "product_quantity": "36",
     "product_alert_quantity": "7",
     "product_tax": "11",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
     "product_name": "Product 4 - Casual Winter 2025",
-    "product_code": "PR3-04",
+    "product_code": "PR3-04111",
     "product_category": "Toys",
     "product_barcode": "UPC-A",
     "product_cost": "1684",
@@ -48,7 +48,7 @@
     "product_quantity": "63",
     "product_alert_quantity": "7",
     "product_tax": "12",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -61,7 +61,7 @@
     "product_quantity": "64",
     "product_alert_quantity": "4",
     "product_tax": "14",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -74,7 +74,7 @@
     "product_quantity": "92",
     "product_alert_quantity": "3",
     "product_tax": "6",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -87,7 +87,7 @@
     "product_quantity": "35",
     "product_alert_quantity": "8",
     "product_tax": "9",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -100,7 +100,7 @@
     "product_quantity": "45",
     "product_alert_quantity": "9",
     "product_tax": "20",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -113,7 +113,7 @@
     "product_quantity": "75",
     "product_alert_quantity": "10",
     "product_tax": "17",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -126,7 +126,7 @@
     "product_quantity": "99",
     "product_alert_quantity": "3",
     "product_tax": "18",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -139,7 +139,7 @@
     "product_quantity": "42",
     "product_alert_quantity": "6",
     "product_tax": "15",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -152,7 +152,7 @@
     "product_quantity": "88",
     "product_alert_quantity": "6",
     "product_tax": "13",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -165,7 +165,7 @@
     "product_quantity": "57",
     "product_alert_quantity": "4",
     "product_tax": "14",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -178,7 +178,7 @@
     "product_quantity": "49",
     "product_alert_quantity": "4",
     "product_tax": "5",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -191,7 +191,7 @@
     "product_quantity": "76",
     "product_alert_quantity": "10",
     "product_tax": "18",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -204,7 +204,7 @@
     "product_quantity": "46",
     "product_alert_quantity": "8",
     "product_tax": "12",
-    "product_taxType": "Exclusive",
+    "product_tax_type": "Exclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -217,7 +217,7 @@
     "product_quantity": "77",
     "product_alert_quantity": "3",
     "product_tax": "7",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -230,7 +230,7 @@
     "product_quantity": "26",
     "product_alert_quantity": "3",
     "product_tax": "7",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -243,7 +243,7 @@
     "product_quantity": "26",
     "product_alert_quantity": "3",
     "product_tax": "7",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   },
   {
@@ -256,7 +256,7 @@
     "product_quantity": "26",
     "product_alert_quantity": "3",
     "product_tax": "7",
-    "product_taxType": "Inclusive",
+    "product_tax_type": "Inclusive",
     "product_unit": "Piece | PC"
   }
 ]

@@ -3,6 +3,7 @@ package pos.tests.products.product;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pos.form.ProductForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.productspage.AllProductsPage;
 import pos.pageobjects.productspage.ProductPage;
@@ -18,37 +19,46 @@ public class CreateProductTest extends BaseTest {
         List<HashMap<String, String>> data = getJsonDataToMap(
                 System.getProperty("user.dir") + "//src//test//java//pos//data//products//Product.json");
         return data.stream()
-                .map(d -> new Object[]{d.get("product_name"), d.get("product_code"), d.get("product_category"), d.get("product_barcode"), d.get("product_cost"),
-                        d.get("product_price"), d.get("product_quantity"), d.get("product_alert_quantity"),
-                        d.get("product_tax"), d.get("product_taxType"), d.get("product_unit")})
+                .map(d -> new Object[]{new ProductForm(
+                        d.get("product_name"),
+                        d.get("product_code"),
+                        d.get("product_category"),
+                        d.get("product_barcode"),
+                        d.get("product_cost"),
+                        d.get("product_price"),
+                        d.get("product_quantity"),
+                        d.get("product_alert_quantity"),
+                        d.get("product_tax"),
+                        d.get("product_tax_type"),
+                        d.get("product_unit")
+                )})
                 .toArray(Object[][]::new);
     }
 
-    @Test(dataProvider = "productData")
-    public void createProductTest(String productName, String productCode,
-                                  String productCategory, String productBarCode,
-                                  String productCost, String productPrice, String productQuantity, String productStockAlert,
-                                  String productOrderTax, String productTaxType, String productUnit) {
-        // Login
+    public ProductPage fillForm(ProductForm form) {
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        AllProductsPage allProductsPage = dashboardPage.goToAllProductsPage();
+        ProductPage createProductPage = allProductsPage.goToCreateProductPage();
 
-        // Navigate to Create Product Page through Dashboard
-        ProductPage productPage = dashboardPage.goToCreateProductPage();
+        createProductPage.inputProductName(form.product_name);
+        createProductPage.inputProductCode(form.product_code);
+        createProductPage.selectCategory(form.product_category);
+        createProductPage.selectBarcodeSymbology(form.product_barcode);
+        createProductPage.inputProductCost(form.product_cost);
+        createProductPage.inputProductPrice(form.product_price);
+        createProductPage.inputProductQuantity(form.product_quantity);
+        createProductPage.inputProductStockAlert(form.product_alert_quantity);
+        createProductPage.inputProductOrderTax(form.product_tax);
+        createProductPage.selectTaxType(form.product_tax_type);
+        createProductPage.selectProductUnit(form.product_unit);
 
-        // Create Product
-        productPage.inputProductName(productName);
-        productPage.inputProductCode(productCode);
-        productPage.selectCategory(productCategory);
-        productPage.selectBarcodeSymbology(productBarCode);
-        productPage.inputProductCost(productCost);
-        productPage.inputProductPrice(productPrice);
-        productPage.inputProductQuantity(productQuantity);
-        productPage.inputProductStockAlert(productStockAlert);
-        productPage.inputProductOrderTax(productOrderTax);
-        productPage.selectTaxType(productTaxType);
-        productPage.selectProductUnit(productUnit);
+        return createProductPage;
+    }
 
+    @Test(dataProvider = "productData")
+    public void createProductTest(ProductForm form) {
+        ProductPage productPage = this.fillForm(form);
         AllProductsPage allProductsPage = productPage.clickSubmitCreateUpdateProduct();
 
         String expectUpdateSuccessMessage = allProductsPage.getSuccessMessage();

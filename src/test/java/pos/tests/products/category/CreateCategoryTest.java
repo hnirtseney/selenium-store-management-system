@@ -30,12 +30,7 @@ public class CreateCategoryTest extends BaseTest {
         return new Object[][]{{data.get(0).get("category_code"), data.get(0).get("category_name")}};
     }
 
-    @Test(
-//			dataProvider = "categoryData",
-            dataProvider = "singleCategoryData",
-            priority = 1)
-    public void createSuccessCategoryTest(String category_code, String category_name) {
-        // Login
+    public CategoryPage fillForm(String category_code, String category_name) {
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
 
@@ -47,6 +42,14 @@ public class CreateCategoryTest extends BaseTest {
         categoryPage.inputCategoryCode(category_code);
         categoryPage.inputCategoryName(category_name);
         categoryPage.createCategory();
+        return categoryPage;
+    }
+
+    @Test(
+            dataProvider = "singleCategoryData",
+            priority = 1)
+    public void createSuccessCategoryTest(String category_code, String category_name) {
+        CategoryPage categoryPage = this.fillForm(category_code, category_name);
 
         String expectMessage = "Product Category Created!";
         String actualMessage = categoryPage.getSuccessMessage();
@@ -58,17 +61,7 @@ public class CreateCategoryTest extends BaseTest {
             dataProvider = "singleCategoryData",
             priority = 2)
     public void createFailedCategorySuccess(String category_code, String category_name) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
-
-        // Navigate to Category Page through Dashboard
-        CategoryPage categoryPage = dashboardPage.goToCategoryPage();
-
-        // Create Category
-        categoryPage.openAddCategoryModal();
-        categoryPage.inputCategoryCode(category_code);
-        categoryPage.inputCategoryName(category_name);
-        categoryPage.createCategory();
+        CategoryPage categoryPage = this.fillForm(category_code, category_name);
 
         String expectMessage = "The category code has already been taken.";
         String actualMessage = categoryPage.getFailedMessage();

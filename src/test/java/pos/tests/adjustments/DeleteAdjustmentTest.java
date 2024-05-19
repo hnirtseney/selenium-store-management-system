@@ -10,8 +10,7 @@ public class DeleteAdjustmentTest extends BaseTest {
     @Test(dataProvider = "testAccount")
     public void deleteAdjustmentTest(String username, String password) {
         // Login
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+        DashboardPage dashboardPage = this.gotoDashboardPage(username, password);
         AllAdjustmentsPage allAdjustmentsPage = dashboardPage.goToAllAdjustmentsPage();
         allAdjustmentsPage.deleteAdjustment();
 

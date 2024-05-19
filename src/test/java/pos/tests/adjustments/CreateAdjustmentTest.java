@@ -3,6 +3,7 @@ package pos.tests.adjustments;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pos.form.AdjustmentForm;
 import pos.pageobjects.adjustmentspage.AdjustmentPage;
 import pos.pageobjects.adjustmentspage.AllAdjustmentsPage;
 import pos.pageobjects.dashboardpage.DashboardPage;
@@ -18,24 +19,30 @@ public class CreateAdjustmentTest extends BaseTest {
         List<HashMap<String, String>> data = getJsonDataToMap(
                 System.getProperty("user.dir") + "//src//test//java//pos//data//adjustments//Adjustment.json");
         return data.stream()
-                .map(d -> new Object[]{d.get("product_code"), d.get("adjustment_quantity"), d.get("adjustment_type")})
+                .map(d -> new Object[]{new AdjustmentForm(
+                        d.get("product_code"),
+                        d.get("adjustment_quantity"),
+                        d.get("adjustment_type")
+                )})
                 .toArray(Object[][]::new);
     }
 
-    @Test(dataProvider = "adjustmentData")
-    public void createProductTest(String product_code, String adjustment_quantity, String adjustment_type) {
-        // Login
+    public AdjustmentPage fillForm(AdjustmentForm form) {
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        AdjustmentPage createAdjustmentPage = dashboardPage.goToAdjustmentPage();
 
-        // Navigate to Create Adjustment Page through Dashboard
-        AdjustmentPage adjustmentPage = dashboardPage.goToAdjustmentPage();
+        createAdjustmentPage.searchByProduct(form.product_code);
+        createAdjustmentPage.fillAdjustmentQuantity(form.adjustment_quantity);
+        createAdjustmentPage.chooseAdjustmentType(form.adjustment_type);
+        return createAdjustmentPage;
+    }
 
-        // Create Adjustment
-        adjustmentPage.searchByProduct(product_code);
-        adjustmentPage.fillAdjustmentQuantity(adjustment_quantity);
-        adjustmentPage.chooseAdjustmentType(adjustment_type);
-        AllAdjustmentsPage allAdjustmentsPage = adjustmentPage.clickCreateSuccess();
+
+    @Test(dataProvider = "adjustmentData")
+    public void createProductTest(AdjustmentForm form) {
+        AdjustmentPage createAdjustmentPage = this.fillForm(form);
+        AllAdjustmentsPage allAdjustmentsPage = createAdjustmentPage.clickCreateSuccess();
 
         String expectSuccessMessage = allAdjustmentsPage.getSuccessMessage();
         String actualSuccessMessage = "Adjustment Created!";

@@ -1,10 +1,9 @@
-// Đang có lỗi không lấy được locator Message
-
 package pos.tests.quotations;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pos.form.QuotationForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.quotationspage.AllQuotationsPage;
 import pos.pageobjects.quotationspage.QuotationPage;
@@ -20,7 +19,7 @@ public class CreateQuotationTest extends BaseTest {
         List<HashMap<String, String>> data = getJsonDataToMap(
                 System.getProperty("user.dir") + "//src//test//java//pos//data//quotations//QuotationsInvalid.json");
         return data.stream()
-                .map(d -> new Object[]{
+                .map(d -> new Object[]{new QuotationForm(
                         d.get("quotation_productCode"),
                         d.get("quotation_customer"),
                         d.get("quotation_quantity"),
@@ -29,7 +28,7 @@ public class CreateQuotationTest extends BaseTest {
                         d.get("quotation_shipping"),
                         d.get("quotation_status"),
                         d.get("quotation_message")
-                })
+                )})
                 .toArray(Object[][]::new);
     }
 
@@ -38,7 +37,7 @@ public class CreateQuotationTest extends BaseTest {
         List<HashMap<String, String>> data = getJsonDataToMap(
                 System.getProperty("user.dir") + "//src//test//java//pos//data//quotations//QuotationsValid.json");
         return data.stream()
-                .map(d -> new Object[]{
+                .map(d -> new Object[]{new QuotationForm(
                         d.get("quotation_productCode"),
                         d.get("quotation_customer"),
                         d.get("quotation_quantity"),
@@ -47,68 +46,39 @@ public class CreateQuotationTest extends BaseTest {
                         d.get("quotation_shipping"),
                         d.get("quotation_status"),
                         d.get("quotation_message")
-                })
+                )})
                 .toArray(Object[][]::new);
     }
 
-    @Test(dataProvider = "quotationsInvalidData")
-    public void createInvalidQuotationTest(
-            String quotation_productCode,
-            String quotation_customer,
-            String quotation_quantity,
-            String quotation_tax,
-            String quotation_discount,
-            String quotation_shipping,
-            String quotation_status,
-            String quotation_message
-    ) {
-
+    public QuotationPage fillForm(QuotationForm form) {
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
         QuotationPage createQuotationPage = dashboardPage.goToCreateQuotationPage();
 
-        createQuotationPage.inputProductCode(quotation_productCode);
-        createQuotationPage.selectCustomer(quotation_customer);
-        createQuotationPage.inputProductQuantity(quotation_quantity);
-        createQuotationPage.inputQuotationTax(quotation_tax);
-        createQuotationPage.inputQuotationDiscount(quotation_discount);
-        createQuotationPage.inputQuotationShipping(quotation_shipping);
-        createQuotationPage.selectQuotationStatus(quotation_status);
+        createQuotationPage.inputProductCode(form.quotation_productCode);
+        createQuotationPage.selectCustomer(form.quotation_customer);
+        createQuotationPage.inputProductQuantity(form.quotation_quantity);
+        createQuotationPage.inputQuotationTax(form.quotation_tax);
+        createQuotationPage.inputQuotationDiscount(form.quotation_discount);
+        createQuotationPage.inputQuotationShipping(form.quotation_shipping);
+        createQuotationPage.selectQuotationStatus(form.quotation_status);
+        return createQuotationPage;
+    }
 
+    @Test(dataProvider = "quotationsInvalidData")
+    public void createInvalidQuotationTest(QuotationForm form) {
+        QuotationPage createQuotationPage = this.fillForm(form);
         createQuotationPage.clickSubmitQuotation();
         String actualMessage = createQuotationPage.getValidationMessage();
-
-        Assert.assertEquals(actualMessage, quotation_message);
+        Assert.assertEquals(actualMessage, form.quotation_message);
     }
 
     @Test(dataProvider = "quotationsValidData")
-    public void createValidQuotationTest(
-            String quotation_productCode,
-            String quotation_customer,
-            String quotation_quantity,
-            String quotation_tax,
-            String quotation_discount,
-            String quotation_shipping,
-            String quotation_status,
-            String quotation_message
-    ) {
-
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
-        QuotationPage createQuotationPage = dashboardPage.goToCreateQuotationPage();
-
-        createQuotationPage.inputProductCode(quotation_productCode);
-        createQuotationPage.selectCustomer(quotation_customer);
-        createQuotationPage.inputProductQuantity(quotation_quantity);
-        createQuotationPage.inputQuotationTax(quotation_tax);
-        createQuotationPage.inputQuotationDiscount(quotation_discount);
-        createQuotationPage.inputQuotationShipping(quotation_shipping);
-        createQuotationPage.selectQuotationStatus(quotation_status);
-
+    public void createValidQuotationTest(QuotationForm form) {
+        QuotationPage createQuotationPage = this.fillForm(form);
         AllQuotationsPage allQuotationsPage = createQuotationPage.clickSubmitQuotation();
         String actualMessage = allQuotationsPage.getSuccessMessage();
-
-        Assert.assertEquals(actualMessage, quotation_message);
+        Assert.assertEquals(actualMessage, form.quotation_message);
     }
 
 

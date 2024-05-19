@@ -3,6 +3,7 @@ package pos.tests.parties.customerstest;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pos.form.CustomerForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.parties.customerspage.CreateCustomerPage;
 import pos.pageobjects.parties.customerspage.CustomersPage;
@@ -18,26 +19,35 @@ public class CreateCustomerTest extends BaseTest {
         List<HashMap<String, String>> data = getJsonDataToMap(
                 System.getProperty("user.dir") + "//src//test//java//pos//data//parties//Customers.json");
         return data.stream()
-                .map(d -> new Object[]{d.get("customer_name"), d.get("customer_mail"), d.get("customer_phone"), d.get("customer_city"), d.get("customer_country"),
-                        d.get("customer_address")})
+                .map(d -> new Object[]{new CustomerForm(
+                        d.get("customer_name"),
+                        d.get("customer_mail"),
+                        d.get("customer_phone"),
+                        d.get("customer_city"),
+                        d.get("customer_country"),
+                        d.get("customer_address")
+                )})
                 .toArray(Object[][]::new);
     }
 
-    @Test(dataProvider = "customersData")
-    public void createCustomerTest(String customer_name, String customer_mail, String customer_phone, String customer_city, String customer_country, String customer_address) {
+    public CreateCustomerPage fillForm(CustomerForm form) {
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
-
         CustomersPage customersPage = dashboardPage.goToCustomersPage();
         CreateCustomerPage createCustomerPage = customersPage.gotoCreateCustomerPage();
 
-        createCustomerPage.inputCustomerName(customer_name);
-        createCustomerPage.inputCustomerMail(customer_mail);
-        createCustomerPage.inputCustomerPhone(customer_phone);
-        createCustomerPage.inputCustomerCity(customer_city);
-        createCustomerPage.inputCustomerCountry(customer_country);
-        createCustomerPage.inputCustomerAddress(customer_address);
+        createCustomerPage.inputCustomerName(form.customer_name);
+        createCustomerPage.inputCustomerMail(form.customer_mail);
+        createCustomerPage.inputCustomerPhone(form.customer_phone);
+        createCustomerPage.inputCustomerCity(form.customer_city);
+        createCustomerPage.inputCustomerCountry(form.customer_country);
+        createCustomerPage.inputCustomerAddress(form.customer_address);
+        return createCustomerPage;
+    }
 
+    @Test(dataProvider = "customersData")
+    public void createCustomerTest(CustomerForm form) {
+        CreateCustomerPage createCustomerPage = this.fillForm(form);
         CustomersPage createdCustomersPage = createCustomerPage.clickSubmitCreateCustomer();
 
         String expectSuccessMessage = "Customer Created!";

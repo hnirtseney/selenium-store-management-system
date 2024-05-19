@@ -1,60 +1,50 @@
 [
   {
-    "product_name": "Product 1 - Casual Spring 2024",
     "product_code": "PR-01",
     "adjustment_quantity": "10",
     "adjustment_type": "(+) Addition"
   },
   {
-    "product_name": "Product 2 - Fashion Spring 2025",
     "product_code": "PR-02",
     "adjustment_quantity": "10",
     "adjustment_type": "(+) Addition"
   },
   {
-    "product_name": "Product 3 - Casual Summer 2025",
     "product_code": "PR-03",
     "adjustment_quantity": "10",
     "adjustment_type": "(+) Addition"
   },
   {
-    "product_name": "Product 4 - Casual Winter 2025",
     "product_code": "PR-04",
     "adjustment_quantity": "10",
     "adjustment_type": "(+) Addition"
   },
   {
-    "product_name": "Product 6 - Sporty Winter 2024",
     "product_code": "PR-06",
     "adjustment_quantity": "10",
     "adjustment_type": "(-) Subtraction"
   },
   {
-    "product_name": "Product 7 - Fashion Autumn 2024",
     "product_code": "PR-07",
     "adjustment_quantity": "10",
     "adjustment_type": "(+) Addition"
   },
   {
-    "product_name": "Product 8 - Elegant Autumn 2024",
     "product_code": "PR-08",
     "adjustment_quantity": "10",
     "adjustment_type": "(+) Addition"
   },
   {
-    "product_name": "Product 9 - Fashion Summer 2025",
     "product_code": "PR-09",
     "adjustment_quantity": "10",
     "adjustment_type": "(-) Subtraction"
   },
   {
-    "product_name": "Product 10 - Casual Winter 2024",
     "product_code": "PR-10",
     "adjustment_quantity": "10",
     "adjustment_type": "(+) Addition"
   },
   {
-    "product_name": "Product 11 - Casual Autumn 2025",
     "product_code": "PR-11",
     "adjustment_quantity": "10",
     "adjustment_type": "(-) Subtraction"

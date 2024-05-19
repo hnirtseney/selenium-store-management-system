@@ -36,7 +36,6 @@ public class BaseTest {
     public DashboardPage dashboardPage;
 
     public WebDriver initializeDriver() throws IOException {
-        // properties class
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream(
                 System.getProperty("user.dir") + "//src//main//java//pos//resources//GlobalData.properties");
@@ -71,15 +70,12 @@ public class BaseTest {
     }
 
     public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
-        // read json to string
         String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
-        // String to HashMap- Jackson Databind
         ObjectMapper mapper = new ObjectMapper();
         List<HashMap<String, String>> data = mapper.readValue(jsonContent,
                 new TypeReference<List<HashMap<String, String>>>() {
                 });
         return data;
-        // {map, map}
     }
 
     public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
@@ -88,6 +84,10 @@ public class BaseTest {
         File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
         FileUtils.copyFile(source, file);
         return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+    }
+
+    public DashboardPage gotoDashboardPage(String username, String password) {
+        return loginPage.login(username, password);
     }
 
     @DataProvider(name = "testAccount")

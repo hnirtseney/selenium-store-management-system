@@ -16,30 +16,6 @@
     "supplier_address": "456 Songdo-dong, Yeonsu-gu, Incheon, Korea"
   },
   {
-    "supplier_name": "Rosé",
-    "supplier_mail": "rose@blackpink.com",
-    "supplier_phone": "+821098765432",
-    "supplier_city": "Gwangju",
-    "supplier_country": "Korea",
-    "supplier_address": "789 Gwangju-daero, Gwangsan-gu, Gwangju, Korea"
-  },
-  {
-    "supplier_name": "Lisa",
-    "supplier_mail": "lisa@blackpink.com",
-    "supplier_phone": "+821009876543",
-    "supplier_city": "Bucheon",
-    "supplier_country": "Korea",
-    "supplier_address": "1011 Bucheon-ro, Wonmi-gu, Bucheon, Korea"
-  },
-  {
-    "supplier_name": "V",
-    "supplier_mail": "v@bts.com",
-    "supplier_phone": "+821011234567",
-    "supplier_city": "Daegu",
-    "supplier_country": "Korea",
-    "supplier_address": "1213 Daegu-daero, Jung-gu, Daegu, Korea"
-  },
-  {
     "supplier_name": "Jungkook",
     "supplier_mail": "jungkook@bts.com",
     "supplier_phone": "+821012345678",
@@ -48,28 +24,12 @@
     "supplier_address": "1415 Busan-daero, Seo-gu, Busan, Korea"
   },
   {
-    "supplier_name": "Jimin",
-    "supplier_mail": "jimin@bts.com",
-    "supplier_phone": "+821012345678",
-    "supplier_city": "Incheon",
-    "supplier_country": "Korea",
-    "supplier_address": "1617 Songdo-dong, Yeonsu-gu, Incheon, Korea"
-  },
-  {
     "supplier_name": "Suga",
     "supplier_mail": "suga@bts.com",
     "supplier_phone": "+821012345678",
     "supplier_city": "Daegu",
     "supplier_country": "Korea",
     "supplier_address": "1819 Daegu-daero, Jung-gu, Daegu, Korea"
-  },
-  {
-    "supplier_name": "J-Hope",
-    "supplier_mail": "jhope@bts.com",
-    "supplier_phone": "+821012345678",
-    "supplier_city": "Gwangju",
-    "supplier_country": "Korea",
-    "supplier_address": "2021 Gwangju-daero, Gwangsan-gu, Gwangju, Korea"
   },
   {
     "supplier_name": "Kai",

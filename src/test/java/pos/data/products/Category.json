@@ -1,62 +1,62 @@
 [
-	{
-		"category_code": "ATM",
-		"category_name": "Automation"
-	},
-	{
-		"category_code": "CBG",
-		"category_name": "Health"
-	},
-	{
-		"category_code": "MTH",
-		"category_name": "Toys"
-	},
-	{
-		"category_code": "GXX",
-		"category_name": "Books"
-	},
-	{
-		"category_code": "BUN",
-		"category_name": "Electronics"
-	},
-	{
-		"category_code": "PON",
-		"category_name": "Clothing"
-	},
-	{
-		"category_code": "LMP",
-		"category_name": "Shoes"
-	},
-	{
-		"category_code": "BHS",
-		"category_name": "Music"
-	},
-	{
-		"category_code": "CZU",
-		"category_name": "Tools"
-	},
-	{
-		"category_code": "LLK",
-		"category_name": "Kids"
-	},
-	{
-		"category_code": "ZQN",
-		"category_name": "Baby"
-	},
-	{
-		"category_code": "WWT",
-		"category_name": "Movies"
-	},
-	{
-		"category_code": "HSV",
-		"category_name": "Sports"
-	},
-	{
-		"category_code": "OSW",
-		"category_name": "Computers"
-	},
-	{
-		"category_code": "SZI",
-		"category_name": "Home"
-	}
+  {
+    "category_code": "ATM1",
+    "category_name": "Automation"
+  },
+  {
+    "category_code": "CBG1",
+    "category_name": "Health"
+  },
+  {
+    "category_code": "MTH1",
+    "category_name": "Toys"
+  },
+  {
+    "category_code": "GXX1",
+    "category_name": "Books"
+  },
+  {
+    "category_code": "BUN1",
+    "category_name": "Electronics"
+  },
+  {
+    "category_code": "PON1",
+    "category_name": "Clothing"
+  },
+  {
+    "category_code": "LMP1",
+    "category_name": "Shoes"
+  },
+  {
+    "category_code": "BHS1",
+    "category_name": "Music"
+  },
+  {
+    "category_code": "CZU1",
+    "category_name": "Tools"
+  },
+  {
+    "category_code": "LLK",
+    "category_name": "Kids"
+  },
+  {
+    "category_code": "ZQN",
+    "category_name": "Baby"
+  },
+  {
+    "category_code": "WWT",
+    "category_name": "Movies"
+  },
+  {
+    "category_code": "HSV",
+    "category_name": "Sports"
+  },
+  {
+    "category_code": "OSW",
+    "category_name": "Computers"
+  },
+  {
+    "category_code": "SZI",
+    "category_name": "Home"
+  }
 ]
