@@ -14,9 +14,9 @@ public class DeleteProductTest extends BaseTest {
         AllProductsPage allProductsPage = dashboardPage.goToAllProductsPage();
         allProductsPage.deleteProduct();
 
-        String expectDeleteSuccessMessage = "Product Deleted!";
-        String actualDeleteSuccessMessage = allProductsPage.getSuccessMessage();
-        AssertJUnit.assertTrue(actualDeleteSuccessMessage.equalsIgnoreCase(expectDeleteSuccessMessage));
+        String expectMessage = "Product Deleted!";
+        String actualMessage = allProductsPage.getSuccessMessage();
+        AssertJUnit.assertTrue(actualMessage.equalsIgnoreCase(expectMessage));
     }
 
 }

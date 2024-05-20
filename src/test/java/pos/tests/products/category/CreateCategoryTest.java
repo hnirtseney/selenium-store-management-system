@@ -46,7 +46,7 @@ public class CreateCategoryTest extends BaseTest {
     }
 
     @Test(
-            dataProvider = "singleCategoryData",
+            dataProvider = "categoryData",
             priority = 1)
     public void createSuccessCategoryTest(String category_code, String category_name) {
         CategoryPage categoryPage = this.fillForm(category_code, category_name);

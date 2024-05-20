@@ -16,37 +16,45 @@ import pos.pageobjects.productspage.CategoryPage;
 import pos.pageobjects.productspage.ProductPage;
 import pos.pageobjects.quotationspage.AllQuotationsPage;
 import pos.pageobjects.quotationspage.QuotationPage;
+import pos.pageobjects.salespage.AllSalesPage;
+import pos.pageobjects.salespage.CreateSalePage;
 
 import java.time.Duration;
 
 public class AbstractComponents {
     WebDriver driver;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/a")
-    WebElement productsBtn;
+    WebElement productsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[1]/a")
-    WebElement categoryBtn;
+    WebElement categoryButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[2]/a")
-    WebElement productBtn;
+    WebElement productButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[3]/a")
-    WebElement allProductsBtn;
+    WebElement allProductsButton;
     @FindBy(xpath = "//a[contains(.,'Stock Adjustments')]")
-    WebElement stockAdjustmentsBtn;
+    WebElement stockAdjustmentsButton;
     @FindBy(linkText = "Create Adjustment")
-    WebElement createAdjustmentBtn;
+    WebElement createAdjustmentButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[3]/ul/li[2]/a")
-    WebElement allAdjustmentsBtn;
+    WebElement allAdjustmentsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/a")
-    WebElement partiesBtn;
+    WebElement partiesButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[1]/a")
-    WebElement customersBtn;
+    WebElement customersButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[2]/a")
-    WebElement suppliersBtn;
+    WebElement suppliersButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[4]/a")
-    WebElement quotationsBtn;
+    WebElement quotationsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[4]/ul/li[1]/a")
-    WebElement createQuotationBtn;
+    WebElement createQuotationButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[4]/ul/li[2]/a")
-    WebElement allQuotationsBtn;
+    WebElement allQuotationsButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/a")
+    WebElement salesButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/ul[1]/li/a")
+    WebElement createSaleButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/ul[2]/li/a")
+    WebElement allSalesButton;
 
     public AbstractComponents(WebDriver driver) {
         this.driver = driver;
@@ -77,58 +85,70 @@ public class AbstractComponents {
 //	}
 
     public CategoryPage goToCategoryPage() {
-        productsBtn.click();
-        categoryBtn.click();
+        productsButton.click();
+        categoryButton.click();
         return new CategoryPage(driver);
     }
 
     public ProductPage goToCreateProductPage() {
-        productsBtn.click();
-        productBtn.click();
+        productsButton.click();
+        productButton.click();
         return new ProductPage(driver);
     }
 
     public AllProductsPage goToAllProductsPage() {
-        productsBtn.click();
-        allProductsBtn.click();
+        productsButton.click();
+        allProductsButton.click();
         return new AllProductsPage(driver);
     }
 
     public AdjustmentPage goToAdjustmentPage() {
-        stockAdjustmentsBtn.click();
-        createAdjustmentBtn.click();
+        stockAdjustmentsButton.click();
+        createAdjustmentButton.click();
         return new AdjustmentPage(driver);
     }
 
     public AllAdjustmentsPage goToAllAdjustmentsPage() {
-        stockAdjustmentsBtn.click();
-        allAdjustmentsBtn.click();
-        allAdjustmentsBtn.click();
+        stockAdjustmentsButton.click();
+        allAdjustmentsButton.click();
+        allAdjustmentsButton.click();
         return new AllAdjustmentsPage(driver);
     }
 
     public CustomersPage goToCustomersPage() {
-        partiesBtn.click();
-        customersBtn.click();
+        partiesButton.click();
+        customersButton.click();
         return new CustomersPage(driver);
     }
 
     public SuppliersPage goToSuppliersPage() {
-        partiesBtn.click();
-        suppliersBtn.click();
+        partiesButton.click();
+        suppliersButton.click();
         return new SuppliersPage(driver);
     }
 
     public QuotationPage goToCreateQuotationPage() {
-        quotationsBtn.click();
-        createQuotationBtn.click();
+        quotationsButton.click();
+        createQuotationButton.click();
         return new QuotationPage(driver);
     }
 
     public AllQuotationsPage goToAllQuotationsPage() {
-        quotationsBtn.click();
-        allQuotationsBtn.click();
+        quotationsButton.click();
+        allQuotationsButton.click();
         return new AllQuotationsPage(driver);
+    }
+
+    public CreateSalePage goToCreateSalePage() {
+        salesButton.click();
+        createSaleButton.click();
+        return new CreateSalePage(driver);
+    }
+
+    public AllSalesPage goToAllSalesPage() {
+        salesButton.click();
+        allSalesButton.click();
+        return new AllSalesPage(driver);
     }
 
 }

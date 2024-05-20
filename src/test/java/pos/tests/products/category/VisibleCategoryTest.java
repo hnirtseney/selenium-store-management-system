@@ -8,10 +8,10 @@ import pos.pageobjects.productspage.CategoryPage;
 import pos.testcomponents.BaseTest;
 
 public class VisibleCategoryTest extends BaseTest {
-    @Test
-    public void visibleCategoriesTable() {
+    @Test(dataProvider = "testAccount")
+    public void visibleCategoriesTable(String username, String password) {
         loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = loginPage.login(username, password);
         CategoryPage categoryPage = dashboardPage.goToCategoryPage();
         categoryPage.waitForElementToAppear(By.id("product_categories-table"));
 

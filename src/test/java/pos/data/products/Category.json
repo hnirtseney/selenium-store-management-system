@@ -1,38 +1,38 @@
 [
   {
-    "category_code": "ATM1",
+    "category_code": "ATM",
     "category_name": "Automation"
   },
   {
-    "category_code": "CBG1",
+    "category_code": "CBG",
     "category_name": "Health"
   },
   {
-    "category_code": "MTH1",
+    "category_code": "MTH",
     "category_name": "Toys"
   },
   {
-    "category_code": "GXX1",
+    "category_code": "GXX",
     "category_name": "Books"
   },
   {
-    "category_code": "BUN1",
+    "category_code": "BUN",
     "category_name": "Electronics"
   },
   {
-    "category_code": "PON1",
+    "category_code": "PON",
     "category_name": "Clothing"
   },
   {
-    "category_code": "LMP1",
+    "category_code": "LMP",
     "category_name": "Shoes"
   },
   {
-    "category_code": "BHS1",
+    "category_code": "BHS",
     "category_name": "Music"
   },
   {
-    "category_code": "CZU1",
+    "category_code": "CZU",
     "category_name": "Tools"
   },
   {

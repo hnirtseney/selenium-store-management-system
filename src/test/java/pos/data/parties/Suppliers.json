@@ -1,39 +1,39 @@
 [
   {
-    "supplier_name": "Jisoo",
-    "supplier_mail": "jisoo@blackpink.com",
+    "supplier_name": "Facebook",
+    "supplier_mail": "fb@meta.com",
     "supplier_phone": "+821012345678",
     "supplier_city": "Seoul",
     "supplier_country": "Korea",
     "supplier_address": "123 Hannam-daero, Yongsan-gu, Seoul, Korea"
   },
   {
-    "supplier_name": "Jennie",
-    "supplier_mail": "jennie@blackpink.com",
+    "supplier_name": "Instagam",
+    "supplier_mail": "ig@meta.com",
     "supplier_phone": "+821087654321",
     "supplier_city": "Incheon",
     "supplier_country": "Korea",
     "supplier_address": "456 Songdo-dong, Yeonsu-gu, Incheon, Korea"
   },
   {
-    "supplier_name": "Jungkook",
-    "supplier_mail": "jungkook@bts.com",
+    "supplier_name": "Tweeter",
+    "supplier_mail": "tweeter@em.com",
     "supplier_phone": "+821012345678",
     "supplier_city": "Busan",
     "supplier_country": "Korea",
     "supplier_address": "1415 Busan-daero, Seo-gu, Busan, Korea"
   },
   {
-    "supplier_name": "Suga",
-    "supplier_mail": "suga@bts.com",
+    "supplier_name": "Thread",
+    "supplier_mail": "thread@meta.com",
     "supplier_phone": "+821012345678",
     "supplier_city": "Daegu",
     "supplier_country": "Korea",
     "supplier_address": "1819 Daegu-daero, Jung-gu, Daegu, Korea"
   },
   {
-    "supplier_name": "Kai",
-    "supplier_mail": "kai@exo.com",
+    "supplier_name": "Trinh",
+    "supplier_mail": "hnirtseney@hyt.com",
     "supplier_phone": "+821012345678",
     "supplier_city": "Seoul",
     "supplier_country": "Korea",
