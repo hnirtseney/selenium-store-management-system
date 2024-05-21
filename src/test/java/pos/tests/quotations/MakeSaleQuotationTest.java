@@ -9,15 +9,16 @@ import pos.pageobjects.salespage.AllSalesPage;
 import pos.testcomponents.BaseTest;
 
 public class MakeSaleQuotationTest extends BaseTest {
-    @Test(priority = 1)
-    public void makeSalePaid() {
+    @Test(dataProvider = "testAccount")
+    public void makeSalePaid(String username, String password) {
 
         loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = loginPage.login(username, password);
         AllQuotationsPage allQuotationsPage = dashboardPage.goToAllQuotationsPage();
         allQuotationsPage.expandSetting();
 
         MakeSalePage makeSalePage = allQuotationsPage.makeSaleQuotation();
+        makeSalePage.selectSaleStatus();
         makeSalePage.clickTotalAmount();
         AllSalesPage allSalesPage = makeSalePage.clickCreateSale();
 
@@ -25,21 +26,4 @@ public class MakeSaleQuotationTest extends BaseTest {
         String expectSuccessMessage = "Sale Created!";
         AssertJUnit.assertTrue(actualMessage.equalsIgnoreCase(expectSuccessMessage));
     }
-//
-//    @Test (priority = 2)
-//    public void makeSalePartial() {
-//
-//        loginPage.goToLoginPage();
-//        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
-//        AllQuotationsPage allQuotationsPage = dashboardPage.goToAllQuotationsPage();
-//        allQuotationsPage.expandSetting();
-//
-//        MakeSalePage makeSalePage = allQuotationsPage.makeSaleQuotation();
-//        makeSalePage.clickTotalAmount();
-//        AllSalesPage allSalesPage = makeSalePage.clickCreateSale();
-//
-//        String actualMessage =  allSalesPage.getSuccessMessage();
-//        String expectSuccessMessage = "Sale Created!";
-//        AssertJUnit.assertTrue(actualMessage.equalsIgnoreCase(expectSuccessMessage));
-//    }
 }

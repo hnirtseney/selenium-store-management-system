@@ -16,9 +16,11 @@ public class AllQuotationsPage extends AbstractComponents {
     @FindBy(xpath = "//*[@id=\"sales-table\"]/tbody/tr[1]/td[6]/div/button")
     WebElement expandOption;
     @FindBy(xpath = "//*[@id=\"delete\"]")
-    WebElement deleteBtn;
+    WebElement deleteButton;
+    @FindBy(xpath = "//*[@id=\"sales-table\"]/tbody/tr[1]/td[6]/div/div/a[3]")
+    WebElement editButton;
     @FindBy(xpath = "//*[@id=\"sales-table\"]/tbody/tr[1]/td[6]/div/div/a[1]")
-    WebElement makeSaleBtn;
+    WebElement makeSaleButton;
 
     public AllQuotationsPage(WebDriver driver) {
         super(driver);
@@ -35,12 +37,17 @@ public class AllQuotationsPage extends AbstractComponents {
     }
 
     public MakeSalePage makeSaleQuotation() {
-        makeSaleBtn.click();
+        makeSaleButton.click();
         return new MakeSalePage(driver);
     }
 
+    public QuotationPage editQuotation() {
+        editButton.click();
+        return new QuotationPage(driver);
+    }
+
     public void deleteQuotation() {
-        deleteBtn.click();
+        deleteButton.click();
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
