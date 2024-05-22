@@ -14,6 +14,8 @@ import pos.pageobjects.parties.supplierspage.SuppliersPage;
 import pos.pageobjects.productspage.AllProductsPage;
 import pos.pageobjects.productspage.CategoryPage;
 import pos.pageobjects.productspage.ProductPage;
+import pos.pageobjects.purchasespage.AllPurchasesPage;
+import pos.pageobjects.purchasespage.CreatePurchasePage;
 import pos.pageobjects.quotationspage.AllQuotationsPage;
 import pos.pageobjects.quotationspage.QuotationPage;
 import pos.pageobjects.salespage.AllSalesPage;
@@ -23,6 +25,7 @@ import java.time.Duration;
 
 public class AbstractComponents {
     WebDriver driver;
+
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/a")
     WebElement productsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[1]/a")
@@ -31,30 +34,37 @@ public class AbstractComponents {
     WebElement productButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[2]/ul/li[3]/a")
     WebElement allProductsButton;
-    @FindBy(xpath = "//a[contains(.,'Stock Adjustments')]")
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[3]/a")
     WebElement stockAdjustmentsButton;
-    @FindBy(linkText = "Create Adjustment")
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[3]/ul/li[1]/a")
     WebElement createAdjustmentButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[3]/ul/li[2]/a")
     WebElement allAdjustmentsButton;
-    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/a")
-    WebElement partiesButton;
-    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[1]/a")
-    WebElement customersButton;
-    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[2]/a")
-    WebElement suppliersButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[4]/a")
     WebElement quotationsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[4]/ul/li[1]/a")
     WebElement createQuotationButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[4]/ul/li[2]/a")
     WebElement allQuotationsButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[5]/a")
+    WebElement purchasesButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[5]/ul[2]/li/a")
+    WebElement allPurchasesButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[5]/ul[1]/li/a")
+    WebElement createPurchasesButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/a")
     WebElement salesButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/ul[1]/li/a")
     WebElement createSaleButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/ul[2]/li/a")
     WebElement allSalesButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/a")
+    WebElement partiesButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[1]/a")
+    WebElement customersButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[2]/a")
+    WebElement suppliersButton;
+
 
     public AbstractComponents(WebDriver driver) {
         this.driver = driver;
@@ -139,6 +149,19 @@ public class AbstractComponents {
         return new AllQuotationsPage(driver);
     }
 
+    public CreatePurchasePage goToCreatePurchasePage() {
+        purchasesButton.click();
+        createPurchasesButton.click();
+        return new CreatePurchasePage(driver);
+    }
+
+    public AllPurchasesPage goToAllPurchasesPage() {
+        purchasesButton.click();
+        allPurchasesButton.click();
+        return new AllPurchasesPage(driver);
+
+    }
+
     public CreateSalePage goToCreateSalePage() {
         salesButton.click();
         createSaleButton.click();
@@ -150,5 +173,6 @@ public class AbstractComponents {
         allSalesButton.click();
         return new AllSalesPage(driver);
     }
+
 
 }
