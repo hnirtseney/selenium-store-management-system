@@ -1,0 +1,90 @@
+[
+  {
+    "productCode": "PR-01",
+    "supplierName": "Facebook",
+    "productQuantity": "10",
+    "purchaseTax": "0",
+    "purchaseDiscount": "10",
+    "purchaseShipping": "10",
+    "purchaseStatus": "Ordered",
+    "purchasePaymentMethod": "Cash",
+    "purchaseAmountPaid": "Partial"
+  },
+  {
+    "productCode": "PR-02",
+    "supplierName": "Thread",
+    "productQuantity": "40",
+    "purchaseTax": "10",
+    "purchaseDiscount": "20",
+    "purchaseShipping": "10",
+    "purchaseStatus": "Completed",
+    "purchasePaymentMethod": "Credit Card",
+    "purchaseAmountPaid": "Paid"
+  },
+  {
+    "productCode": "PR-03",
+    "supplierName": "Instagam",
+    "productQuantity": "100",
+    "purchaseTax": "10",
+    "purchaseDiscount": "10",
+    "purchaseShipping": "40",
+    "purchaseStatus": "Ordered",
+    "purchasePaymentMethod": "Credit Card",
+    "purchaseAmountPaid": "Paid"
+  },
+  {
+    "productCode": "PR-04",
+    "supplierName": "Trinh",
+    "productQuantity": "20",
+    "purchaseTax": "10",
+    "purchaseDiscount": "10",
+    "purchaseShipping": "10",
+    "purchaseStatus": "Pending",
+    "purchasePaymentMethod": "Bank Transfer",
+    "purchaseAmountPaid": "Paid"
+  },
+  {
+    "productCode": "PR-05",
+    "supplierName": "Tweeter",
+    "productQuantity": "30",
+    "purchaseTax": "10",
+    "purchaseDiscount": "10",
+    "purchaseShipping": "10",
+    "purchaseStatus": "Completed",
+    "purchasePaymentMethod": "Cheque",
+    "purchaseAmountPaid": "Paid"
+  },
+  {
+    "productCode": "PR-06",
+    "supplierName": "Trinh",
+    "productQuantity": "40",
+    "purchaseTax": "10",
+    "purchaseDiscount": "40",
+    "purchaseShipping": "10",
+    "purchaseStatus": "Ordered",
+    "purchasePaymentMethod": "Cash",
+    "purchaseAmountPaid": "Partial"
+  },
+  {
+    "productCode": "PR-07",
+    "supplierName": "Trinh",
+    "productQuantity": "20",
+    "purchaseTax": "10",
+    "purchaseDiscount": "30",
+    "purchaseShipping": "10",
+    "purchaseStatus": "Completed",
+    "purchasePaymentMethod": "Credit Card",
+    "purchaseAmountPaid": "Partial"
+  },
+  {
+    "productCode": "PR-08",
+    "supplierName": "Facebook",
+    "productQuantity": "2",
+    "purchaseTax": "0",
+    "purchaseDiscount": "50",
+    "purchaseShipping": "0",
+    "purchaseStatus": "Completed",
+    "purchasePaymentMethod": "Credit Card",
+    "purchaseAmountPaid": "Partial"
+  }
+]
