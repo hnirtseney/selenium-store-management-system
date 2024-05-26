@@ -1,0 +1,134 @@
+[
+  {
+    "productCode": "PR-01",
+    "customerName": "Jennie",
+    "productQuantity": "2",
+    "saleReturnTax": "0",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "10",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Cash",
+    "saleReturnAmountReceived": "Partial"
+  },
+  {
+    "productCode": "PR-02",
+    "customerName": "Jisoo",
+    "productQuantity": "4",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "20",
+    "saleReturnShipping": "10",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-03",
+    "customerName": "Lisa",
+    "productQuantity": "1",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "40",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-04",
+    "customerName": "Rosé",
+    "productQuantity": "2",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "10",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Bank Transfer",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-05",
+    "customerName": "Kai",
+    "productQuantity": "3",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "10",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Cheque",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-06",
+    "customerName": "J-Hope",
+    "productQuantity": "4",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "10",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-07",
+    "customerName": "Suga",
+    "productQuantity": "2",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "10",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Partial"
+  },
+  {
+    "productCode": "PR-08",
+    "customerName": "Jimin",
+    "productQuantity": "2",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "10",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-09",
+    "customerName": "Jungkook",
+    "productQuantity": "1",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "10",
+    "saleReturnStatus": "Completed",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-18",
+    "customerName": "Kai",
+    "productQuantity": "4",
+    "saleReturnTax": "20",
+    "saleReturnDiscount": "20",
+    "saleReturnShipping": "40",
+    "saleReturnStatus": "Pending",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-19",
+    "customerName": "Jennie",
+    "productQuantity": "4",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "0",
+    "saleReturnStatus": "Pending",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-20",
+    "customerName": "Jennie",
+    "productQuantity": "4",
+    "saleReturnTax": "10",
+    "saleReturnDiscount": "10",
+    "saleReturnShipping": "0",
+    "saleReturnStatus": "Pending",
+    "saleReturnPaymentMethod": "Credit Card",
+    "saleReturnAmountReceived": "Paid"
+  }
+]

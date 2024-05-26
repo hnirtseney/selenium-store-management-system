@@ -1,0 +1,90 @@
+[
+  {
+    "productCode": "PR-01",
+    "supplierName": "Facebook",
+    "productQuantity": "10",
+    "purchaseReturnTax": "0",
+    "purchaseReturnDiscount": "10",
+    "purchaseReturnShipping": "10",
+    "purchaseReturnStatus": "Shipped",
+    "purchaseReturnPaymentMethod": "Cash",
+    "purchaseReturnAmountPaid": "Partial"
+  },
+  {
+    "productCode": "PR-02",
+    "supplierName": "Thread",
+    "productQuantity": "40",
+    "purchaseReturnTax": "10",
+    "purchaseReturnDiscount": "20",
+    "purchaseReturnShipping": "10",
+    "purchaseReturnStatus": "Completed",
+    "purchaseReturnPaymentMethod": "Credit Card",
+    "purchaseReturnAmountPaid": "Paid"
+  },
+  {
+    "productCode": "PR-03",
+    "supplierName": "Instagam",
+    "productQuantity": "100",
+    "purchaseReturnTax": "10",
+    "purchaseReturnDiscount": "10",
+    "purchaseReturnShipping": "40",
+    "purchaseReturnStatus": "Shipped",
+    "purchaseReturnPaymentMethod": "Credit Card",
+    "purchaseReturnAmountPaid": "Paid"
+  },
+  {
+    "productCode": "PR-04",
+    "supplierName": "Trinh",
+    "productQuantity": "20",
+    "purchaseReturnTax": "10",
+    "purchaseReturnDiscount": "10",
+    "purchaseReturnShipping": "10",
+    "purchaseReturnStatus": "Pending",
+    "purchaseReturnPaymentMethod": "Bank Transfer",
+    "purchaseReturnAmountPaid": "Paid"
+  },
+  {
+    "productCode": "PR-05",
+    "supplierName": "Tweeter",
+    "productQuantity": "30",
+    "purchaseReturnTax": "10",
+    "purchaseReturnDiscount": "10",
+    "purchaseReturnShipping": "10",
+    "purchaseReturnStatus": "Completed",
+    "purchaseReturnPaymentMethod": "Cheque",
+    "purchaseReturnAmountPaid": "Paid"
+  },
+  {
+    "productCode": "PR-06",
+    "supplierName": "Trinh",
+    "productQuantity": "40",
+    "purchaseReturnTax": "10",
+    "purchaseReturnDiscount": "40",
+    "purchaseReturnShipping": "10",
+    "purchaseReturnStatus": "Shipped",
+    "purchaseReturnPaymentMethod": "Cash",
+    "purchaseReturnAmountPaid": "Partial"
+  },
+  {
+    "productCode": "PR-07",
+    "supplierName": "Trinh",
+    "productQuantity": "20",
+    "purchaseReturnTax": "10",
+    "purchaseReturnDiscount": "30",
+    "purchaseReturnShipping": "10",
+    "purchaseReturnStatus": "Completed",
+    "purchaseReturnPaymentMethod": "Credit Card",
+    "purchaseReturnAmountPaid": "Partial"
+  },
+  {
+    "productCode": "PR-08",
+    "supplierName": "Facebook",
+    "productQuantity": "2",
+    "purchaseReturnTax": "0",
+    "purchaseReturnDiscount": "50",
+    "purchaseReturnShipping": "0",
+    "purchaseReturnStatus": "Completed",
+    "purchaseReturnPaymentMethod": "Credit Card",
+    "purchaseReturnAmountPaid": "Partial"
+  }
+]

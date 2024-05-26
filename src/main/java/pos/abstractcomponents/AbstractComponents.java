@@ -14,10 +14,14 @@ import pos.pageobjects.parties.supplierspage.SuppliersPage;
 import pos.pageobjects.productspage.AllProductsPage;
 import pos.pageobjects.productspage.CategoryPage;
 import pos.pageobjects.productspage.ProductPage;
+import pos.pageobjects.purchasereturnspage.AllPurchaseReturnsPage;
+import pos.pageobjects.purchasereturnspage.CreatePurchaseReturnPage;
 import pos.pageobjects.purchasespage.AllPurchasesPage;
 import pos.pageobjects.purchasespage.CreatePurchasePage;
 import pos.pageobjects.quotationspage.AllQuotationsPage;
 import pos.pageobjects.quotationspage.QuotationPage;
+import pos.pageobjects.salereturnspage.AllSaleReturnsPage;
+import pos.pageobjects.salereturnspage.CreateSaleReturnPage;
 import pos.pageobjects.salespage.AllSalesPage;
 import pos.pageobjects.salespage.CreateSalePage;
 
@@ -48,16 +52,28 @@ public class AbstractComponents {
     WebElement allQuotationsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[5]/a")
     WebElement purchasesButton;
-    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[5]/ul[2]/li/a")
-    WebElement allPurchasesButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[5]/ul[1]/li/a")
     WebElement createPurchasesButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[5]/ul[2]/li/a")
+    WebElement allPurchasesButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[6]/a")
+    WebElement purchasesReturnButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[6]/ul[1]/li/a")
+    WebElement createPurchasesReturnButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[6]/ul[2]/li/a")
+    WebElement allPurchaseReturnsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/a")
     WebElement salesButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/ul[1]/li/a")
     WebElement createSaleButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[7]/ul[2]/li/a")
     WebElement allSalesButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[8]/a")
+    WebElement saleReturnsButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[8]/ul[1]/li/a")
+    WebElement createSaleReturnButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[8]/ul[2]/li/a")
+    WebElement allSaleReturnsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/a")
     WebElement partiesButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[10]/ul/li[1]/a")
@@ -159,7 +175,18 @@ public class AbstractComponents {
         purchasesButton.click();
         allPurchasesButton.click();
         return new AllPurchasesPage(driver);
+    }
 
+    public CreatePurchaseReturnPage goToCreatePurchaseReturnPage() {
+        purchasesReturnButton.click();
+        createPurchasesReturnButton.click();
+        return new CreatePurchaseReturnPage(driver);
+    }
+
+    public AllPurchaseReturnsPage goToAllPurchaseReturnsPage() {
+        purchasesReturnButton.click();
+        allPurchaseReturnsButton.click();
+        return new AllPurchaseReturnsPage(driver);
     }
 
     public CreateSalePage goToCreateSalePage() {
@@ -174,5 +201,15 @@ public class AbstractComponents {
         return new AllSalesPage(driver);
     }
 
+    public CreateSaleReturnPage goToCreateSaleReturnPage() {
+        saleReturnsButton.click();
+        createSaleReturnButton.click();
+        return new CreateSaleReturnPage(driver);
+    }
 
+    public AllSaleReturnsPage goToAllSaleReturnsPage() {
+        saleReturnsButton.click();
+        allSaleReturnsButton.click();
+        return new AllSaleReturnsPage(driver);
+    }
 }
