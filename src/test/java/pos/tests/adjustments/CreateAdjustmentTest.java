@@ -3,7 +3,7 @@ package pos.tests.adjustments;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.form.AdjustmentForm;
+import pos.form.adjustments.AdjustmentForm;
 import pos.pageobjects.adjustmentspage.AdjustmentPage;
 import pos.pageobjects.adjustmentspage.AllAdjustmentsPage;
 import pos.pageobjects.dashboardpage.DashboardPage;
@@ -28,10 +28,8 @@ public class CreateAdjustmentTest extends BaseTest {
     }
 
     public AdjustmentPage fillForm(AdjustmentForm form) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AdjustmentPage createAdjustmentPage = dashboardPage.goToAdjustmentPage();
-
         createAdjustmentPage.searchByProduct(form.product_code);
         createAdjustmentPage.fillAdjustmentQuantity(form.adjustment_quantity);
         createAdjustmentPage.chooseAdjustmentType(form.adjustment_type);
@@ -40,7 +38,7 @@ public class CreateAdjustmentTest extends BaseTest {
 
 
     @Test(dataProvider = "adjustmentData")
-    public void createProductTest(AdjustmentForm form) {
+    public void createAdjustmenTest(AdjustmentForm form) {
         AdjustmentPage createAdjustmentPage = this.fillForm(form);
         AllAdjustmentsPage allAdjustmentsPage = createAdjustmentPage.clickCreateSuccess();
 

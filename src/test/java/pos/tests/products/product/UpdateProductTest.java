@@ -8,12 +8,9 @@ import pos.pageobjects.productspage.ProductPage;
 import pos.testcomponents.BaseTest;
 
 public class UpdateProductTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void updateProductTest(String username, String password) {
-        // Login
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
-
+    @Test
+    public void updateProductTest() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllProductsPage allProductsPage;
         allProductsPage = dashboardPage.goToAllProductsPage();
 

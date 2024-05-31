@@ -1,0 +1,50 @@
+[
+  {
+    "expenseCategory": "Furniture",
+    "expenseTotalAmount": "40.00"
+  },
+  {
+    "expenseCategory": "Clothes",
+    "expenseTotalAmount": "20.00"
+  },
+  {
+    "expenseCategory": "Clothes",
+    "expenseTotalAmount": "12.00"
+  },
+  {
+    "expenseCategory": "Furniture",
+    "expenseTotalAmount": "100.00"
+  },
+  {
+    "expenseCategory": "Furniture",
+    "expenseTotalAmount": "20.00"
+  },
+  {
+    "expenseCategory": "Cleaning Stuff",
+    "expenseTotalAmount": "50.00"
+  },
+  {
+    "expenseCategory": "Equipment",
+    "expenseTotalAmount": "20.00"
+  },
+  {
+    "expenseCategory": "Clothes",
+    "expenseTotalAmount": "10.00"
+  },
+  {
+    "expenseCategory": "Equipment",
+    "expenseTotalAmount": "40.00"
+  },
+  {
+    "expenseCategory": "Clothes",
+    "expenseTotalAmount": "20.00"
+  },
+  {
+    "expenseCategory": "Equipment",
+    "expenseTotalAmount": "Baby"
+  },
+  {
+    "expenseCategory": "Equipment",
+    "expenseTotalAmount": "Movies"
+  }
+]

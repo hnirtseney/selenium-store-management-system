@@ -9,11 +9,10 @@ import pos.pageobjects.salespage.AllSalesPage;
 import pos.testcomponents.BaseTest;
 
 public class MakeSaleQuotationTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void makeSalePaid(String username, String password) {
+    @Test
+    public void makeSalePaid() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
 
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
         AllQuotationsPage allQuotationsPage = dashboardPage.goToAllQuotationsPage();
         allQuotationsPage.expandSetting();
 

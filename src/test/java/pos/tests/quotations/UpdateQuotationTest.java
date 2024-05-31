@@ -8,10 +8,9 @@ import pos.pageobjects.quotationspage.QuotationPage;
 import pos.testcomponents.BaseTest;
 
 public class UpdateQuotationTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void createValidQuotationTest(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void createValidQuotationTest() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllQuotationsPage allQuotationsPage = dashboardPage.goToAllQuotationsPage();
 
         allQuotationsPage.expandSetting();

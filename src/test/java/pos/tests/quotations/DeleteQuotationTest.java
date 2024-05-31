@@ -7,9 +7,9 @@ import pos.pageobjects.quotationspage.AllQuotationsPage;
 import pos.testcomponents.BaseTest;
 
 public class DeleteQuotationTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void deleteProduct(String username, String password) {
-        DashboardPage dashboardPage = this.gotoDashboardPage(username, password);
+    @Test
+    public void deleteProduct() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllQuotationsPage allQuotationsPage = dashboardPage.goToAllQuotationsPage();
         allQuotationsPage.expandSetting();
         allQuotationsPage.deleteQuotation();

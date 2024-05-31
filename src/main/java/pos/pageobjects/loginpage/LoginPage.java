@@ -9,13 +9,16 @@ import pos.pageobjects.dashboardpage.DashboardPage;
 
 public class LoginPage extends AbstractComponents {
 
+    public static final String USERNAME = "super.admin@test.com";
+    public static final String PASSWORD = "12345678";
+
     WebDriver driver;
     // Định nghĩa các WebElement sử dụng PageFactory
     @FindBy(id = "email")
     WebElement emailField;
     @FindBy(id = "password")
     WebElement passwordField;
-    @FindBy(id = "submit")
+    @FindBy(xpath = "//*[@id=\"submit\"]")
     WebElement submitButton;
     @FindBy(css = "div[class*='invalid-feedback']")
     WebElement errorMessage;
@@ -35,6 +38,13 @@ public class LoginPage extends AbstractComponents {
         return new DashboardPage(driver);
     }
 
+    public DashboardPage loginTest() {
+        emailField.sendKeys(USERNAME);
+        passwordField.sendKeys(PASSWORD);
+        submitButton.click();
+        return new DashboardPage(driver);
+    }
+
     // Phương thức lấy thông báo lỗi
     public String getErrorMessage() {
         waitForWebElementToAppear(errorMessage);
@@ -43,5 +53,6 @@ public class LoginPage extends AbstractComponents {
 
     public void goToLoginPage() {
         driver.get("http://127.0.0.1:8000/login");
+//        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom = '0.9'");
     }
 }

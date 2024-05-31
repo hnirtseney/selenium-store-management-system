@@ -3,7 +3,7 @@ package pos.tests.products.product;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.form.ProductForm;
+import pos.form.products.ProductForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.productspage.AllProductsPage;
 import pos.pageobjects.productspage.ProductPage;
@@ -36,8 +36,7 @@ public class CreateProductTest extends BaseTest {
     }
 
     public ProductPage fillForm(ProductForm form) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllProductsPage allProductsPage = dashboardPage.goToAllProductsPage();
         ProductPage createProductPage = allProductsPage.goToCreateProductPage();
 

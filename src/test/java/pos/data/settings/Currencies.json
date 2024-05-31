@@ -1,0 +1,23 @@
+[
+  {
+    "currencyName": "Dong",
+    "currencyCode": "VND",
+    "currencySymbol": "Đ",
+    "currencyThousandSeparator": ",",
+    "currencyDecimalSeparator": "."
+  },
+  {
+    "currencyName": "Dollar",
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "currencyThousandSeparator": ",",
+    "currencyDecimalSeparator": "."
+  },
+  {
+    "currencyName": "Euro",
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "currencyThousandSeparator": ",",
+    "currencyDecimalSeparator": "."
+  }
+]

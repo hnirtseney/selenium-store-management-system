@@ -8,10 +8,10 @@ import pos.pageobjects.salespage.AllSalesPage;
 import pos.testcomponents.BaseTest;
 
 public class VisibleSalesTableTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void visibleCategoriesTable(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void visibleCategoriesTable() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
+
         AllSalesPage allSalesPage = dashboardPage.goToAllSalesPage();
         allSalesPage.waitForElementToAppear(By.id("sales-table"));
 

@@ -1,0 +1,50 @@
+[
+  {
+    "userName": "Tooru Oikawa",
+    "userMail": "oikawa@aobajohsai.com",
+    "userPassword": "oikawa123",
+    "userConfirmPassword": "oikawa123",
+    "userRole": "Admin",
+    "userStatus": "Active"
+  },
+  {
+    "userName": "Iwaizumi",
+    "userMail": "iwaizumi@aobajohsai.com",
+    "userPassword": "iwaizumi123",
+    "userConfirmPassword": "iwaizumi123",
+    "userRole": "Manager",
+    "userStatus": "Active"
+  },
+  {
+    "userName": "Tsukishima Kei",
+    "userMail": "tsukishima@karasuno.com",
+    "userPassword": "tsukishima234",
+    "userConfirmPassword": "tsukishima234",
+    "userRole": "Manager",
+    "userStatus": "Active"
+  },
+  {
+    "userName": "Hinata Shoyo",
+    "userMail": "hinata@kararuno.com",
+    "userPassword": "shoyo1234",
+    "userConfirmPassword": "shoyo1234",
+    "userRole": "Staff",
+    "userStatus": "Active"
+  },
+  {
+    "userName": "Kenma Kozume",
+    "userMail": "kenmakozume@nekoma.com",
+    "userPassword": "kenmakozume111",
+    "userConfirmPassword": "kenmakozume111",
+    "userRole": "Staff",
+    "userStatus": "Active"
+  },
+  {
+    "userName": "Kageyama Tobio",
+    "userMail": "kageyama@karasuno.com",
+    "userPassword": "tobiodz124",
+    "userConfirmPassword": "tobiodz124",
+    "userRole": "Staff",
+    "userStatus": "Active"
+  }
+]

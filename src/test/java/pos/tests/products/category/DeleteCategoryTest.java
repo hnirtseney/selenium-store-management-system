@@ -7,10 +7,12 @@ import pos.pageobjects.productspage.CategoryPage;
 import pos.testcomponents.BaseTest;
 
 public class DeleteCategoryTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void deleteCategory(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test(
+            priority = 6,
+            groups = {"ProductsTest"}
+    )
+    public void deleteCategory() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         CategoryPage categoryPage = dashboardPage.goToCategoryPage();
         categoryPage.deleteCategory();
 

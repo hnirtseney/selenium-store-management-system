@@ -8,10 +8,9 @@ import pos.testcomponents.BaseTest;
 
 public class DeletePurchaseReturnTest extends BaseTest {
 
-    @Test(dataProvider = "testAccount")
-    public void testDeletePurchase(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void testDeletePurchase() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllPurchaseReturnsPage allPurchaseReturnsPage = dashboardPage.goToAllPurchaseReturnsPage();
         allPurchaseReturnsPage.deletePurchaseReturns();
 

@@ -31,13 +31,8 @@ public class CreateCategoryTest extends BaseTest {
     }
 
     public CategoryPage fillForm(String category_code, String category_name) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
-
-        // Navigate to Category Page through Dashboard
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         CategoryPage categoryPage = dashboardPage.goToCategoryPage();
-
-        // Create Category
         categoryPage.openAddCategoryModal();
         categoryPage.inputCategoryCode(category_code);
         categoryPage.inputCategoryName(category_name);
@@ -47,7 +42,9 @@ public class CreateCategoryTest extends BaseTest {
 
     @Test(
             dataProvider = "categoryData",
-            priority = 1)
+            priority = 1,
+            groups = {"ProductsTest"}
+    )
     public void createSuccessCategoryTest(String category_code, String category_name) {
         CategoryPage categoryPage = this.fillForm(category_code, category_name);
 
@@ -59,7 +56,9 @@ public class CreateCategoryTest extends BaseTest {
 
     @Test(
             dataProvider = "singleCategoryData",
-            priority = 2)
+            priority = 2,
+            groups = {"ProductsTest"}
+    )
     public void createFailedCategorySuccess(String category_code, String category_name) {
         CategoryPage categoryPage = this.fillForm(category_code, category_name);
 

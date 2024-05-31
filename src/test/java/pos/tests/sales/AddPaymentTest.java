@@ -8,10 +8,9 @@ import pos.pageobjects.salespage.AllSalesPage;
 import pos.testcomponents.BaseTest;
 
 public class AddPaymentTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void addPaymentTest(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void addPaymentTest() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
 
         AllSalesPage allSalesPage = dashboardPage.goToAllSalesPage();
         AddPaymentPage addPaymentPage = allSalesPage.clickAddPaymentButton();

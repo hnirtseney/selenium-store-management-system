@@ -3,7 +3,7 @@ package pos.tests.quotations;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.form.QuotationForm;
+import pos.form.quotations.QuotationForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.quotationspage.AllQuotationsPage;
 import pos.pageobjects.quotationspage.QuotationPage;
@@ -51,8 +51,7 @@ public class CreateQuotationTest extends BaseTest {
     }
 
     public QuotationPage fillForm(QuotationForm form) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         QuotationPage createQuotationPage = dashboardPage.goToCreateQuotationPage();
 
         createQuotationPage.inputProductCode(form.quotation_productCode);

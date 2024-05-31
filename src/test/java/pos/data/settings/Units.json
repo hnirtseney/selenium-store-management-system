@@ -1,0 +1,20 @@
+[
+  {
+    "unitName": "Plate",
+    "unitShortName": "PL",
+    "unitOperator": "*",
+    "unitOperatorValue": "1"
+  },
+  {
+    "unitName": "Book",
+    "unitShortName": "BK",
+    "unitOperator": "*",
+    "unitOperatorValue": "1"
+  },
+  {
+    "unitName": "Cup",
+    "unitShortName": "CP",
+    "unitOperator": "*",
+    "unitOperatorValue": "1"
+  }
+]

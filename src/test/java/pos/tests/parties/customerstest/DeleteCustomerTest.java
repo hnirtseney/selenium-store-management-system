@@ -7,13 +7,10 @@ import pos.pageobjects.parties.customerspage.CustomersPage;
 import pos.testcomponents.BaseTest;
 
 public class DeleteCustomerTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void deleteCustomerTest(String username, String password) {
-        // Login
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void deleteCustomerTest() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         CustomersPage customersPage = dashboardPage.goToCustomersPage();
-
         customersPage.deleteCustomer();
 
         String expectSuccessMessage = customersPage.getSuccessMessage();

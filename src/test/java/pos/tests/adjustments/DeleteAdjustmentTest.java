@@ -1,16 +1,14 @@
 package pos.tests.adjustments;
 
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 import pos.pageobjects.adjustmentspage.AllAdjustmentsPage;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.testcomponents.BaseTest;
 
 public class DeleteAdjustmentTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void deleteAdjustmentTest(String username, String password) {
+    public void deleteAdjustmentTest() {
         // Login
-        DashboardPage dashboardPage = this.gotoDashboardPage(username, password);
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllAdjustmentsPage allAdjustmentsPage = dashboardPage.goToAllAdjustmentsPage();
         allAdjustmentsPage.deleteAdjustment();
 

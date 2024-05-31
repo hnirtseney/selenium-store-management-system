@@ -7,11 +7,9 @@ import pos.pageobjects.purchasespage.AllPurchasesPage;
 import pos.testcomponents.BaseTest;
 
 public class DeletePurchaseTest extends BaseTest {
-
-    @Test(dataProvider = "testAccount")
-    public void testDeletePurchase(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void testDeletePurchase() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllPurchasesPage allPurchasesPage = dashboardPage.goToAllPurchasesPage();
         allPurchasesPage.deletePurchase();
 

@@ -3,7 +3,7 @@ package pos.tests.purchases;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.form.CreatePurchaseForm;
+import pos.form.purchases.CreatePurchaseForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.purchasespage.AllPurchasesPage;
 import pos.pageobjects.purchasespage.CreatePurchasePage;
@@ -34,8 +34,7 @@ public class CreatePurchaseTest extends BaseTest {
     }
 
     public CreatePurchasePage fillForm(CreatePurchaseForm form) throws InterruptedException {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         CreatePurchasePage createPurchasePage = dashboardPage.goToCreatePurchasePage();
 
         createPurchasePage.inputProducts(form.productCode);

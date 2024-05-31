@@ -8,10 +8,9 @@ import pos.pageobjects.salereturnspage.ShowPaymentSaleReturnPage;
 import pos.testcomponents.BaseTest;
 
 public class DeletePaymentSaleReturnTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void deletePaymentsTest(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void deletePaymentsTest() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
 
         AllSaleReturnsPage allSalesReturnPage = dashboardPage.goToAllSaleReturnsPage();
         ShowPaymentSaleReturnPage showPaymentPage = allSalesReturnPage.clickShowPayment();

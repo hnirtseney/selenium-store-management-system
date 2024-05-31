@@ -10,8 +10,7 @@ import pos.testcomponents.BaseTest;
 public class VisibleQuotationTest extends BaseTest {
     @Test
     public void visibleCategoriesTable() {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllQuotationsPage allQuotationsPage = dashboardPage.goToAllQuotationsPage();
         allQuotationsPage.waitForElementToAppear(By.id("sales-table_wrapper"));
 

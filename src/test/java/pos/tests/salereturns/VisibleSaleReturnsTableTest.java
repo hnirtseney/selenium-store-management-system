@@ -8,10 +8,9 @@ import pos.pageobjects.salereturnspage.AllSaleReturnsPage;
 import pos.testcomponents.BaseTest;
 
 public class VisibleSaleReturnsTableTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void visibleSaleReturnsTableTest(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void visibleSaleReturnsTableTest() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllSaleReturnsPage allSaleReturnsPage = dashboardPage.goToAllSaleReturnsPage();
         allSaleReturnsPage.waitForElementToAppear(By.id("sale-returns-table_wrapper"));
 

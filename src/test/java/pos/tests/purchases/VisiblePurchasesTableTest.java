@@ -8,10 +8,9 @@ import pos.pageobjects.purchasespage.AllPurchasesPage;
 import pos.testcomponents.BaseTest;
 
 public class VisiblePurchasesTableTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void visibleCategoriesTable(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void visibleCategoriesTable() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllPurchasesPage allPurchasesPage = dashboardPage.goToAllPurchasesPage();
         allPurchasesPage.waitForElementToAppear(By.id("purchases-table_wrapper"));
 

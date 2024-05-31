@@ -3,7 +3,7 @@ package pos.tests.parties.supplierstest;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.form.SupplierForm;
+import pos.form.parties.SupplierForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.parties.supplierspage.CreateSupplierPage;
 import pos.pageobjects.parties.supplierspage.SuppliersPage;
@@ -31,8 +31,7 @@ public class CreateSupplierTest extends BaseTest {
     }
 
     public CreateSupplierPage fillForm(SupplierForm form) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         SuppliersPage suppliersPage = dashboardPage.goToSuppliersPage();
         CreateSupplierPage createSupplierPage = suppliersPage.gotoCreateSupplierPage();
 

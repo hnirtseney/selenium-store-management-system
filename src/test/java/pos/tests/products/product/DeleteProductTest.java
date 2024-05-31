@@ -7,10 +7,9 @@ import pos.pageobjects.productspage.AllProductsPage;
 import pos.testcomponents.BaseTest;
 
 public class DeleteProductTest extends BaseTest {
-    @Test(dataProvider = "testAccount")
-    public void deleteProduct(String username, String password) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(username, password);
+    @Test
+    public void deleteProduct() {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         AllProductsPage allProductsPage = dashboardPage.goToAllProductsPage();
         allProductsPage.deleteProduct();
 

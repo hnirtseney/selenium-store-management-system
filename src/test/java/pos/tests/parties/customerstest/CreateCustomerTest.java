@@ -3,7 +3,7 @@ package pos.tests.parties.customerstest;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.form.CustomerForm;
+import pos.form.parties.CustomerForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.parties.customerspage.CreateCustomerPage;
 import pos.pageobjects.parties.customerspage.CustomersPage;
@@ -31,8 +31,7 @@ public class CreateCustomerTest extends BaseTest {
     }
 
     public CreateCustomerPage fillForm(CustomerForm form) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         CustomersPage customersPage = dashboardPage.goToCustomersPage();
         CreateCustomerPage createCustomerPage = customersPage.gotoCreateCustomerPage();
 

@@ -33,29 +33,36 @@ public class UpdateCategoryTest extends BaseTest {
         };
     }
 
-    @Test(dataProvider = "successData", priority = 1)
-    public void updateCategorySuccessTest(String categoryCode, String categoryName) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+    public DetailCategoryPage updateCategory(String categoryCode, String categoryName) {
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         CategoryPage categoryPage = dashboardPage.goToCategoryPage();
         DetailCategoryPage detailCategoryPage = categoryPage.clickUpdateCategoryButton();
 
         detailCategoryPage.setCategoryCode(categoryCode);
         detailCategoryPage.setCategoryName(categoryName);
-        detailCategoryPage.clickUpdateBtn();
+
+        return detailCategoryPage;
+    }
+
+    @Test(
+            dataProvider = "successData",
+            priority = 4,
+            groups = {"ProductsTest"}
+    )
+    public void updateCategorySuccessTest(String categoryCode, String categoryName) {
+        DetailCategoryPage detailCategoryPage = this.updateCategory(categoryCode, categoryName);
+        CategoryPage categoryPage = detailCategoryPage.clickUpdateBtn();
         String successMessage = categoryPage.getSuccessMessage();
         Assert.assertEquals(successMessage, "Product Category Updated!");
     }
 
-    @Test(dataProvider = "failureData", priority = 2)
+    @Test(
+            dataProvider = "failureData",
+            priority = 5,
+            groups = {"ProductsTest"}
+    )
     public void updateCategoryFailedTest(String categoryCode, String categoryName) {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
-        CategoryPage categoryPage = dashboardPage.goToCategoryPage();
-        DetailCategoryPage detailCategoryPage = categoryPage.clickUpdateCategoryButton();
-
-        detailCategoryPage.setCategoryCode(categoryCode);
-        detailCategoryPage.setCategoryName(categoryName);
+        DetailCategoryPage detailCategoryPage = this.updateCategory(categoryCode, categoryName);
         detailCategoryPage.clickUpdateBtn();
         String failedMessage = detailCategoryPage.getFailedMessage();
         Assert.assertEquals(failedMessage, "The category code has already been taken.");

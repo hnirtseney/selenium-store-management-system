@@ -3,7 +3,7 @@ package pos.tests.salereturns;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.form.CreateSaleReturnForm;
+import pos.form.salereturns.CreateSaleReturnForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.salereturnspage.AllSaleReturnsPage;
 import pos.pageobjects.salereturnspage.CreateSaleReturnPage;
@@ -34,8 +34,7 @@ public class CreateSaleReturnTest extends BaseTest {
     }
 
     public CreateSaleReturnPage fillForm(CreateSaleReturnForm form) throws InterruptedException {
-        loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login("super.admin@test.com", "12345678");
+        DashboardPage dashboardPage = this.gotoDashboardPage();
         CreateSaleReturnPage createSaleReturnPage = dashboardPage.goToCreateSaleReturnPage();
 
         createSaleReturnPage.inputProducts(form.productCode);

@@ -9,19 +9,20 @@ import pos.abstractcomponents.AbstractComponents;
 
 public class SuppliersPage extends AbstractComponents {
     WebDriver driver;
-    public SuppliersPage (WebDriver driver) {
+    @FindBy(xpath = "/html/body/div[2]/div/main/div/div/div/div/div/a")
+    WebElement addCustomerBtn;
+    @FindBy(xpath = "//*[@id=\"delete\"]")
+    WebElement deleteCustomerBtn;
+    @FindBy(xpath = "//*[@id=\"swal2-title\"]")
+    WebElement successMessage;
+    
+
+    //    *[@id="sidebar"]
+    public SuppliersPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    @FindBy (xpath = "/html/body/div[2]/div/main/div/div/div/div/div/a")
-    WebElement addCustomerBtn;
-
-    @FindBy(xpath = "//*[@id=\"delete\"]")
-    WebElement deleteCustomerBtn;
-
-    @FindBy(xpath = "//*[@id=\"swal2-title\"]")
-    WebElement successMessage;
 
     public CreateSupplierPage gotoCreateSupplierPage() {
         addCustomerBtn.click();

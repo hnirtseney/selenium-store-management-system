@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +13,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.pageobjects.loginpage.LoginPage;
 import pos.pageobjects.productspage.CategoryPage;
@@ -29,6 +27,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class BaseTest {
+
 
     public WebDriver driver;
     public LoginPage loginPage;
@@ -51,15 +50,12 @@ public class BaseTest {
                 options.addArguments("headless");
             }
             driver = new ChromeDriver(options);
-            driver.manage().window().setSize(new Dimension(1440, 900));// full screen
-
+            driver.manage().window().maximize();
         } else if (browserName.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver", "/Users/rahulshetty//documents//geckodriver");
+            System.setProperty("webdriver.gecko.driver", "path");
             driver = new FirefoxDriver();
-            // Firefox
         } else if (browserName.equalsIgnoreCase("edge")) {
-            // Edge
-            System.setProperty("webdriver.edge.driver", "edge.exe");
+            System.setProperty("webdriver.edge.driver", "path");
             driver = new EdgeDriver();
         }
 
@@ -67,6 +63,15 @@ public class BaseTest {
         driver.manage().window().maximize();
         return driver;
 
+    }
+
+
+    public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        File source = ts.getScreenshotAs(OutputType.FILE);
+        File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+        FileUtils.copyFile(source, file);
+        return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
     }
 
     public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
@@ -78,25 +83,8 @@ public class BaseTest {
         return data;
     }
 
-    public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
-        FileUtils.copyFile(source, file);
-        return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
-    }
-
-    public DashboardPage gotoDashboardPage(String username, String password) {
-        return loginPage.login(username, password);
-    }
-
-    @DataProvider(name = "testAccount")
-    public Object[][] getProductData() throws IOException {
-        List<HashMap<String, String>> data = getJsonDataToMap(
-                System.getProperty("user.dir") + "//src//test//java//pos//data//generaldata//TestAccount.json");
-        return data.stream()
-                .map(d -> new Object[]{d.get("username"), d.get("password")})
-                .toArray(Object[][]::new);
+    public DashboardPage gotoDashboardPage() {
+        return loginPage.loginTest();
     }
 
     @BeforeMethod(alwaysRun = true)
