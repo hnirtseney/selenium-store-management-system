@@ -15,6 +15,7 @@ import pos.pageobjects.expensespage.CategoriesPage;
 import pos.pageobjects.expensespage.CreateExpensePage;
 import pos.pageobjects.parties.customerspage.CustomersPage;
 import pos.pageobjects.parties.supplierspage.SuppliersPage;
+import pos.pageobjects.pospage.PosSystemPage;
 import pos.pageobjects.productspage.AllProductsPage;
 import pos.pageobjects.productspage.CategoryPage;
 import pos.pageobjects.productspage.ProductPage;
@@ -108,6 +109,8 @@ public class AbstractComponents {
     WebElement unitsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[13]/ul[2]/li/a")
     WebElement currenciesButton;
+    @FindBy(xpath = "/html/body/div[2]/header/ul[2]/li[1]/a")
+    WebElement possystemButton;
 
     public AbstractComponents(WebDriver driver) {
         this.driver = driver;
@@ -124,10 +127,10 @@ public class AbstractComponents {
         wait.until(ExpectedConditions.visibilityOf(findBy));
     }
 
-//	public void waitForElementToDisappear(WebElement ele) throws InterruptedException {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//		wait.until(ExpectedConditions.invisibilityOf(ele));
-//	}
+    public void waitForElementToDisappear(WebElement ele) throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.invisibilityOf(ele));
+    }
 
 //	public void expandSidebar() {
 //		WebElement sidebar = driver.findElement(By.id("sidebar"));
@@ -293,5 +296,12 @@ public class AbstractComponents {
         currenciesButton.click();
         return new AllCurrenciesPage(driver);
     }
+
+    public PosSystemPage goToPosSystemPage() {
+        possystemButton.click();
+        return new PosSystemPage(driver);
+    }
+
+    //    Grand Total = Price per product * Quantity * (1 + Order Tax) * (1 - Discount) + Shipping Amount
 
 }
