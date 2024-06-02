@@ -12,9 +12,18 @@ public class CreateSaleByPosForm {
     public String paymentMethod;
     public String receivedAmount;
 
-
     // Constructor
-    public CreateSaleByPosForm(String productBySearchBox, String productCategory, String productCount, String customerName, String productQuantity, String productOrderTax, String productDiscount, String productShipping, String paymentMethod, String receivedAmount) {
+    public CreateSaleByPosForm(
+            String productBySearchBox,
+            String productCategory,
+            String productCount,
+            String customerName,
+            String productQuantity,
+            String productOrderTax,
+            String productDiscount,
+            String productShipping,
+            String paymentMethod,
+            String receivedAmount) {
         this.productBySearchBox = productBySearchBox;
         this.productCategory = productCategory;
         this.productCount = productCount;

@@ -40,41 +40,36 @@ public class CreateSaleByPosTest extends BaseTest {
         DashboardPage dashboardPage = this.gotoDashboardPage();
         PosSystemPage posSystemPage = dashboardPage.goToPosSystemPage();
 
-        String quantity1 = form.productQuantity;
-        String tax = form.productOrderTax;
-        String productDiscount = form.productDiscount;
-        String productShipping = form.productShipping;
-
         posSystemPage.selectProduct(form.productBySearchBox, form.productCategory);
         posSystemPage.selectProductCount(form.productCount);
         posSystemPage.selectCustomer(form.customerName);
-        posSystemPage.inputProductQuantity(quantity1);
-        posSystemPage.inputOrderTax(tax);
-        posSystemPage.inputDiscount(productDiscount);
-        posSystemPage.inputShipping(productShipping);
+        posSystemPage.inputProductQuantity(form.productQuantity);
+        posSystemPage.inputOrderTax(form.productOrderTax);
+        posSystemPage.inputDiscount(form.productDiscount);
+        posSystemPage.inputShipping(form.productShipping);
+
         double pricePerProduct = posSystemPage.getProductPrice();
-        double quantity = Double.parseDouble(quantity1);
-        double orderTax = Double.parseDouble(tax);
-        double discount = Double.parseDouble(productDiscount);
-        double shipping = Double.parseDouble(productShipping);
-        Thread.sleep(2000);
+        double quantity = Double.parseDouble(form.productQuantity);
+        double orderTax = Double.parseDouble(form.productOrderTax);
+        double discount = Double.parseDouble(form.productDiscount);
+        double shipping = Double.parseDouble(form.productShipping);
+
+        Thread.sleep(1500);
         double expectedGrandTotal = pricePerProduct * quantity * (1 + orderTax / 100) * (1 - discount / 100) + shipping;
-        // Làm tròn giá trị expectedGrandTotal đến 2 chữ số thập phân
-        BigDecimal exp = new BigDecimal(Double.toString(expectedGrandTotal));
-        exp = exp.setScale(0, RoundingMode.HALF_UP);
+        BigDecimal exp = new BigDecimal(Double.toString(expectedGrandTotal)).setScale(0, RoundingMode.HALF_UP);
         expectedGrandTotal = exp.doubleValue();
-        Thread.sleep(2000);
+
+        Thread.sleep(1500);
         double actualGrandTotal = posSystemPage.getGrandTotal();
-        BigDecimal act = new BigDecimal(Double.toString(actualGrandTotal));
-        act = act.setScale(0, RoundingMode.HALF_UP);
+        BigDecimal act = new BigDecimal(Double.toString(actualGrandTotal)).setScale(0, RoundingMode.HALF_UP);
         actualGrandTotal = act.doubleValue();
+
         posSystemPage.clickProceed();
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         posSystemPage.selectPaymentMethod(form.paymentMethod);
         posSystemPage.inputReceivedAmountType(form.receivedAmount);
 
         Assert.assertEquals(actualGrandTotal, expectedGrandTotal, "Grand Total does not match the expected value.");
-
         return posSystemPage;
     }
 

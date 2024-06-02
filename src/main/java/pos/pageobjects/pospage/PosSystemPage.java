@@ -74,6 +74,9 @@ public class PosSystemPage extends AbstractComponents {
     @FindBy(xpath = "//*[@id=\"checkout-form\"]/div[2]/button[2]")
     WebElement submitButton;
 
+    @FindBy(xpath = "")
+    WebElement checkOutPopUp;
+
     public PosSystemPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
