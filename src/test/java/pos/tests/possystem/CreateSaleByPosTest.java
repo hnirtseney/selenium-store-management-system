@@ -1,11 +1,11 @@
-package pos.tests.pos;
+package pos.tests.possystem;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.form.pos.CreateSaleByPosForm;
+import pos.form.possystem.CreateSaleByPosForm;
 import pos.pageobjects.dashboardpage.DashboardPage;
-import pos.pageobjects.pospage.PosSystemPage;
+import pos.pageobjects.possystempage.PosSystemPage;
 import pos.pageobjects.salespage.AllSalesPage;
 import pos.testcomponents.BaseTest;
 
@@ -19,7 +19,7 @@ public class CreateSaleByPosTest extends BaseTest {
     @DataProvider(name = "saleByPosData")
     public Object[][] getProductData() throws IOException {
         List<HashMap<String, String>> data = getJsonDataToMap(
-                System.getProperty("user.dir") + "//src//test//java//pos//data//pos//SalesByPos.json");
+                System.getProperty("user.dir") + "//src//test//java//pos//data//possystem//SalesByPos.json");
         return data.stream()
                 .map(d -> new Object[]{new CreateSaleByPosForm(
                         d.get("productBySearchBox"),

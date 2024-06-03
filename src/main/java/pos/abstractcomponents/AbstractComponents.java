@@ -15,7 +15,7 @@ import pos.pageobjects.expensespage.CategoriesPage;
 import pos.pageobjects.expensespage.CreateExpensePage;
 import pos.pageobjects.parties.customerspage.CustomersPage;
 import pos.pageobjects.parties.supplierspage.SuppliersPage;
-import pos.pageobjects.pospage.PosSystemPage;
+import pos.pageobjects.possystempage.PosSystemPage;
 import pos.pageobjects.productspage.AllProductsPage;
 import pos.pageobjects.productspage.CategoryPage;
 import pos.pageobjects.productspage.ProductPage;

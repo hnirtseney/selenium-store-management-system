@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-public class CreateProductTest extends BaseTest {
+public class InputImageTest extends BaseTest {
     @DataProvider(name = "productData")
     public Object[][] getProductData() throws IOException {
         List<HashMap<String, String>> data = getJsonDataToMap(

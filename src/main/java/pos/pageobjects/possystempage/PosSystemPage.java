@@ -1,4 +1,4 @@
-package pos.pageobjects.pospage;
+package pos.pageobjects.possystempage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

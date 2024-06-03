@@ -12,13 +12,14 @@ public class ProductForm {
     public String product_tax;
     public String product_tax_type;
     public String product_unit;
+    public String product_image;
 
 
     // Constructor
     public ProductForm(String product_name, String product_code,
                        String product_category, String product_barcode,
                        String product_cost, String product_price, String product_quantity, String product_alert_quantity,
-                       String product_tax, String product_tax_type, String product_unit) {
+                       String product_tax, String product_tax_type, String product_unit, String product_image) {
         this.product_name = product_name;
         this.product_code = product_code;
         this.product_category = product_category;
@@ -30,6 +31,7 @@ public class ProductForm {
         this.product_tax = product_tax;
         this.product_tax_type = product_tax_type;
         this.product_unit = product_unit;
+        this.product_image = product_image;
     }
 }
 

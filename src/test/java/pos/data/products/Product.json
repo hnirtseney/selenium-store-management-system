@@ -10,7 +10,8 @@
     "product_alert_quantity": "9",
     "product_tax": "15",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "5db9346ef2369d4e66cd3654e71053b4.jpg"
   },
   {
     "product_name": "Product 2 - Fashion Spring 2025",
@@ -23,7 +24,8 @@
     "product_alert_quantity": "10",
     "product_tax": "9",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "07b9fa052317f215eedf075c32f28fe6.jpg"
   },
   {
     "product_name": "Product 3 - Casual Summer 2025",
@@ -36,7 +38,8 @@
     "product_alert_quantity": "7",
     "product_tax": "11",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "7c90f9b69517bacb2207777f84a9985d.jpg"
   },
   {
     "product_name": "Product 4 - Casual Winter 2025",
@@ -49,7 +52,8 @@
     "product_alert_quantity": "7",
     "product_tax": "12",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "31ad30857fe703037ee43dc69438eba6.jpg"
   },
   {
     "product_name": "Product 5 - Sporty Winter 2024",
@@ -62,7 +66,8 @@
     "product_alert_quantity": "4",
     "product_tax": "14",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "99ee2d2985ee9ac815cb7143bbebef9a.jpg"
   },
   {
     "product_name": "Product 6 - Sporty Winter 2024",
@@ -75,7 +80,8 @@
     "product_alert_quantity": "3",
     "product_tax": "6",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "5288b5660458748391fd19ad10b09ad9.jpg"
   },
   {
     "product_name": "Product 7 - Fashion Autumn 2024",
@@ -88,7 +94,8 @@
     "product_alert_quantity": "8",
     "product_tax": "9",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "5634a28b196c11c72a4a8eeff7b83ef0.jpg"
   },
   {
     "product_name": "Product 8 - Elegant Autumn 2024",
@@ -101,7 +108,8 @@
     "product_alert_quantity": "9",
     "product_tax": "20",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "7056f7c102ea90c2363a6b5955f12b2d.jpg"
   },
   {
     "product_name": "Product 9 - Fashion Summer 2025",
@@ -114,7 +122,8 @@
     "product_alert_quantity": "10",
     "product_tax": "17",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "9482cc66b56e8e1ef6842191994ba5fb.jpg"
   },
   {
     "product_name": "Product 10 - Casual Winter 2024",
@@ -127,7 +136,8 @@
     "product_alert_quantity": "3",
     "product_tax": "18",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "63226a720e7f7a012d8d2f784defa1f9.jpg"
   },
   {
     "product_name": "Product 11 - Casual Autumn 2025",
@@ -140,7 +150,8 @@
     "product_alert_quantity": "6",
     "product_tax": "15",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "a114fba16b654dce690b781e8b7cbe76.jpg"
   },
   {
     "product_name": "Product 12 - Fashion Autumn 2025",
@@ -153,7 +164,8 @@
     "product_alert_quantity": "6",
     "product_tax": "13",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "b9b8c7aede14b30bd8625b20b73a3836.jpg"
   },
   {
     "product_name": "Product 13 - Casual Spring 2025",
@@ -166,7 +178,8 @@
     "product_alert_quantity": "4",
     "product_tax": "14",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "b277c457c8a01efc6df9566be192b5be.jpg"
   },
   {
     "product_name": "Product 14 - Elegant Winter 2024",
@@ -179,7 +192,8 @@
     "product_alert_quantity": "4",
     "product_tax": "5",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "c995e57e7b372c5a7807fc46f384025c.jpg"
   },
   {
     "product_name": "Product 15 - Fashion Winter 2025",
@@ -192,7 +206,8 @@
     "product_alert_quantity": "10",
     "product_tax": "18",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "d11cdc8b1d505ca4356f4bae9455526a.jpg"
   },
   {
     "product_name": "Product 16 - Sporty Summer 2025",
@@ -205,7 +220,8 @@
     "product_alert_quantity": "8",
     "product_tax": "12",
     "product_tax_type": "Exclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "dd96112c5912eca6c118a38b3ec48a94.jpg"
   },
   {
     "product_name": "Product 17 - Fashion Spring 2025",
@@ -218,7 +234,8 @@
     "product_alert_quantity": "3",
     "product_tax": "7",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "ee4f67097bcad44cdb781bc5ca70c368.jpg"
   },
   {
     "product_name": "Product 18 - Casual Autumn 2024",
@@ -231,7 +248,8 @@
     "product_alert_quantity": "3",
     "product_tax": "7",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "f74ed4649b784147d6af1cd7ee8e9438.jpg"
   },
   {
     "product_name": "Product 19 - Casual Summer 2024",
@@ -244,7 +262,8 @@
     "product_alert_quantity": "3",
     "product_tax": "7",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "a3f730342864e178f6aa51fe9c9d9ae3.jpg"
   },
   {
     "product_name": "Product 20 - Casual Spring 2024",
@@ -257,6 +276,7 @@
     "product_alert_quantity": "3",
     "product_tax": "7",
     "product_tax_type": "Inclusive",
-    "product_unit": "Piece | PC"
+    "product_unit": "Piece | PC",
+    "product_image": "07e1495627bdc93f8a47ac750d977c91.jpg"
   }
 ]

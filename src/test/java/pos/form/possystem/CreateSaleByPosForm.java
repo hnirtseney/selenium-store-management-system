@@ -1,4 +1,4 @@
-package pos.form.pos;
+package pos.form.possystem;
 
 public class CreateSaleByPosForm {
     public String productBySearchBox;
