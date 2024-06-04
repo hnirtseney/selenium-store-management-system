@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="parties-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="PartiesTest">
+        <classes>
+            <!--Customer Test-->
+            <class name="pos.tests.parties.customerstest.CreateCustomerTest"/>
+            <!--            <class name="pos.tests.parties.customerstest.VisibleCustomerTest"/>-->
+            <!--            <class name="pos.tests.parties.customerstest.UpdateCustomerTest"/>-->
+            <!--Supplier Test-->
+            <class name="pos.tests.parties.supplierstest.CreateSupplierTest"/>
+            <!--            <class name="pos.tests.parties.supplierstest.UpdateSupplierTest"/>-->
+            <!--            <class name="pos.tests.parties.supplierstest.UpdateSupplierTest"/>-->
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+

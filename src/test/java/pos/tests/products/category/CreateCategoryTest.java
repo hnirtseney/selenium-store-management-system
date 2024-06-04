@@ -42,7 +42,6 @@ public class CreateCategoryTest extends BaseTest {
 
     @Test(
             dataProvider = "categoryData",
-            priority = 1,
             groups = {"ProductsTest"}
     )
     public void createSuccessCategoryTest(String category_code, String category_name) {

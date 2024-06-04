@@ -9,7 +9,6 @@ import pos.testcomponents.BaseTest;
 
 public class VisibleCategoryTest extends BaseTest {
     @Test(
-            priority = 3,
             groups = {"ProductsTest"}
     )
     public void visibleCategoriesTable() {

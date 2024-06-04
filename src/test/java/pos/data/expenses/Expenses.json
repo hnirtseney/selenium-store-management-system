@@ -38,13 +38,5 @@
   {
     "expenseCategory": "Clothes",
     "expenseTotalAmount": "20.00"
-  },
-  {
-    "expenseCategory": "Equipment",
-    "expenseTotalAmount": "Baby"
-  },
-  {
-    "expenseCategory": "Equipment",
-    "expenseTotalAmount": "Movies"
   }
 ]

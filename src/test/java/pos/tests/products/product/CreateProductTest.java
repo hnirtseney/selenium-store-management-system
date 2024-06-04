@@ -57,10 +57,11 @@ public class CreateProductTest extends BaseTest {
         return createProductPage;
     }
 
-    @Test(dataProvider = "productData")
+    @Test(
+            dataProvider = "productData")
     public void createProductTest(ProductForm form) throws InterruptedException {
         ProductPage productPage = this.fillForm(form);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         AllProductsPage allProductsPage = productPage.clickSubmitCreateUpdateProduct();
 
         String expectUpdateSuccessMessage = allProductsPage.getSuccessMessage();

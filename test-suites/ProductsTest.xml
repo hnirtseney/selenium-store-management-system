@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="product-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="ProductsTest">
+        <classes>
+            <!--CategoryTest-->
+            <class name="pos.tests.products.category.CreateCategoryTest"/>
+            <class name="pos.tests.products.category.VisibleCategoryTest"/>
+            <class name="pos.tests.products.category.UpdateCategoryTest"/>
+            <!--            <class name="pos.tests.products.category.DeleteCategoryTest"/>-->
+            <!--ProductTest-->
+            <class name="pos.tests.products.product.CreateProductTest"/>
+            <class name="pos.tests.products.product.UpdateProductTest"/>
+            <!--            <class name="pos.tests.products.product.DeleteProductTest"/>-->
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+

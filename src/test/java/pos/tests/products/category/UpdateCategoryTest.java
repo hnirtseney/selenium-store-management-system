@@ -46,7 +46,6 @@ public class UpdateCategoryTest extends BaseTest {
 
     @Test(
             dataProvider = "successData",
-            priority = 4,
             groups = {"ProductsTest"}
     )
     public void updateCategorySuccessTest(String categoryCode, String categoryName) {

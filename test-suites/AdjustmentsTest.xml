@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="adjustment-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="AdjustmentsTest">
+        <classes>
+            <!--CategoryTest-->
+            <class name="pos.tests.adjustments.CreateAdjustmentTest"/>
+            <!--            <class name="pos.tests.adjustments.DeleteAdjustmentTest"/>-->
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+

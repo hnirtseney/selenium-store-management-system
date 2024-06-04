@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="quotation-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="QuotationsTest">
+        <classes>
+            <!--CategoryTest-->
+            <class name="pos.tests.quotations.CreateQuotationTest"/>
+            <class name="pos.tests.quotations.DeleteQuotationTest"/>
+            <class name="pos.tests.quotations.MakeSaleQuotationTest"/>
+            <class name="pos.tests.quotations.UpdateQuotationTest"/>
+            <class name="pos.tests.quotations.VisibleQuotationTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+

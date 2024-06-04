@@ -8,7 +8,6 @@ import pos.testcomponents.BaseTest;
 
 public class DeleteCategoryTest extends BaseTest {
     @Test(
-            priority = 6,
             groups = {"ProductsTest"}
     )
     public void deleteCategory() {
