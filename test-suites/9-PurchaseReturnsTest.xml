@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="purchase-returns-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="PurchaseReturnsTest">
+        <classes>
+            <!--PurchaseReturnsTest-->
+            <class name="pos.tests.purchasereturns.CreatePurchaseReturnTest"/>
+            <class name="pos.tests.purchasereturns.VisiblePurchaseReturnsTableTest"/>
+            <class name="pos.tests.purchasereturns.AddPaymentPurchaseReturnTest"/>
+            <class name="pos.tests.purchasereturns.DeletePaymentPurchaseReturnTest"/>
+            <class name="pos.tests.purchasereturns.DeletePurchaseReturnTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+
+
+
+

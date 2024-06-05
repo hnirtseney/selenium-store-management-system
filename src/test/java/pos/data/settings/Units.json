@@ -6,6 +6,12 @@
     "unitOperatorValue": "1"
   },
   {
+    "unitName": "Piece",
+    "unitShortName": "PC",
+    "unitOperator": "*",
+    "unitOperatorValue": "1"
+  },
+  {
     "unitName": "Book",
     "unitShortName": "BK",
     "unitOperator": "*",

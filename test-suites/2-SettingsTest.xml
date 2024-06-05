@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="settings-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="CurrenciesTest">
+        <classes>
+            <!--CurrenciesTest-->
+            <class name="pos.tests.settings.currencies.CreateCurrencyTest"/>
+            <class name="pos.tests.settings.currencies.UpdateCurrencyTest"/>
+            <class name="pos.tests.settings.currencies.VisibleCurrenciesTableTest"/>
+            <class name="pos.tests.settings.currencies.DeleteCurrencyTest"/>
+        </classes>
+    </test>
+
+    <test name="UnitsTest">
+        <classes>
+            <!--UnitsTest-->
+            <class name="pos.tests.settings.units.CreateUnitTest"/>
+            <class name="pos.tests.settings.units.VisibleUnitsTableTest"/>
+            <class name="pos.tests.settings.units.UpdateUnitTest"/>
+            <class name="pos.tests.settings.units.DeleteUnitTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+
+
+
+

@@ -1,0 +1,94 @@
+{
+  "Admin_test": {
+    "Dashboard": [
+      "Total Stats",
+      "Notifications",
+      "Month Overview",
+      "Weekly Sales & Purchases",
+      "Monthly Cashflow"
+    ],
+    "User Management": [
+      "Access",
+      "Own Profile"
+    ],
+    "Products": [
+      "Access",
+      "Create",
+      "Delete",
+      "View",
+      "Edit",
+      "Category",
+      "Print Barcodes"
+    ],
+    "Adjustments": [
+      "Access",
+      "Create",
+      "View",
+      "Delete",
+      "Edit"
+    ],
+    "Quotaions": [
+      "Access",
+      "Create",
+      "View",
+      "Edit",
+      "Delete",
+      "Send Email",
+      "Sale From Quotation"
+    ],
+    "Expenses": [
+      "Access",
+      "Create",
+      "Edit",
+      "Delete",
+      "Category"
+    ]
+  },
+  "Customer": {
+    "Products": [
+      "Access",
+      "Create",
+      "Delete",
+      "View",
+      "Edit",
+      "Category",
+      "Print Barcodes"
+    ],
+    "Adjustments": [
+      "Access",
+      "Create",
+      "View",
+      "Delete",
+      "Edit"
+    ],
+    "Quotaions": [
+      "Access",
+      "Create",
+      "View",
+      "Edit",
+      "Delete",
+      "Send Email",
+      "Sale From Quotation"
+    ],
+    "Expenses": [
+      "Access",
+      "Create",
+      "Edit",
+      "Delete",
+      "Category"
+    ]
+  },
+  "Manager": {
+    "Dashboard": [
+      "Total Stats",
+      "Notifications",
+      "Month Overview",
+      "Weekly Sales & Purchases",
+      "Monthly Cashflow"
+    ],
+    "User Management": [
+      "Access",
+      "Own Profile"
+    ]
+  }
+}

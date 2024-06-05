@@ -6,31 +6,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pos.abstractcomponents.AbstractComponents;
-import pos.pageobjects.possystempage.PosSystemPage;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 public class DashboardPage extends AbstractComponents {
-
     WebDriver driver;
-    // Page elements
-    @FindBy(xpath = "//div[@class='text-value text-primary']")
-    private WebElement revenueValue;
-    @FindBy(xpath = "//div[@class='text-value text-warning']")
-    private WebElement salesReturnValue;
-    @FindBy(xpath = "//div[@class='text-value text-success']")
-    private WebElement purchasesReturnValue;
-    @FindBy(xpath = "//div[@class='text-value text-info']")
-    private WebElement profitValue;
-    @FindBy(xpath = "//canvas[@id='salesPurchasesChart']")
-    private WebElement salesPurchasesChart;
-    @FindBy(xpath = "//canvas[@id='currentMonthChart']")
-    private WebElement currentMonthChart;
-    @FindBy(xpath = "//canvas[@id='paymentChart']")
-    private WebElement paymentChart;
-    @FindBy(xpath = "/html/body/div[2]/header/ul[2]/li[1]/a")
-    private WebElement posSystemLink;
+
+    @FindBy(xpath = "//div[contains(text(),'Revenue')]/preceding-sibling::div")
+    WebElement revenue;
+
+    @FindBy(xpath = "//div[contains(text(),'Sales Return')]/preceding-sibling::div")
+    WebElement salesReturn;
+
+    @FindBy(xpath = "//div[contains(text(),'Purchases Return')]/preceding-sibling::div")
+    WebElement purchasesReturn;
+
+    @FindBy(xpath = "//div[contains(text(),'Profit')]/preceding-sibling::div")
+    WebElement profit;
 
     public DashboardPage(WebDriver driver) {
         super(driver);
@@ -38,63 +32,59 @@ public class DashboardPage extends AbstractComponents {
         PageFactory.initElements(driver, this);
     }
 
-    public String getRevenueValue() {
-        return revenueValue.getText();
+    public double getRevenue() {
+        return Double.parseDouble(revenue.getText().replace("$", "").replace(",", ""));
     }
 
-    public String getSalesReturnValue() {
-        return salesReturnValue.getText();
+    public double getSalesReturn() {
+        return Double.parseDouble(salesReturn.getText().replace("$", "").replace(",", ""));
     }
 
-    public String getPurchasesReturnValue() {
-        return purchasesReturnValue.getText();
+    public double getPurchasesReturn() {
+        return Double.parseDouble(purchasesReturn.getText().replace("$", "").replace(",", ""));
     }
 
-    public String getProfitValue() {
-        return profitValue.getText();
+    public double getProfit() {
+        return Double.parseDouble(profit.getText().replace("$", "").replace(",", ""));
     }
 
-    public PosSystemPage clickPOSSystemLink() {
-        posSystemLink.click();
-        return new PosSystemPage(driver);
+//    public double[] getChartData(String chartId) {
+//        String script = "return Array.from(document.getElementById('" + chartId + "').getContext('2d').chart.data.datasets[0].data);";
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        return ((List<Double>) js.executeScript(script)).stream().mapToDouble(Double::doubleValue).toArray();
+//    }
+
+    public double getCurrentMonthChartData(String dataType) {
+        String script = "return document.getElementById('currentMonthChart').data.datasets.find(dataset => dataset.label === '" + dataType + "').data[0];";
+        Object result = ((JavascriptExecutor) driver).executeScript(script);
+        return ((Number) result).doubleValue();
     }
 
-    public boolean isSalesPurchasesChartDisplayed() {
-        return salesPurchasesChart.isDisplayed();
+    public List<Double> getSalesPurchasesChartData(String dataType) {
+        String script = "return document.getElementById('salesPurchasesChart').data.datasets.find(dataset => dataset.label === '" + dataType + "').data;";
+        Object result = ((JavascriptExecutor) driver).executeScript(script);
+        return parseChartData(result);
     }
 
-    public Map<String, List<Map<String, Object>>> getSalesPurchasesChart() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        String script = "var chart = Chart.getChart('salesPurchasesChart');" +
-                "var salesData = [];" +
-                "var purchasesData = [];" +
-                "if (chart) {" +
-                "    var labels = chart.data.labels;" +
-                "    var datasets = chart.data.datasets;" +
-                "    for (var i = 0; i < labels.length; i++) {" +
-                "        salesData.push({" +
-                "            day: labels[i]," +
-                "            value: datasets[0].data[i]" +
-                "        });" +
-                "        purchasesData.push({" +
-                "            day: labels[i]," +
-                "            value: datasets[1].data[i]" +
-                "        });" +
-                "    }" +
-                "}" +
-                "return {sales: salesData, purchases: purchasesData};";
-
-//        List<Map<String, Object>> data = (List<Map<String, Object>>) js.executeScript(script);
-//        return Map.of("sales", data.get(0), "purchases", data.get(1));
-        Map<String, List<Map<String, Object>>> chartData = (Map<String, List<Map<String, Object>>>) js.executeScript(script);
-        return chartData;
+    public List<Double> getPaymentChartData(String dataType) {
+        String script = "return document.getElementById('paymentChart').data.datasets.find(dataset => dataset.label === '" + dataType + "').data;";
+        Object result = ((JavascriptExecutor) driver).executeScript(script);
+        return parseChartData(result);
     }
 
-    public boolean isCurrentMonthChartDisplayed() {
-        return currentMonthChart.isDisplayed();
+    public List<String> getPaymentChartMonths() {
+        String script = "return document.getElementById('paymentChart').data.labels;";
+        Object result = ((JavascriptExecutor) driver).executeScript(script);
+        return Arrays.asList(((String) result).split(","));
     }
 
-    public boolean isPaymentChartDisplayed() {
-        return paymentChart.isDisplayed();
+    private List<Double> parseChartData(Object result) {
+        List<Double> data = new ArrayList<>();
+        if (result instanceof List) {
+            for (Object value : (List<?>) result) {
+                data.add(((Number) value).doubleValue());
+            }
+        }
+        return data;
     }
 }

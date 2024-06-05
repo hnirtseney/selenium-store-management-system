@@ -19,7 +19,7 @@
     "saleReturnShipping": "10",
     "saleReturnStatus": "Completed",
     "saleReturnPaymentMethod": "Credit Card",
-    "saleReturnAmountReceived": "Paid"
+    "saleReturnAmountReceived": "Partial"
   },
   {
     "productCode": "PR-03",
@@ -118,7 +118,7 @@
     "saleReturnShipping": "0",
     "saleReturnStatus": "Pending",
     "saleReturnPaymentMethod": "Credit Card",
-    "saleReturnAmountReceived": "Paid"
+    "saleReturnAmountReceived": "Partial"
   },
   {
     "productCode": "PR-20",
@@ -129,6 +129,6 @@
     "saleReturnShipping": "0",
     "saleReturnStatus": "Pending",
     "saleReturnPaymentMethod": "Credit Card",
-    "saleReturnAmountReceived": "Paid"
+    "saleReturnAmountReceived": "Partial"
   }
 ]

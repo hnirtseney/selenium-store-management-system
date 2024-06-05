@@ -206,7 +206,7 @@
     "saleShipping": "0",
     "saleStatus": "Pending",
     "salePaymentMethod": "Credit Card",
-    "saleAmountReceived": "Paid"
+    "saleAmountReceived": "Partial"
   },
   {
     "productCode": "PR-20",
@@ -217,6 +217,6 @@
     "saleShipping": "0",
     "saleStatus": "Pending",
     "salePaymentMethod": "Credit Card",
-    "saleAmountReceived": "Paid"
+    "saleAmountReceived": "Partial"
   }
 ]

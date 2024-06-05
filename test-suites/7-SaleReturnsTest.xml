@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="sale-return-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="SaleReturnsTest">
+        <classes>
+            <!--SaleReturnsTest-->
+            <class name="pos.tests.salereturns.CreateSaleReturnTest"/>
+            <class name="pos.tests.salereturns.VisibleSaleReturnsTableTest"/>
+            <class name="pos.tests.salereturns.AddPaymentSaleReturnTest"/>
+            <class name="pos.tests.salereturns.DeletePaymentSaleReturnTest"/>
+            <class name="pos.tests.salereturns.DeleteSaleReturnTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+
+
+
+

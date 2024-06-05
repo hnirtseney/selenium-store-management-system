@@ -1,6 +1,6 @@
 [
   {
-    "userName": "Tooru Oikawa",
+    "userName": "Oikawa Tooru",
     "userMail": "oikawa@aobajohsai.com",
     "userPassword": "oikawa123",
     "userConfirmPassword": "oikawa123",
@@ -8,7 +8,7 @@
     "userStatus": "Active"
   },
   {
-    "userName": "Iwaizumi",
+    "userName": "Akaashi Keiji",
     "userMail": "iwaizumi@aobajohsai.com",
     "userPassword": "iwaizumi123",
     "userConfirmPassword": "iwaizumi123",
@@ -20,7 +20,7 @@
     "userMail": "tsukishima@karasuno.com",
     "userPassword": "tsukishima234",
     "userConfirmPassword": "tsukishima234",
-    "userRole": "Manager",
+    "userRole": "Sub-Manager",
     "userStatus": "Active"
   },
   {

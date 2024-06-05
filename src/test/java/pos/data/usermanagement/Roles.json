@@ -1,0 +1,261 @@
+[
+  {
+    "roleName": "Manager",
+    "rolePermission": {
+      "Dashboard": [
+        "Total Stats",
+        "Notifications",
+        "Month Overview",
+        "Weekly Sales & Purchases",
+        "Monthly Cashflow"
+      ],
+      "User Mangement": [
+        "Own Profile"
+      ],
+      "Products": [
+        "Access",
+        "Create",
+        "Delete",
+        "View",
+        "Edit",
+        "Category",
+        "Print Barcodes"
+      ],
+      "Adjustments": [
+        "Access",
+        "Create",
+        "View",
+        "Delete",
+        "Edit"
+      ],
+      "Quotaions": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Send Email",
+        "Sale From Quotation"
+      ],
+      "Expenses": [
+        "Access",
+        "Create",
+        "Edit",
+        "Delete",
+        "Category"
+      ],
+      "Customers": [
+        "Access",
+        "Create",
+        "View"
+      ],
+      "Suppliers": [
+        "Access",
+        "Create",
+        "View"
+      ],
+      "Sales": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "POS System",
+        "Payments"
+      ],
+      "Sale Returns": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Payments"
+      ],
+      "Purchases": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Payments"
+      ],
+      "Purchase Returns": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Payments"
+      ],
+      "Reports": [
+        "Access"
+      ]
+    }
+  },
+  {
+    "roleName": "Sub-Manager",
+    "rolePermission": {
+      "Dashboard": [
+        "Total Stats",
+        "Notifications",
+        "Month Overview",
+        "Weekly Sales & Purchases",
+        "Monthly Cashflow"
+      ],
+      "User Mangement": [
+        "Own Profile"
+      ],
+      "Products": [
+        "Access",
+        "Create",
+        "Delete",
+        "View",
+        "Edit",
+        "Category",
+        "Print Barcodes"
+      ],
+      "Adjustments": [
+        "Access",
+        "Create",
+        "View",
+        "Delete",
+        "Edit"
+      ],
+      "Quotaions": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Send Email",
+        "Sale From Quotation"
+      ],
+      "Expenses": [
+        "Access",
+        "Create",
+        "Edit",
+        "Delete",
+        "Category"
+      ],
+      "Customers": [
+        "Access",
+        "Create",
+        "View"
+      ],
+      "Suppliers": [
+        "Access",
+        "Create",
+        "View"
+      ],
+      "Sales": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "POS System",
+        "Payments"
+      ],
+      "Sale Returns": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Payments"
+      ],
+      "Purchases": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Payments"
+      ],
+      "Purchase Returns": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Payments"
+      ]
+    }
+  },
+  {
+    "roleName": "Staff",
+    "rolePermission": {
+      "Dashboard": [
+        "Total Stats",
+        "Notifications"
+      ],
+      "User Mangement": [
+        "Own Profile"
+      ],
+      "Products": [
+        "Access",
+        "View"
+      ],
+      "Adjustments": [
+        "Access",
+        "Create",
+        "View",
+        "Edit"
+      ],
+      "Quotaions": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Send Email",
+        "Sale From Quotation"
+      ],
+      "Customers": [
+        "Access",
+        "Create",
+        "View"
+      ],
+      "Suppliers": [
+        "Access",
+        "Create",
+        "View"
+      ],
+      "Sales": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "POS System",
+        "Payments"
+      ],
+      "Sale Returns": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Payments"
+      ],
+      "Purchases": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete",
+        "Payments"
+      ],
+      "Purchase Returns": [
+        "Access",
+        "Create",
+        "View",
+        "Edit",
+        "Delete"
+      ],
+      "Reports": [
+        "Access"
+      ]
+    }
+  }
+]

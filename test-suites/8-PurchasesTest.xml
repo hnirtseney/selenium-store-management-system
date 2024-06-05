@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="purchases-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="PurchasesTest">
+        <classes>
+            <!--PurchasesTest-->
+            <class name="pos.tests.purchases.CreatePurchaseTest"/>
+            <class name="pos.tests.purchases.VisiblePurchasesTableTest"/>
+            <class name="pos.tests.purchases.AddPaymentTest"/>
+            <class name="pos.tests.purchases.DeletePaymentTest"/>
+            <class name="pos.tests.purchases.DeletePurchaseTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+
+
+
+

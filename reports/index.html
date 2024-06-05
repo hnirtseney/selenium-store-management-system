@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Login Testing Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 3, 2024 04:26:39 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jun 5, 2024 09:57:12 PM</span></a>
 </li>
 </ul>
 </div>
@@ -80,39 +80,97 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCreateExpenseCategoryTest</p>
+            <p class="name">createPurchaseReturnTest</p>
             <p class="text-sm">
-              <span>4:26:43 PM</span> / <span>00:00:06:361</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>9:57:20 PM</span> / <span>00:01:03:196</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCreateExpenseCategoryTest</h5>
-<span class='badge badge-success'>06.03.2024 4:26:43 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:26:49 PM</span>
-<span class='badge badge-default'>00:00:06:361</span>
+<h5 class="test-status text-fail">createPurchaseReturnTest</h5>
+<span class='badge badge-success'>06.05.2024 9:57:20 PM</span>
+<span class='badge badge-danger'>06.05.2024 9:58:23 PM</span>
+<span class='badge badge-default'>00:01:03:196</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\eclipse-workspace-new\triangle-pos//reports//createPurchaseReturnTest.png' src="D:\eclipse-workspace-new\triangle-pos//reports//createPurchaseReturnTest.png">
+    <div class="title">createPurchaseReturnTest</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:26:49 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:58:23 PM</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="swal2-title"]"}
+  (Session info: chrome=125.0.6422.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [01367e2b87b2334f37571519e565f13b, findElement {using=xpath, value=//*[@id="swal2-title"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59219}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59219/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 01367e2b87b2334f37571519e565f13b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at pos.pageobjects.purchasereturnspage.AllPurchaseReturnsPage.getSuccessMessage(AllPurchaseReturnsPage.java:55)
+	at pos.tests.purchasereturns.CreatePurchaseReturnTest.createPurchaseReturnTest(CreatePurchaseReturnTest.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -125,9 +183,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCreateExpenseCategoryTest</p>
+            <p class="name">createPurchaseReturnTest</p>
             <p class="text-sm">
-              <span>4:26:52 PM</span> / <span>00:00:08:445</span>
+              <span>9:58:30 PM</span> / <span>00:01:10:120</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -135,10 +193,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCreateExpenseCategoryTest</h5>
-<span class='badge badge-success'>06.03.2024 4:26:52 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:27:01 PM</span>
-<span class='badge badge-default'>00:00:08:445</span>
+<h5 class="test-status text-pass">createPurchaseReturnTest</h5>
+<span class='badge badge-success'>06.05.2024 9:58:30 PM</span>
+<span class='badge badge-danger'>06.05.2024 9:59:40 PM</span>
+<span class='badge badge-default'>00:01:10:120</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -150,7 +208,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:27:01 PM</td>
+        <td>9:59:40 PM</td>
         <td>
           Test Passed
         </td>
@@ -165,9 +223,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCreateExpenseCategoryTest</p>
+            <p class="name">createPurchaseReturnTest</p>
             <p class="text-sm">
-              <span>4:27:03 PM</span> / <span>00:00:10:002</span>
+              <span>9:59:52 PM</span> / <span>00:00:48:802</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -175,10 +233,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCreateExpenseCategoryTest</h5>
-<span class='badge badge-success'>06.03.2024 4:27:03 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:27:13 PM</span>
-<span class='badge badge-default'>00:00:10:002</span>
+<h5 class="test-status text-pass">createPurchaseReturnTest</h5>
+<span class='badge badge-success'>06.05.2024 9:59:52 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:00:41 PM</span>
+<span class='badge badge-default'>00:00:48:802</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -190,7 +248,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:27:13 PM</td>
+        <td>10:00:41 PM</td>
         <td>
           Test Passed
         </td>
@@ -205,9 +263,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCreateExpenseCategoryTest</p>
+            <p class="name">createPurchaseReturnTest</p>
             <p class="text-sm">
-              <span>4:27:16 PM</span> / <span>00:00:07:340</span>
+              <span>10:00:53 PM</span> / <span>00:00:41:081</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -215,10 +273,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCreateExpenseCategoryTest</h5>
-<span class='badge badge-success'>06.03.2024 4:27:16 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:27:23 PM</span>
-<span class='badge badge-default'>00:00:07:340</span>
+<h5 class="test-status text-pass">createPurchaseReturnTest</h5>
+<span class='badge badge-success'>06.05.2024 10:00:53 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:01:34 PM</span>
+<span class='badge badge-default'>00:00:41:081</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -230,7 +288,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:27:23 PM</td>
+        <td>10:01:34 PM</td>
         <td>
           Test Passed
         </td>
@@ -245,9 +303,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCustomerTest</p>
+            <p class="name">createPurchaseReturnTest</p>
             <p class="text-sm">
-              <span>4:27:26 PM</span> / <span>00:00:08:547</span>
+              <span>10:01:45 PM</span> / <span>00:00:35:500</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -255,10 +313,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:27:26 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:27:35 PM</span>
-<span class='badge badge-default'>00:00:08:547</span>
+<h5 class="test-status text-pass">createPurchaseReturnTest</h5>
+<span class='badge badge-success'>06.05.2024 10:01:45 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:02:21 PM</span>
+<span class='badge badge-default'>00:00:35:500</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -270,7 +328,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:27:35 PM</td>
+        <td>10:02:21 PM</td>
         <td>
           Test Passed
         </td>
@@ -285,9 +343,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCustomerTest</p>
+            <p class="name">createPurchaseReturnTest</p>
             <p class="text-sm">
-              <span>4:27:37 PM</span> / <span>00:00:06:675</span>
+              <span>10:02:27 PM</span> / <span>00:00:32:284</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -295,10 +353,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:27:37 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:27:43 PM</span>
-<span class='badge badge-default'>00:00:06:675</span>
+<h5 class="test-status text-pass">createPurchaseReturnTest</h5>
+<span class='badge badge-success'>06.05.2024 10:02:27 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:02:59 PM</span>
+<span class='badge badge-default'>00:00:32:284</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -310,7 +368,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:27:43 PM</td>
+        <td>10:02:59 PM</td>
         <td>
           Test Passed
         </td>
@@ -325,9 +383,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCustomerTest</p>
+            <p class="name">createPurchaseReturnTest</p>
             <p class="text-sm">
-              <span>4:27:46 PM</span> / <span>00:00:07:286</span>
+              <span>10:03:09 PM</span> / <span>00:00:36:164</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -335,10 +393,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:27:46 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:27:53 PM</span>
-<span class='badge badge-default'>00:00:07:286</span>
+<h5 class="test-status text-pass">createPurchaseReturnTest</h5>
+<span class='badge badge-success'>06.05.2024 10:03:09 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:03:45 PM</span>
+<span class='badge badge-default'>00:00:36:164</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -350,7 +408,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:27:53 PM</td>
+        <td>10:03:45 PM</td>
         <td>
           Test Passed
         </td>
@@ -365,9 +423,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCustomerTest</p>
+            <p class="name">createPurchaseReturnTest</p>
             <p class="text-sm">
-              <span>4:27:56 PM</span> / <span>00:00:09:121</span>
+              <span>10:03:54 PM</span> / <span>00:00:30:045</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -375,10 +433,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:27:56 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:28:05 PM</span>
-<span class='badge badge-default'>00:00:09:121</span>
+<h5 class="test-status text-pass">createPurchaseReturnTest</h5>
+<span class='badge badge-success'>06.05.2024 10:03:54 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:04:24 PM</span>
+<span class='badge badge-default'>00:00:30:045</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -390,7 +448,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:28:05 PM</td>
+        <td>10:04:24 PM</td>
         <td>
           Test Passed
         </td>
@@ -405,9 +463,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCustomerTest</p>
+            <p class="name">visiblePurchaseReturnsTableTest</p>
             <p class="text-sm">
-              <span>4:28:07 PM</span> / <span>00:00:06:979</span>
+              <span>10:04:32 PM</span> / <span>00:00:18:975</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -415,10 +473,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:28:07 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:28:14 PM</span>
-<span class='badge badge-default'>00:00:06:979</span>
+<h5 class="test-status text-pass">visiblePurchaseReturnsTableTest</h5>
+<span class='badge badge-success'>06.05.2024 10:04:32 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:04:51 PM</span>
+<span class='badge badge-default'>00:00:18:975</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -430,7 +488,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:28:14 PM</td>
+        <td>10:04:51 PM</td>
         <td>
           Test Passed
         </td>
@@ -445,9 +503,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCustomerTest</p>
+            <p class="name">addPaymentTest</p>
             <p class="text-sm">
-              <span>4:28:17 PM</span> / <span>00:00:07:171</span>
+              <span>10:05:00 PM</span> / <span>00:00:33:927</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -455,10 +513,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:28:17 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:28:24 PM</span>
-<span class='badge badge-default'>00:00:07:171</span>
+<h5 class="test-status text-pass">addPaymentTest</h5>
+<span class='badge badge-success'>06.05.2024 10:05:00 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:05:34 PM</span>
+<span class='badge badge-default'>00:00:33:927</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -470,7 +528,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:28:24 PM</td>
+        <td>10:05:34 PM</td>
         <td>
           Test Passed
         </td>
@@ -485,9 +543,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCustomerTest</p>
+            <p class="name">deletePaymentsTest</p>
             <p class="text-sm">
-              <span>4:28:27 PM</span> / <span>00:00:06:150</span>
+              <span>10:05:43 PM</span> / <span>00:00:43:551</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -495,10 +553,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:28:27 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:28:33 PM</span>
-<span class='badge badge-default'>00:00:06:150</span>
+<h5 class="test-status text-pass">deletePaymentsTest</h5>
+<span class='badge badge-success'>06.05.2024 10:05:43 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:06:26 PM</span>
+<span class='badge badge-default'>00:00:43:551</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -510,7 +568,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:28:33 PM</td>
+        <td>10:06:26 PM</td>
         <td>
           Test Passed
         </td>
@@ -525,9 +583,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">createCustomerTest</p>
+            <p class="name">testDeletePurchase</p>
             <p class="text-sm">
-              <span>4:28:37 PM</span> / <span>00:00:07:633</span>
+              <span>10:06:30 PM</span> / <span>00:00:06:856</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -535,10 +593,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:28:37 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:28:45 PM</span>
-<span class='badge badge-default'>00:00:07:633</span>
+<h5 class="test-status text-pass">testDeletePurchase</h5>
+<span class='badge badge-success'>06.05.2024 10:06:30 PM</span>
+<span class='badge badge-danger'>06.05.2024 10:06:37 PM</span>
+<span class='badge badge-default'>00:00:06:856</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -550,285 +608,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:28:45 PM</td>
+        <td>10:06:37 PM</td>
         <td>
           Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="13"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">createCustomerTest</p>
-            <p class="text-sm">
-              <span>4:28:47 PM</span> / <span>00:00:07:244</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:28:47 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:28:54 PM</span>
-<span class='badge badge-default'>00:00:07:244</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:28:54 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="14"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">createCustomerTest</p>
-            <p class="text-sm">
-              <span>4:28:57 PM</span> / <span>00:00:12:004</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:28:57 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:29:09 PM</span>
-<span class='badge badge-default'>00:00:12:004</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:29:09 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="15"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">createCustomerTest</p>
-            <p class="text-sm">
-              <span>4:29:11 PM</span> / <span>00:00:15:292</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:29:11 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:29:27 PM</span>
-<span class='badge badge-default'>00:00:15:292</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\eclipse-workspace-new\triangle-pos//reports//createCustomerTest.png' src="D:\eclipse-workspace-new\triangle-pos//reports//createCustomerTest.png">
-    <div class="title">createCustomerTest</div>
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:29:26 PM</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="swal2-title"]"}
-  (Session info: chrome=125.0.6422.113)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cf2d7448dbd31dd3227b0155d06f40b5, findElement {using=xpath, value=//*[@id="swal2-title"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60198/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cf2d7448dbd31dd3227b0155d06f40b5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at pos.pageobjects.expensespage.AllExpensesPage.getSuccessMessage(AllExpensesPage.java:25)
-	at pos.tests.expenses.expense.CreateExpenseTest.createCustomerTest(CreateExpenseTest.java:44)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="16"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">createCustomerTest</p>
-            <p class="text-sm">
-              <span>4:29:29 PM</span> / <span>00:00:16:817</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">createCustomerTest</h5>
-<span class='badge badge-success'>06.03.2024 4:29:29 PM</span>
-<span class='badge badge-danger'>06.03.2024 4:29:46 PM</span>
-<span class='badge badge-default'>00:00:16:817</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\eclipse-workspace-new\triangle-pos//reports//createCustomerTest.png' src="D:\eclipse-workspace-new\triangle-pos//reports//createCustomerTest.png">
-    <div class="title">createCustomerTest</div>
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:29:46 PM</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="swal2-title"]"}
-  (Session info: chrome=125.0.6422.113)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [002ad173b5cf8d2a270e51d5adf8ff44, findElement {using=xpath, value=//*[@id="swal2-title"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60255/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 002ad173b5cf8d2a270e51d5adf8ff44
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at pos.pageobjects.expensespage.AllExpensesPage.getSuccessMessage(AllExpensesPage.java:25)
-	at pos.tests.expenses.expense.CreateExpenseTest.createCustomerTest(CreateExpenseTest.java:44)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
         </td>
       </tr>
   </tbody>
@@ -856,15 +638,15 @@ Session ID: 002ad173b5cf8d2a270e51d5adf8ff44
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -877,16 +659,9 @@ Session ID: 002ad173b5cf8d2a270e51d5adf8ff44
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:29:11 PM</td>
+<td>21:57:20 PM</td>
 <td>
-<a href="#" class="linked" test-id='15' id='15'>createCustomerTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:29:29 PM</td>
-<td>
-<a href="#" class="linked" test-id='16' id='16'>createCustomerTest</a>
+<a href="#" class="linked" test-id='1' id='1'>createPurchaseReturnTest</a>
 </td>
 </tr>
 </tbody>
@@ -906,25 +681,25 @@ Session ID: 002ad173b5cf8d2a270e51d5adf8ff44
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 3, 2024 04:26:39 PM</h3>
+<h3>Jun 5, 2024 09:57:12 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 3, 2024 04:29:46 PM</h3>
+<h3>Jun 5, 2024 10:06:37 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>14</h3>
+<h3>11</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -940,12 +715,12 @@ Session ID: 002ad173b5cf8d2a270e51d5adf8ff44
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='87%'>
-<b>14</b> tests passed
+<div><small data-tooltip='91%'>
+<b>11</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='12%'><b>2</b> tests failed,
+<small data-tooltip='8%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -963,9 +738,9 @@ Session ID: 002ad173b5cf8d2a270e51d5adf8ff44
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='87%'><b>14</b> events passed</small></div>
+<div><small data-tooltip='91%'><b>11</b> events passed</small></div>
 <div>
-<small data-tooltip='12%'><b>2</b> events failed,
+<small data-tooltip='8%'><b>1</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -982,7 +757,7 @@ Session ID: 002ad173b5cf8d2a270e51d5adf8ff44
 </div></div>
 <script>
 var timeline = {
-"createCreateExpenseCategoryTest":6.361,"createCreateExpenseCategoryTest":8.445,"createCreateExpenseCategoryTest":10.002,"createCreateExpenseCategoryTest":7.34,"createCustomerTest":8.547,"createCustomerTest":6.675,"createCustomerTest":7.286,"createCustomerTest":9.121,"createCustomerTest":6.979,"createCustomerTest":7.171,"createCustomerTest":6.15,"createCustomerTest":7.633,"createCustomerTest":7.244,"createCustomerTest":12.004,"createCustomerTest":15.292,"createCustomerTest":16.817
+"createPurchaseReturnTest":63.196,"createPurchaseReturnTest":70.12,"createPurchaseReturnTest":48.802,"createPurchaseReturnTest":41.081,"createPurchaseReturnTest":35.5,"createPurchaseReturnTest":32.284,"createPurchaseReturnTest":36.164,"createPurchaseReturnTest":30.045,"visiblePurchaseReturnsTableTest":18.975,"addPaymentTest":33.927,"deletePaymentsTest":43.551,"testDeletePurchase":6.856
 };
 </script>
 <div class="row">
@@ -1005,8 +780,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 14,
-failParent: 2,
+passParent: 11,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1022,8 +797,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 14,
-failEvents: 2,
+passEvents: 11,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

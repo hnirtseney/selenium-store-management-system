@@ -45,13 +45,15 @@ public class CreatePurchaseTest extends BaseTest {
         createPurchasePage.inputShippingAmount(form.purchaseShipping);
         createPurchasePage.selectStatus(form.purchaseStatus);
         createPurchasePage.selectPaymentMethod(form.purchasePaymentMethod);
+
+        Thread.sleep(2000);
         createPurchasePage.inputAmount(form.purchaseAmountPaid);
 
         return createPurchasePage;
     }
 
     @Test(dataProvider = "purchaseData")
-    public void createProductTest(CreatePurchaseForm form) throws InterruptedException {
+    public void createPurchaseTest(CreatePurchaseForm form) throws InterruptedException {
         CreatePurchasePage createPurchasePage = this.fillForm(form);
         AllPurchasesPage allPurchasesPage = createPurchasePage.clickSubmitButton();
 

@@ -31,8 +31,9 @@ import pos.pageobjects.salespage.AllSalesPage;
 import pos.pageobjects.salespage.CreateSalePage;
 import pos.pageobjects.settingspage.currenciespage.AllCurrenciesPage;
 import pos.pageobjects.settingspage.unitspage.AllUnitsPage;
-import pos.pageobjects.usermanagementpage.AllUsersPage;
-import pos.pageobjects.usermanagementpage.CreateUserPage;
+import pos.pageobjects.usermanagementpage.rolespermissions.RolesAndPermissionsPage;
+import pos.pageobjects.usermanagementpage.users.AllUsersPage;
+import pos.pageobjects.usermanagementpage.users.CreateUserPage;
 
 import java.time.Duration;
 
@@ -103,6 +104,8 @@ public class AbstractComponents {
     WebElement createUserButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[12]/ul/li[2]/a")
     WebElement allUsersButton;
+    @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[12]/ul/li[3]/a")
+    WebElement rolesPermissionsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[13]/a")
     WebElement settingsButton;
     @FindBy(xpath = "//*[@id=\"sidebar\"]/ul/li[13]/ul[1]/li/a")
@@ -279,6 +282,14 @@ public class AbstractComponents {
         userManagementButton.click();
         allUsersButton.click();
         return new AllUsersPage(driver);
+    }
+
+    public RolesAndPermissionsPage goToRolesPermissionsPage() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", userManagementButton);
+        userManagementButton.click();
+        rolesPermissionsButton.click();
+        return new RolesAndPermissionsPage(driver);
     }
 
     public AllUnitsPage goToAllUnitsPage() {

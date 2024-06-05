@@ -15,7 +15,7 @@ public class DeletePaymentPurchaseReturnTest extends BaseTest {
         ShowPaymentPurchaseReturnPage showPaymentPage = allPurchasesReturnPage.clickShowPayment();
         AllPurchaseReturnsPage allPurchasesPageAfterDeletePayment = showPaymentPage.clickDeleteButton();
 
-        String expectMessage = "Purchase Payment Deleted!";
+        String expectMessage = "Purchase Return Payment Deleted!";
         String actualMessage = allPurchasesPageAfterDeletePayment.getSuccessMessage();
 
         AssertJUnit.assertTrue(actualMessage.equalsIgnoreCase(expectMessage));
