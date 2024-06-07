@@ -10,10 +10,9 @@
         <classes>
             <!--CategoryTest-->
             <class name="pos.tests.adjustments.CreateAdjustmentTest"/>
-            <!--            <class name="pos.tests.adjustments.DeleteAdjustmentTest"/>-->
+            <class name="pos.tests.adjustments.DeleteAdjustmentTest"/>
         </classes>
     </test>
-
 </suite> <!-- Suite -->
 
 

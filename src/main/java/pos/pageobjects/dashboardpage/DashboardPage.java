@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import pos.abstractcomponents.AbstractComponents;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class DashboardPage extends AbstractComponents {
@@ -25,6 +24,13 @@ public class DashboardPage extends AbstractComponents {
 
     @FindBy(xpath = "//div[contains(text(),'Profit')]/preceding-sibling::div")
     WebElement profit;
+
+    @FindBy(id = "salesPurchasesChart")
+    WebElement salesPurchasesChart;
+    @FindBy(id = "currentMonthChart")
+    WebElement currentMonthChart;
+    @FindBy(id = "paymentChart")
+    WebElement paymentChart;
 
     public DashboardPage(WebDriver driver) {
         super(driver);
@@ -48,43 +54,37 @@ public class DashboardPage extends AbstractComponents {
         return Double.parseDouble(profit.getText().replace("$", "").replace(",", ""));
     }
 
-//    public double[] getChartData(String chartId) {
-//        String script = "return Array.from(document.getElementById('" + chartId + "').getContext('2d').chart.data.datasets[0].data);";
-//        JavascriptExecutor js = (JavascriptExecutor) driver;
-//        return ((List<Double>) js.executeScript(script)).stream().mapToDouble(Double::doubleValue).toArray();
-//    }
+    public ArrayList<ArrayList<Double>> getDataFromChart(WebElement chartElement) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        ArrayList<ArrayList<Number>> rawData = (ArrayList<ArrayList<Number>>) js.executeScript(
+                "var chart = Chart.getChart(arguments[0]);" +
+                        "if (chart) {" +
+                        "   var datasets = chart.data.datasets;" +
+                        "   return datasets.map(dataset => dataset.data);" +
+                        "} else { return null; }",
+                chartElement.getAttribute("id")
+        );
 
-    public double getCurrentMonthChartData(String dataType) {
-        String script = "return document.getElementById('currentMonthChart').data.datasets.find(dataset => dataset.label === '" + dataType + "').data[0];";
-        Object result = ((JavascriptExecutor) driver).executeScript(script);
-        return ((Number) result).doubleValue();
-    }
-
-    public List<Double> getSalesPurchasesChartData(String dataType) {
-        String script = "return document.getElementById('salesPurchasesChart').data.datasets.find(dataset => dataset.label === '" + dataType + "').data;";
-        Object result = ((JavascriptExecutor) driver).executeScript(script);
-        return parseChartData(result);
-    }
-
-    public List<Double> getPaymentChartData(String dataType) {
-        String script = "return document.getElementById('paymentChart').data.datasets.find(dataset => dataset.label === '" + dataType + "').data;";
-        Object result = ((JavascriptExecutor) driver).executeScript(script);
-        return parseChartData(result);
-    }
-
-    public List<String> getPaymentChartMonths() {
-        String script = "return document.getElementById('paymentChart').data.labels;";
-        Object result = ((JavascriptExecutor) driver).executeScript(script);
-        return Arrays.asList(((String) result).split(","));
-    }
-
-    private List<Double> parseChartData(Object result) {
-        List<Double> data = new ArrayList<>();
-        if (result instanceof List) {
-            for (Object value : (List<?>) result) {
-                data.add(((Number) value).doubleValue());
+        ArrayList<ArrayList<Double>> chartData = new ArrayList<>();
+        for (List<Number> dataset : rawData) {
+            ArrayList<Double> dataPoints = new ArrayList<>();
+            for (Number value : dataset) {
+                dataPoints.add(value.doubleValue());
             }
+            chartData.add(dataPoints);
         }
-        return data;
+        return chartData;
+    }
+
+    public ArrayList<ArrayList<Double>> getSalesPurchasesChartFromDashboardPage() {
+        return this.getDataFromChart(salesPurchasesChart);
+    }
+
+    public ArrayList<ArrayList<Double>> getCurrentMonthChartFromDashboardPage() {
+        return this.getDataFromChart(currentMonthChart);
+    }
+
+    public ArrayList<ArrayList<Double>> getPaymentChartFromDashboardPage() {
+        return this.getDataFromChart(paymentChart);
     }
 }

@@ -12,11 +12,11 @@
             <class name="pos.tests.products.category.CreateCategoryTest"/>
             <class name="pos.tests.products.category.VisibleCategoryTest"/>
             <class name="pos.tests.products.category.UpdateCategoryTest"/>
-            <!--            <class name="pos.tests.products.category.DeleteCategoryTest"/>-->
+            <class name="pos.tests.products.category.DeleteCategoryTest"/>
             <!--ProductTest-->
             <class name="pos.tests.products.product.CreateProductTest"/>
             <class name="pos.tests.products.product.UpdateProductTest"/>
-            <!--            <class name="pos.tests.products.product.DeleteProductTest"/>-->
+            <class name="pos.tests.products.product.DeleteProductTest"/>
         </classes>
     </test>
 
