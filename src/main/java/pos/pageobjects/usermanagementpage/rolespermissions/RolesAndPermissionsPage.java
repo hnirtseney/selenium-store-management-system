@@ -8,15 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 import pos.abstractcomponents.AbstractComponents;
 
 public class RolesAndPermissionsPage extends AbstractComponents {
+    @FindBy(xpath = "//*[@id=\"roles-table\"]")
+    public WebElement tableRolesAndPermissions;
     WebDriver driver;
-
     @FindBy(xpath = "/html/body/div[2]/div/main/div/div/div/div/div/a")
     WebElement addRoleButton;
-    @FindBy(id = "roles-table")
-    WebElement tableRolesAndPermissions;
-    @FindBy(xpath = "//*[@id=\"roles-table\"]/tbody/tr/td[4]/a")
+    @FindBy(xpath = "//*[@id=\"roles-table\"]/tbody/tr[3]/td[4]/a")
     WebElement editButton;
-    @FindBy(id = "delete")
+    @FindBy(xpath = "//*[@id=\"delete\"]")
     WebElement deleteButton;
     @FindBy(xpath = "//*[@id=\"swal2-title\"]")
     WebElement successMessage;
@@ -32,7 +31,7 @@ public class RolesAndPermissionsPage extends AbstractComponents {
         return new CreateRolePage(driver);
     }
 
-    public CreateRolePage UpdateRole() {
+    public CreateRolePage updateRole() {
         editButton.click();
         return new CreateRolePage(driver);
     }

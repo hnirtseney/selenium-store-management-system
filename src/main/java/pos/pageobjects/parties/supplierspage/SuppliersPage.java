@@ -8,14 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 import pos.abstractcomponents.AbstractComponents;
 
 public class SuppliersPage extends AbstractComponents {
+    @FindBy(xpath = "//*[@id=\"suppliers-table\"]")
+    public WebElement supplierTable;
     WebDriver driver;
     @FindBy(xpath = "/html/body/div[2]/div/main/div/div/div/div/div/a")
-    WebElement addCustomerBtn;
+    WebElement addSupplierBtn;
     @FindBy(xpath = "//*[@id=\"delete\"]")
-    WebElement deleteCustomerBtn;
+    WebElement deleteSupplierBtn;
+    @FindBy(xpath = "//*[@id=\"suppliers-table\"]/tbody/tr[1]/td[4]/a[1]")
+    WebElement updateSupplierBtn;
     @FindBy(xpath = "//*[@id=\"swal2-title\"]")
     WebElement successMessage;
-    
+
 
     //    *[@id="sidebar"]
     public SuppliersPage(WebDriver driver) {
@@ -25,12 +29,17 @@ public class SuppliersPage extends AbstractComponents {
     }
 
     public CreateSupplierPage gotoCreateSupplierPage() {
-        addCustomerBtn.click();
+        addSupplierBtn.click();
         return new CreateSupplierPage(driver);
     }
 
-    public void deleteCustomer() {
-        deleteCustomerBtn.click();
+    public CreateSupplierPage updateSupplierPage() {
+        updateSupplierBtn.click();
+        return new CreateSupplierPage(driver);
+    }
+
+    public void deleteSupplier() {
+        deleteSupplierBtn.click();
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }

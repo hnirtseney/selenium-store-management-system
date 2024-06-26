@@ -13,6 +13,8 @@ public class CreateRolePage extends AbstractComponents {
     WebDriver driver;
     @FindBy(xpath = "/html/body/div[2]/div/main/div/div/div/form/div[2]/div/div[1]/input")
     WebElement roleNameTextField;
+    @FindBy(xpath = "/html/body/div[2]/div/main/div/div/div/form/div[2]/div/div[3]/div/label")
+    WebElement giveAllPermissionsButton;
 
     public CreateRolePage(WebDriver driver) {
         super(driver);
@@ -24,14 +26,13 @@ public class CreateRolePage extends AbstractComponents {
         roleNameTextField.sendKeys(roleName);
     }
 
+    public void giveAllPermissions() {
+        giveAllPermissionsButton.click();
+    }
+
     public RolesAndPermissionsPage clickCreateButton() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", createButton);
         return new RolesAndPermissionsPage(driver);
     }
-
-//    public RolesAndPermissionsPage clickCreateButton() {
-//        createButton.click();
-//        return new RolesAndPermissionsPage(driver);
-//    }
 }

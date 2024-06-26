@@ -10,12 +10,14 @@
         <classes>
             <!--Customer Test-->
             <class name="pos.tests.parties.customerstest.CreateCustomerTest"/>
-            <!--            <class name="pos.tests.parties.customerstest.VisibleCustomerTest"/>-->
-            <!--            <class name="pos.tests.parties.customerstest.UpdateCustomerTest"/>-->
+            <class name="pos.tests.parties.customerstest.VisibleCustomerTableTest"/>
+            <class name="pos.tests.parties.customerstest.UpdateCustomerTest"/>
+            <class name="pos.tests.parties.customerstest.DeleteCustomerTest"/>
             <!--Supplier Test-->
             <class name="pos.tests.parties.supplierstest.CreateSupplierTest"/>
-            <!--            <class name="pos.tests.parties.supplierstest.UpdateSupplierTest"/>-->
-            <!--            <class name="pos.tests.parties.supplierstest.UpdateSupplierTest"/>-->
+            <class name="pos.tests.parties.supplierstest.UpdateSupplierTest"/>
+            <class name="pos.tests.parties.supplierstest.UpdateSupplierTest"/>
+            <class name="pos.tests.parties.supplierstest.DeleteSupplierTest"/>
         </classes>
     </test>
 

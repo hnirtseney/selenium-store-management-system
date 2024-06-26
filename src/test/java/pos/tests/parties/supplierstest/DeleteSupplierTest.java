@@ -10,7 +10,7 @@ public class DeleteSupplierTest extends BaseTest {
         DashboardPage dashboardPage = this.gotoDashboardPage();
         SuppliersPage suppliersPage = dashboardPage.goToSuppliersPage();
 
-        suppliersPage.deleteCustomer();
+        suppliersPage.deleteSupplier();
 
         String expectSuccessMessage = suppliersPage.getSuccessMessage();
         String actualSuccessMessage = "Supplier Deleted!";

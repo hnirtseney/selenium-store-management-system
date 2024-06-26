@@ -8,7 +8,7 @@
 
     <test name="QuotationsTest">
         <classes>
-            <!--CategoryTest-->
+            <!--QuotationsTest-->
             <class name="pos.tests.quotations.CreateQuotationTest"/>
             <class name="pos.tests.quotations.DeleteQuotationTest"/>
             <class name="pos.tests.quotations.MakeSaleQuotationTest"/>

@@ -312,7 +312,6 @@ public class AbstractComponents {
         possystemButton.click();
         return new PosSystemPage(driver);
     }
-
     //    Grand Total = Price per product * Quantity * (1 + Order Tax) * (1 - Discount) + Shipping Amount
 
 }

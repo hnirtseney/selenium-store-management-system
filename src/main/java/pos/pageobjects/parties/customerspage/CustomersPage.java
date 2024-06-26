@@ -8,28 +8,36 @@ import org.openqa.selenium.support.PageFactory;
 import pos.abstractcomponents.AbstractComponents;
 
 public class CustomersPage extends AbstractComponents {
+    @FindBy(id = "customers-table")
+    public WebElement customersTable;
     WebDriver driver;
-    public CustomersPage (WebDriver driver) {
+    @FindBy(xpath = "/html/body/div[2]/div/main/div/div/div/div/div/a")
+    WebElement addCustomerButton;
+    @FindBy(xpath = "//*[@id=\"customers-table\"]/tbody/tr[1]/td[4]/a[1]")
+    WebElement updateCustomerBtn;
+    @FindBy(xpath = "//*[@id=\"delete\"]")
+    WebElement deleteCustomerButton;
+    @FindBy(xpath = "//*[@id=\"swal2-title\"]")
+    WebElement successMessage;
+
+    public CustomersPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    @FindBy (xpath = "/html/body/div[2]/div/main/div/div/div/div/div/a")
-    WebElement addCustomerBtn;
-
-    @FindBy(xpath = "//*[@id=\"delete\"]")
-    WebElement deleteCustomerBtn;
-
-    @FindBy(xpath = "//*[@id=\"swal2-title\"]")
-    WebElement successMessage;
 
     public CreateCustomerPage gotoCreateCustomerPage() {
-        addCustomerBtn.click();
+        addCustomerButton.click();
+        return new CreateCustomerPage(driver);
+    }
+
+    public CreateCustomerPage updateCustomer() {
+        updateCustomerBtn.click();
         return new CreateCustomerPage(driver);
     }
 
     public void deleteCustomer() {
-        deleteCustomerBtn.click();
+        deleteCustomerButton.click();
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
