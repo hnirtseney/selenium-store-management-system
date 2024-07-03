@@ -5,16 +5,6 @@
         <listener class-name="pos.testcomponents.Listeners"/>
     </listeners>
 
-    <test name="CurrenciesTest">
-        <classes>
-            <!--CurrenciesTest-->
-            <class name="pos.tests.settings.currencies.CreateCurrencyTest"/>
-            <class name="pos.tests.settings.currencies.UpdateCurrencyTest"/>
-            <class name="pos.tests.settings.currencies.VisibleCurrenciesTableTest"/>
-            <class name="pos.tests.settings.currencies.DeleteCurrencyTest"/>
-        </classes>
-    </test>
-
     <test name="UnitsTest">
         <classes>
             <!--UnitsTest-->
