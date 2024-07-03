@@ -27,12 +27,19 @@ import java.util.List;
 import java.util.Properties;
 
 public class BaseTest {
-
-
+    private final WebDriverConfig webDriverConfig;
     public WebDriver driver;
     public LoginPage loginPage;
     public CategoryPage categoryPage;
     public DashboardPage dashboardPage;
+
+    public BaseTest() {
+        this.webDriverConfig = new WebDriverConfig();
+    }
+
+    public WebDriver initializeDriver(String browserName, boolean useGrid) throws IOException {
+        return webDriverConfig.initializeDriver(browserName, useGrid);
+    }
 
     public WebDriver initializeDriver() throws IOException {
         Properties prop = new Properties();
@@ -90,6 +97,7 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     public LoginPage launchApplication() throws IOException {
         driver = initializeDriver();
+//        driver = initializeDriver("chrome", true);
         loginPage = new LoginPage(driver);
         loginPage.goToLoginPage();
         return loginPage;

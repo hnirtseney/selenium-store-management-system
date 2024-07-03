@@ -1,0 +1,505 @@
+<html>
+<head>
+<title>TestNG:  ProductsTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ProductsTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 01 02:50:26 ICT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>499 seconds (499684 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: ZQN, Baby</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;swal2-title&quot;]&quot;}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ab17b49671dd0707905bca14780f0b1e, findElement {using=xpath, value=//*[@id=&quot;swal2-title&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52739/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab17b49671dd0707905bca14780f0b1e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at pos.pageobjects.productspage.CategoryPage.getSuccessMessage(CategoryPage.java:77)
+	at pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest(CreateCategoryTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1844518545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1844518545'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;swal2-title&quot;]&quot;}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ab17b49671dd0707905bca14780f0b1e, findElement {using=xpath, value=//*[@id=&quot;swal2-title&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52739/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab17b49671dd0707905bca14780f0b1e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at pos.pageobjects.productspage.CategoryPage.getSuccessMessage(CategoryPage.java:77)
+	at pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest(CreateCategoryTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: WWT, Movies</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;swal2-title&quot;]&quot;}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [acde6331dff6126b5e467903c3d83b4b, findElement {using=xpath, value=//*[@id=&quot;swal2-title&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52795/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: acde6331dff6126b5e467903c3d83b4b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at pos.pageobjects.productspage.CategoryPage.getSuccessMessage(CategoryPage.java:77)
+	at pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest(CreateCategoryTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2139895366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2139895366'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;swal2-title&quot;]&quot;}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [acde6331dff6126b5e467903c3d83b4b, findElement {using=xpath, value=//*[@id=&quot;swal2-title&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52795/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: acde6331dff6126b5e467903c3d83b4b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at pos.pageobjects.productspage.CategoryPage.getSuccessMessage(CategoryPage.java:77)
+	at pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest(CreateCategoryTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@5e22ac65</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Movies
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at pos.pageobjects.productspage.ProductPage.selectCategory(ProductPage.java:61)
+	at pos.tests.products.product.CreateProductTest.fillForm(CreateProductTest.java:46)
+	at pos.tests.products.product.CreateProductTest.createProductTest(CreateProductTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1116264374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1116264374'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Movies
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at pos.pageobjects.productspage.ProductPage.selectCategory(ProductPage.java:61)
+	at pos.tests.products.product.CreateProductTest.fillForm(CreateProductTest.java:46)
+	at pos.tests.products.product.CreateProductTest.createProductTest(CreateProductTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>16</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: ATM, Automation</td>
+<td></td>
+<td>5</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: GXX, Books</td>
+<td></td>
+<td>4</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: PON, Clothing</td>
+<td></td>
+<td>5</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@4088c5e6</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@a256322</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.DeleteProductTest.deleteProduct()'><b>deleteProduct</b><br>Test class: pos.tests.products.product.DeleteProductTest</td>
+<td></td>
+<td>6</td>
+<td>pos.tests.products.product.DeleteProductTest@4b520ea8</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@aa9b6a8</td>
+<td></td>
+<td>11</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@3833897c</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: BUN, Electronics</td>
+<td></td>
+<td>4</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: CBG, Health</td>
+<td></td>
+<td>4</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: SZI, Home</td>
+<td></td>
+<td>6</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.UpdateProductTest.updateProductTest()'><b>updateProductTest</b><br>Test class: pos.tests.products.product.UpdateProductTest</td>
+<td></td>
+<td>7</td>
+<td>pos.tests.products.product.UpdateProductTest@5a5a729f</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@7fdff56b</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.UpdateCategoryTest.updateCategoryFailedTest()'><b>updateCategoryFailedTest</b><br>Test class: pos.tests.products.category.UpdateCategoryTest<br>Parameters: ATM, Bangtan Boys</td>
+<td></td>
+<td>7</td>
+<td>pos.tests.products.category.UpdateCategoryTest@7a6d7e92</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@685280dd</td>
+<td></td>
+<td>11</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@3af1b643</td>
+<td></td>
+<td>13</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@6705b98b</td>
+<td></td>
+<td>11</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: LLK, Kids</td>
+<td></td>
+<td>6</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@5fa0943d</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.UpdateCategoryTest.updateCategorySuccessTest()'><b>updateCategorySuccessTest</b><br>Test class: pos.tests.products.category.UpdateCategoryTest<br>Parameters: BLP, Blackpink</td>
+<td></td>
+<td>7</td>
+<td>pos.tests.products.category.UpdateCategoryTest@7a6d7e92</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: BHS, Music</td>
+<td></td>
+<td>6</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@29511cf9</td>
+<td></td>
+<td>11</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: LMP, Shoes</td>
+<td></td>
+<td>7</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@5de25642</td>
+<td></td>
+<td>11</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@668f0ee</td>
+<td></td>
+<td>11</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: HSV, Sports</td>
+<td></td>
+<td>6</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@584f12eb</td>
+<td></td>
+<td>11</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: MTH, Toys</td>
+<td></td>
+<td>4</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createFailedCategorySuccess()'><b>createFailedCategorySuccess</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: ATM, Automation</td>
+<td></td>
+<td>7</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@65b680b4</td>
+<td></td>
+<td>16</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: CZU, Tools</td>
+<td></td>
+<td>7</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@270be080</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@5de32e00</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest()'><b>createSuccessCategoryTest</b><br>Test class: pos.tests.products.category.CreateCategoryTest<br>Parameters: OSW, Computers</td>
+<td></td>
+<td>7</td>
+<td>pos.tests.products.category.CreateCategoryTest@17bffc17</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@48d84d75</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@27002c5a</td>
+<td></td>
+<td>12</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.product.CreateProductTest.createProductTest()'><b>createProductTest</b><br>Test class: pos.tests.products.product.CreateProductTest<br>Parameters: pos.form.products.ProductForm@1177049c</td>
+<td></td>
+<td>11</td>
+<td>pos.tests.products.product.CreateProductTest@97e93f1</td></tr>
+<tr>
+<td title='pos.tests.products.category.VisibleCategoryTest.visibleCategoriesTable()'><b>visibleCategoriesTable</b><br>Test class: pos.tests.products.category.VisibleCategoryTest</td>
+<td></td>
+<td>4</td>
+<td>pos.tests.products.category.VisibleCategoryTest@1a4927d6</td></tr>
+<tr>
+<td title='pos.tests.products.category.DeleteCategoryTest.deleteCategory()'><b>deleteCategory</b><br>Test class: pos.tests.products.category.DeleteCategoryTest</td>
+<td></td>
+<td>6</td>
+<td>pos.tests.products.category.DeleteCategoryTest@aba625</td></tr>
+</table><p>
+</body>
+</html>

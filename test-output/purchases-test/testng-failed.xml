@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [purchases-test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="pos.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="PurchasesTest(failed)">
+    <classes>
+      <class name="pos.tests.purchases.CreatePurchaseTest">
+        <methods>
+          <include name="createPurchaseTest" invocation-numbers="2"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.purchases.CreatePurchaseTest -->
+    </classes>
+  </test> <!-- PurchasesTest(failed) -->
+</suite> <!-- Failed suite [purchases-test] -->

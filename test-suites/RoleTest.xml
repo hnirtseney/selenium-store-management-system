@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="roles-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="RolesTest">
+        <classes>
+            <!--Roles And Permissions Test-->
+            <class name="pos.tests.usermanagement.rolespermissions.CreateRoleTest"></class>
+            <class name="pos.tests.usermanagement.rolespermissions.UpdateRoleTest"></class>
+            <class name="pos.tests.usermanagement.rolespermissions.DeleteRoleTest"></class>
+            <class name="pos.tests.usermanagement.rolespermissions.VisibleRolesTable"></class>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
+
+

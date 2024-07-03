@@ -3,7 +3,6 @@ package pos.tests.login;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.testcomponents.BaseTest;
 
 import java.io.IOException;
@@ -27,7 +26,7 @@ public class LoginFailedTest extends BaseTest {
     )
     public void loginFailureTest(String email, String password, String expectedError) {
         loginPage.goToLoginPage();
-        DashboardPage dashboardPage = loginPage.login(email, password);
+        loginPage.login(email, password);
         String actualError = loginPage.getErrorMessage();
         Assert.assertEquals(actualError, expectedError, "Error message does not match expected.");
     }

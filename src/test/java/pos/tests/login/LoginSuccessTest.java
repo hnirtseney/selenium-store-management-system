@@ -1,7 +1,10 @@
 package pos.tests.login;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pos.pageobjects.dashboardpage.DashboardPage;
 import pos.testcomponents.BaseTest;
 
 import java.io.IOException;
@@ -23,6 +26,12 @@ public class LoginSuccessTest extends BaseTest {
             groups = {"LoginTest"})
     public void loginSuccessTest(String email, String password) {
         loginPage.goToLoginPage();
-        loginPage.login(email, password);
+        DashboardPage dashboardPage = loginPage.login(email, password);
+        dashboardPage.waitForElementToAppear(By.id("paymentChart"));
+        Assert.assertTrue(dashboardPage.paymentChart.isDisplayed(), "Bảng payment  không hiển thị.");
+
+//        AllUsersPage allUsersPage = dashboardPage.goToAllUsersPage();
+//        allUsersPage.waitForElementToAppear((By.id("users-table")));
+//        Assert.assertTrue(allUsersPage.usersTable.isDisplayed(), "Bảng danh sách Users không hiển thị.");
     }
 }

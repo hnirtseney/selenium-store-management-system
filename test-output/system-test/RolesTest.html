@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>TestNG:  RolesTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RolesTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 30 14:02:41 ICT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>75 seconds (75941 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pos.tests.usermanagement.rolespermissions.CreateRoleTest.createRoleTest()'><b>createRoleTest</b><br>Test class: pos.tests.usermanagement.rolespermissions.CreateRoleTest<br>Parameters: {roleName=Manager, rolePermission={Dashboard=[Total Stats, Notifications, Month Overview, Weekly Sales & Purchases, Monthly Cashflow], User Mangement=[Own Profile], Products=[Access, Create, Delete, View, Edit, Category, Print Barcodes], Adjustments=[Access, Create, View, Delete, Edit], Quotaions=[Access, Create, View, Edit, Delete, Send Email, Sale From Quotation], Expenses=[Access, Create, Edit, Delete, Category], Customers=[Access, Create, View], Suppliers=[Access, Create, View], Sales=[Access, Create, View, Edit, Delete, POS System, Payments], Sale Returns=[Access, Create, View, Edit, Delete, Payments], Purchases=[Access, Create, View, Edit, Delete, Payments], Purchase Returns=[Access, Create, View, Edit, Delete, Payments], Reports=[Access]}}</td>
+<td></td>
+<td>16</td>
+<td>pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd</td></tr>
+<tr>
+<td title='pos.tests.usermanagement.rolespermissions.CreateRoleTest.createRoleTest()'><b>createRoleTest</b><br>Test class: pos.tests.usermanagement.rolespermissions.CreateRoleTest<br>Parameters: {roleName=Sub-Manager, rolePermission={Dashboard=[Total Stats, Notifications, Month Overview, Weekly Sales & Purchases, Monthly Cashflow], User Mangement=[Own Profile], Products=[Access, Create, Delete, View, Edit, Category, Print Barcodes], Adjustments=[Access, Create, View, Delete, Edit], Quotaions=[Access, Create, View, Edit, Delete, Send Email, Sale From Quotation], Expenses=[Access, Create, Edit, Delete, Category], Customers=[Access, Create, View], Suppliers=[Access, Create, View], Sales=[Access, Create, View, Edit, Delete, POS System, Payments], Sale Returns=[Access, Create, View, Edit, Delete, Payments], Purchases=[Access, Create, View, Edit, Delete, Payments], Purchase Returns=[Access, Create, View, Edit, Delete, Payments]}}</td>
+<td></td>
+<td>18</td>
+<td>pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd</td></tr>
+<tr>
+<td title='pos.tests.usermanagement.rolespermissions.CreateRoleTest.createRoleTest()'><b>createRoleTest</b><br>Test class: pos.tests.usermanagement.rolespermissions.CreateRoleTest<br>Parameters: {roleName=Staff, rolePermission={Dashboard=[Total Stats, Notifications], User Mangement=[Own Profile], Products=[Access, View], Adjustments=[Access, Create, View, Edit], Quotaions=[Access, Create, View, Edit, Delete, Send Email, Sale From Quotation], Customers=[Access, Create, View], Suppliers=[Access, Create, View], Sales=[Access, Create, View, Edit, Delete, POS System, Payments], Sale Returns=[Access, Create, View, Edit, Delete, Payments], Purchases=[Access, Create, View, Edit, Delete, Payments], Purchase Returns=[Access, Create, View, Edit, Delete], Reports=[Access]}}</td>
+<td></td>
+<td>13</td>
+<td>pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd</td></tr>
+<tr>
+<td title='pos.tests.usermanagement.rolespermissions.DeleteRoleTest.deleteRoleTest()'><b>deleteRoleTest</b><br>Test class: pos.tests.usermanagement.rolespermissions.DeleteRoleTest</td>
+<td></td>
+<td>5</td>
+<td>pos.tests.usermanagement.rolespermissions.DeleteRoleTest@333d4a8c</td></tr>
+<tr>
+<td title='pos.tests.usermanagement.rolespermissions.VisibleRolesTable.visibleRolesTableTest()'><b>visibleRolesTableTest</b><br>Test class: pos.tests.usermanagement.rolespermissions.VisibleRolesTable</td>
+<td></td>
+<td>3</td>
+<td>pos.tests.usermanagement.rolespermissions.VisibleRolesTable@55de24cc</td></tr>
+<tr>
+<td title='pos.tests.usermanagement.rolespermissions.UpdateRoleTest.updateRoleTest()'><b>updateRoleTest</b><br>Test class: pos.tests.usermanagement.rolespermissions.UpdateRoleTest</td>
+<td></td>
+<td>6</td>
+<td>pos.tests.usermanagement.rolespermissions.UpdateRoleTest@1c742ed4</td></tr>
+</table><p>
+</body>
+</html>

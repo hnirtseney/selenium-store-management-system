@@ -11,26 +11,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DashboardPage extends AbstractComponents {
+    @FindBy(id = "paymentChart")
+    public WebElement paymentChart;
     WebDriver driver;
-
     @FindBy(xpath = "//div[contains(text(),'Revenue')]/preceding-sibling::div")
     WebElement revenue;
-
     @FindBy(xpath = "//div[contains(text(),'Sales Return')]/preceding-sibling::div")
     WebElement salesReturn;
-
     @FindBy(xpath = "//div[contains(text(),'Purchases Return')]/preceding-sibling::div")
     WebElement purchasesReturn;
-
     @FindBy(xpath = "//div[contains(text(),'Profit')]/preceding-sibling::div")
     WebElement profit;
-
     @FindBy(id = "salesPurchasesChart")
     WebElement salesPurchasesChart;
     @FindBy(id = "currentMonthChart")
     WebElement currentMonthChart;
-    @FindBy(id = "paymentChart")
-    WebElement paymentChart;
 
     public DashboardPage(WebDriver driver) {
         super(driver);

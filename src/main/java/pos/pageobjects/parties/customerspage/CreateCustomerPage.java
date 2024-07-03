@@ -5,10 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateCustomerPage {
+import pos.abstractcomponents.AbstractComponents;
+
+public class CreateCustomerPage extends AbstractComponents {
     WebDriver driver;
 
     public CreateCustomerPage(WebDriver driver) {
+    	super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

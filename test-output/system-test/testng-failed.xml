@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [system-test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="pos.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="UsersTest(failed)">
+    <classes>
+      <class name="pos.tests.usermanagement.users.CreateUserTest">
+        <methods>
+          <include name="createCustomerTest" invocation-numbers="3 4 5"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.usermanagement.users.CreateUserTest -->
+    </classes>
+  </test> <!-- UsersTest(failed) -->
+  <test thread-count="5" name="SalesTest(failed)">
+    <classes>
+      <class name="pos.tests.sales.CreateSaleTest">
+        <methods>
+          <include name="createProductTest" invocation-numbers="0 4 15 17"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.sales.CreateSaleTest -->
+    </classes>
+  </test> <!-- SalesTest(failed) -->
+  <test thread-count="5" name="SaleReturnsTest(failed)">
+    <classes>
+      <class name="pos.tests.salereturns.CreateSaleReturnTest">
+        <methods>
+          <include name="createSaleReturnTest" invocation-numbers="0 4 9"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.salereturns.CreateSaleReturnTest -->
+    </classes>
+  </test> <!-- SaleReturnsTest(failed) -->
+  <test thread-count="5" name="PurchasesTest(failed)">
+    <classes>
+      <class name="pos.tests.purchases.CreatePurchaseTest">
+        <methods>
+          <include name="createPurchaseTest" invocation-numbers="0"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.purchases.CreatePurchaseTest -->
+    </classes>
+  </test> <!-- PurchasesTest(failed) -->
+  <test thread-count="5" name="PurchaseReturnsTest(failed)">
+    <classes>
+      <class name="pos.tests.purchasereturns.CreatePurchaseReturnTest">
+        <methods>
+          <include name="createPurchaseReturnTest" invocation-numbers="0"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.purchasereturns.CreatePurchaseReturnTest -->
+    </classes>
+  </test> <!-- PurchaseReturnsTest(failed) -->
+  <test thread-count="5" name="QuotationsTest(failed)">
+    <classes>
+      <class name="pos.tests.quotations.CreateQuotationTest">
+        <methods>
+          <include name="createValidQuotationTest" invocation-numbers="0 1 2 3"/>
+          <include name="createInvalidQuotationTest" invocation-numbers="0 1 2"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.quotations.CreateQuotationTest -->
+    </classes>
+  </test> <!-- QuotationsTest(failed) -->
+  <test thread-count="5" name="AdjustmentsTest(failed)">
+    <classes>
+      <class name="pos.tests.adjustments.CreateAdjustmentTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="createAdjustmenTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- pos.tests.adjustments.CreateAdjustmentTest -->
+    </classes>
+  </test> <!-- AdjustmentsTest(failed) -->
+  <test thread-count="5" name="POSSystemTest(failed)">
+    <classes>
+      <class name="pos.tests.possystem.CreateSaleByPosTest">
+        <methods>
+          <include name="createProductProceedTest" invocation-numbers="0 8"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.possystem.CreateSaleByPosTest -->
+    </classes>
+  </test> <!-- POSSystemTest(failed) -->
+  <test thread-count="5" name="DashboardTest(failed)">
+    <classes>
+      <class name="pos.tests.dashboard.DashboardChartTest">
+        <methods>
+          <include name="paymentChartTest"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pos.tests.dashboard.DashboardChartTest -->
+    </classes>
+  </test> <!-- DashboardTest(failed) -->
+</suite> <!-- Failed suite [system-test] -->
