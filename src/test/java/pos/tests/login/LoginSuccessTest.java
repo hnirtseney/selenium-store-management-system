@@ -27,7 +27,7 @@ public class LoginSuccessTest extends BaseTest {
     public void loginSuccessTest(String email, String password) {
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login(email, password);
-        dashboardPage.waitForElementToAppear(By.id("paymentChart"));
+        dashboardPage.waitForElementToAppear(By.id("paymentChartp"));
         Assert.assertTrue(dashboardPage.paymentChart.isDisplayed(), "Bảng payment  không hiển thị.");
 
 //        AllUsersPage allUsersPage = dashboardPage.goToAllUsersPage();

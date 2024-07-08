@@ -15,7 +15,7 @@
             <class name="pos.tests.usermanagement.rolespermissions.VisibleRolesTable"></class>
         </classes>
     </test>
-    
+
     <test name="UsersTest">
         <classes>
             <!--UsersTest-->
@@ -25,7 +25,7 @@
             <class name="pos.tests.usermanagement.users.DeleteUserTest"/>
         </classes>
     </test>
-    
+
     <test name="LoginTest">
         <classes>
             <!--LoginTest-->
@@ -53,7 +53,7 @@
             <class name="pos.tests.settings.units.DeleteUnitTest"/>
         </classes>
     </test>
-    
+
     <test name="CustomersTest">
         <classes>
             <!--Customer Test-->
@@ -156,7 +156,7 @@
             <class name="pos.tests.possystem.CreateSaleByPosTest"/>
         </classes>
     </test>
-        <test name="DashboardTest">
+    <test name="DashboardTest">
         <classes>
             <!--DashboardTest-->
             <class name="pos.tests.dashboard.DashboardChartTest"/>
@@ -165,8 +165,5 @@
     </test>
 
 </suite> <!-- Suite -->
-
-
-
 
 
