@@ -77,6 +77,7 @@ public class CreateRoleTest extends BaseTest {
 
         if (permissionElement != null) {
             if (!permissionElement.isSelected()) {
+//                permissionElement.click();
                 Actions actions = new Actions(driver);
                 actions.moveToElement(permissionElement).click().perform();
             } else {

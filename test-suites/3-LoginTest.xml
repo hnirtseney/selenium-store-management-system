@@ -6,7 +6,7 @@
         <listener class-name="pos.testcomponents.Listeners"/>
     </listeners>
 
-    <test name="AdjustmentsTest">
+    <test name="LoginTest">
         <classes>
             <!--Login Test-->
             <class name="pos.tests.login.LoginFailedTest"/>
