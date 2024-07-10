@@ -53,7 +53,7 @@ public class LoginPage extends AbstractComponents {
 
     public void goToLoginPage() {
 //        driver.get("http://127.0.0.1:8000/login");
-        driver.get("http://3.81.170.242/login");
+        driver.get("http://35.173.180.202/login");
 //        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom = '0.9'");
     }
 }
