@@ -84,8 +84,8 @@ public class BaseTest {
 
     @BeforeMethod(alwaysRun = true)
     public LoginPage launchApplication() throws IOException {
-        driver = initializeDriver();
-//        driver = initializeDriver("chrome", true);
+//        driver = initializeDriver();
+        driver = initializeDriver("chrome", true);
         loginPage = new LoginPage(driver);
         loginPage.goToLoginPage();
         return loginPage;

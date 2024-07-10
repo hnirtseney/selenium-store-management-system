@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumTest">
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="ip" value="172.20.10.2"/>
+        <parameter name="port" value="5555"/>
+        <classes>
+            <!--Login Test-->
+            <class name="pos.tests.login.LoginFailedTest"/>
+            <class name="pos.tests.login.LoginSuccessTest"/>
+        </classes>
+    </test>
+</suite>

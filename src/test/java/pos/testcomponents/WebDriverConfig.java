@@ -22,13 +22,13 @@ public class WebDriverConfig {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             if (browserName.equalsIgnoreCase("chrome")) {
                 capabilities.setBrowserName("chrome");
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+                driver = new RemoteWebDriver(new URL("http://localhost:8888/wd/hub"), capabilities);
             } else if (browserName.equalsIgnoreCase("firefox")) {
                 capabilities.setBrowserName("firefox");
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+                driver = new RemoteWebDriver(new URL("http://localhost:8888/wd/hub"), capabilities);
             } else if (browserName.equalsIgnoreCase("edge")) {
                 capabilities.setBrowserName("MicrosoftEdge");
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+                driver = new RemoteWebDriver(new URL("http://localhost:8888 /wd/hub"), capabilities);
             }
         } else {
             if (browserName.equalsIgnoreCase("chrome")) {
