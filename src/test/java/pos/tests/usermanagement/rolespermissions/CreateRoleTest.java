@@ -70,14 +70,9 @@ public class CreateRoleTest extends BaseTest {
         WebElement pageElement = driver.findElement(By.xpath("//div[contains(@class, 'card-header') and normalize-space(text())='" + pageName + "']"));
         WebElement parentEle = pageElement.findElement(By.xpath("./following-sibling::div"));
         WebElement permissionElement = parentEle.findElement(By.xpath(".//label[normalize-space(text())='" + permissionName + "']/preceding-sibling::input"));
-//        permissionElement.click();
-//        Actions actions = new Actions(driver);
-//        actions.moveToElement(permissionElement).perform();
-
 
         if (permissionElement != null) {
             if (!permissionElement.isSelected()) {
-//                permissionElement.click();
                 Actions actions = new Actions(driver);
                 actions.moveToElement(permissionElement).click().perform();
             } else {
