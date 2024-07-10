@@ -8,7 +8,7 @@
 
     <test name="AdjustmentsTest">
         <classes>
-            <!--CategoryTest-->
+            <!--Login Test-->
             <class name="pos.tests.login.LoginFailedTest"/>
             <class name="pos.tests.login.LoginSuccessTest"/>
         </classes>

@@ -28,11 +28,7 @@ public class LoginSuccessTest extends BaseTest {
         loginPage.goToLoginPage();
         DashboardPage dashboardPage = loginPage.login(email, password);
         dashboardPage.waitForElementToAppear(By.id("paymentChart"));
-        Assert.assertTrue(dashboardPage.paymentChart.isDisplayed(), "Bảng payment  không hiển thị.");
-
-//        AllUsersPage allUsersPage = dashboardPage.goToAllUsersPage();
-//        allUsersPage.waitForElementToAppear((By.id("users-table")));
-//        Assert.assertTrue(allUsersPage.usersTable.isDisplayed(), "Bảng danh sách Users không hiển thị.");
+        Assert.assertTrue(dashboardPage.paymentChart.isDisplayed(), "Đăng nhập không thành công!");
     }
-    
+
 }

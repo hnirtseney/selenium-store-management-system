@@ -1,1080 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="42" passed="39" failed="3" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-01T02:50:26 ICT" name="product-test" finished-at="2024-07-01T02:58:46 ICT" duration-ms="499684">
+  <suite started-at="2024-07-09T15:58:10 ICT" name="login-test" finished-at="2024-07-09T15:58:52 ICT" duration-ms="41477">
     <groups>
-      <group name="ProductsTest">
-        <method signature="CreateCategoryTest.createFailedCategorySuccess(java.lang.String,java.lang.String)[pri:2, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" name="createFailedCategorySuccess" class="pos.tests.products.category.CreateCategoryTest"/>
-        <method signature="CreateCategoryTest.createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" name="createSuccessCategoryTest" class="pos.tests.products.category.CreateCategoryTest"/>
-        <method signature="DeleteCategoryTest.deleteCategory()[pri:0, instance:pos.tests.products.category.DeleteCategoryTest@aba625]" name="deleteCategory" class="pos.tests.products.category.DeleteCategoryTest"/>
-        <method signature="UpdateCategoryTest.updateCategoryFailedTest(java.lang.String,java.lang.String)[pri:5, instance:pos.tests.products.category.UpdateCategoryTest@7a6d7e92]" name="updateCategoryFailedTest" class="pos.tests.products.category.UpdateCategoryTest"/>
-        <method signature="UpdateCategoryTest.updateCategorySuccessTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.UpdateCategoryTest@7a6d7e92]" name="updateCategorySuccessTest" class="pos.tests.products.category.UpdateCategoryTest"/>
-        <method signature="VisibleCategoryTest.visibleCategoriesTable()[pri:0, instance:pos.tests.products.category.VisibleCategoryTest@1a4927d6]" name="visibleCategoriesTable" class="pos.tests.products.category.VisibleCategoryTest"/>
-      </group> <!-- ProductsTest -->
+      <group name="LoginTest">
+        <method signature="LoginFailedTest.loginFailureTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:pos.tests.login.LoginFailedTest@710636b0]" name="loginFailureTest" class="pos.tests.login.LoginFailedTest"/>
+        <method signature="LoginSuccessTest.loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@333d4a8c]" name="loginSuccessTest" class="pos.tests.login.LoginSuccessTest"/>
+      </group> <!-- LoginTest -->
     </groups>
-    <test started-at="2024-07-01T02:50:26 ICT" name="ProductsTest" finished-at="2024-07-01T02:58:46 ICT" duration-ms="499684">
-      <class name="pos.tests.products.category.DeleteCategoryTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.DeleteCategoryTest@aba625]" started-at="2024-07-01T02:53:24 ICT" name="launchApplication" finished-at="2024-07-01T02:53:26 ICT" duration-ms="1914" status="PASS">
+    <test started-at="2024-07-09T15:58:10 ICT" name="AdjustmentsTest" finished-at="2024-07-09T15:58:52 ICT" duration-ms="41477">
+      <class name="pos.tests.login.LoginSuccessTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginSuccessTest@333d4a8c]" started-at="2024-07-09T15:58:33 ICT" name="launchApplication" finished-at="2024-07-09T15:58:35 ICT" duration-ms="2490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="deleteCategory()[pri:0, instance:pos.tests.products.category.DeleteCategoryTest@aba625]" started-at="2024-07-01T02:53:26 ICT" name="deleteCategory" finished-at="2024-07-01T02:53:33 ICT" duration-ms="6566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCategory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.DeleteCategoryTest@aba625]" started-at="2024-07-01T02:53:33 ICT" name="tearDown" finished-at="2024-07-01T02:53:33 ICT" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.products.category.DeleteCategoryTest -->
-      <class name="pos.tests.products.product.UpdateProductTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.UpdateProductTest@5a5a729f]" started-at="2024-07-01T02:58:28 ICT" name="launchApplication" finished-at="2024-07-01T02:58:30 ICT" duration-ms="1842" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="updateProductTest()[pri:0, instance:pos.tests.products.product.UpdateProductTest@5a5a729f]" started-at="2024-07-01T02:58:30 ICT" name="updateProductTest" finished-at="2024-07-01T02:58:37 ICT" duration-ms="7311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.UpdateProductTest@5a5a729f]" started-at="2024-07-01T02:58:37 ICT" name="tearDown" finished-at="2024-07-01T02:58:37 ICT" duration-ms="183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.products.product.UpdateProductTest -->
-      <class name="pos.tests.products.category.VisibleCategoryTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.VisibleCategoryTest@1a4927d6]" started-at="2024-07-01T02:52:57 ICT" name="launchApplication" finished-at="2024-07-01T02:53:00 ICT" duration-ms="2435" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="visibleCategoriesTable()[pri:0, instance:pos.tests.products.category.VisibleCategoryTest@1a4927d6]" started-at="2024-07-01T02:53:00 ICT" name="visibleCategoriesTable" finished-at="2024-07-01T02:53:04 ICT" duration-ms="4737" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visibleCategoriesTable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.VisibleCategoryTest@1a4927d6]" started-at="2024-07-01T02:53:04 ICT" name="tearDown" finished-at="2024-07-01T02:53:05 ICT" duration-ms="168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.products.category.VisibleCategoryTest -->
-      <class name="pos.tests.products.category.CreateCategoryTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:26 ICT" name="launchApplication" finished-at="2024-07-01T02:50:28 ICT" duration-ms="2128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:28 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:50:33 ICT" duration-ms="5038" status="PASS">
+        <test-method signature="loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@333d4a8c]" started-at="2024-07-09T15:58:35 ICT" name="loginSuccessTest" data-provider="loginSuccessData" finished-at="2024-07-09T15:58:41 ICT" duration-ms="5532" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ATM]]>
+                <![CDATA[super.admin@test.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Automation]]>
+                <![CDATA[12345678]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:33 ICT" name="tearDown" finished-at="2024-07-01T02:50:33 ICT" duration-ms="171" status="PASS">
+        </test-method> <!-- loginSuccessTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginSuccessTest@333d4a8c]" started-at="2024-07-09T15:58:41 ICT" name="tearDown" finished-at="2024-07-09T15:58:41 ICT" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:33 ICT" name="launchApplication" finished-at="2024-07-01T02:50:35 ICT" duration-ms="1511" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginSuccessTest@333d4a8c]" started-at="2024-07-09T15:58:41 ICT" name="launchApplication" finished-at="2024-07-09T15:58:46 ICT" duration-ms="5100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:35 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:50:39 ICT" duration-ms="4436" status="PASS">
+        <test-method signature="loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@333d4a8c]" started-at="2024-07-09T15:58:46 ICT" name="loginSuccessTest" data-provider="loginSuccessData" finished-at="2024-07-09T15:58:52 ICT" duration-ms="5490" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CBG]]>
+                <![CDATA[oikawa@aobajohsai.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Health]]>
+                <![CDATA[oikawa123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:39 ICT" name="tearDown" finished-at="2024-07-01T02:50:39 ICT" duration-ms="116" status="PASS">
+        </test-method> <!-- loginSuccessTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginSuccessTest@333d4a8c]" started-at="2024-07-09T15:58:52 ICT" name="tearDown" finished-at="2024-07-09T15:58:52 ICT" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:39 ICT" name="launchApplication" finished-at="2024-07-01T02:50:41 ICT" duration-ms="1544" status="PASS">
+      </class> <!-- pos.tests.login.LoginSuccessTest -->
+      <class name="pos.tests.login.LoginFailedTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:11 ICT" name="launchApplication" finished-at="2024-07-09T15:58:15 ICT" duration-ms="4541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:41 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:50:46 ICT" duration-ms="4640" status="PASS">
+        <test-method signature="loginFailureTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:15 ICT" name="loginFailureTest" data-provider="loginFailureData" finished-at="2024-07-09T15:58:20 ICT" duration-ms="4478" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MTH]]>
+                <![CDATA[hotrinh.1314@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Toys]]>
+                <![CDATA[Trinh13052002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[These credentials do not match our records.]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:46 ICT" name="tearDown" finished-at="2024-07-01T02:50:46 ICT" duration-ms="126" status="PASS">
+        </test-method> <!-- loginFailureTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:20 ICT" name="tearDown" finished-at="2024-07-09T15:58:20 ICT" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:46 ICT" name="launchApplication" finished-at="2024-07-01T02:50:47 ICT" duration-ms="1675" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:20 ICT" name="launchApplication" finished-at="2024-07-09T15:58:23 ICT" duration-ms="2955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:47 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:50:52 ICT" duration-ms="4619" status="PASS">
+        <test-method signature="loginFailureTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:23 ICT" name="loginFailureTest" data-provider="loginFailureData" finished-at="2024-07-09T15:58:26 ICT" duration-ms="3654" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[GXX]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Books]]>
+                <![CDATA[Trinh13052002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[The email field is required.]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:52 ICT" name="tearDown" finished-at="2024-07-01T02:50:52 ICT" duration-ms="130" status="PASS">
+        </test-method> <!-- loginFailureTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:26 ICT" name="tearDown" finished-at="2024-07-09T15:58:27 ICT" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:52 ICT" name="launchApplication" finished-at="2024-07-01T02:50:54 ICT" duration-ms="1623" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:27 ICT" name="launchApplication" finished-at="2024-07-09T15:58:29 ICT" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:54 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:50:59 ICT" duration-ms="4728" status="PASS">
+        <test-method signature="loginFailureTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:29 ICT" name="loginFailureTest" data-provider="loginFailureData" finished-at="2024-07-09T15:58:33 ICT" duration-ms="4118" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[BUN]]>
+                <![CDATA[hotrinh.1314@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Electronics]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[The password field is required.]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:59 ICT" name="tearDown" finished-at="2024-07-01T02:50:59 ICT" duration-ms="137" status="PASS">
+        </test-method> <!-- loginFailureTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginFailedTest@710636b0]" started-at="2024-07-09T15:58:33 ICT" name="tearDown" finished-at="2024-07-09T15:58:33 ICT" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:50:59 ICT" name="launchApplication" finished-at="2024-07-01T02:51:00 ICT" duration-ms="1702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:00 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:51:06 ICT" duration-ms="5702" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[PON]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Clothing]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:06 ICT" name="tearDown" finished-at="2024-07-01T02:51:06 ICT" duration-ms="218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:06 ICT" name="launchApplication" finished-at="2024-07-01T02:51:09 ICT" duration-ms="2803" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:09 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:51:17 ICT" duration-ms="7796" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[LMP]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Shoes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:17 ICT" name="tearDown" finished-at="2024-07-01T02:51:17 ICT" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:17 ICT" name="launchApplication" finished-at="2024-07-01T02:51:20 ICT" duration-ms="3007" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:20 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:51:26 ICT" duration-ms="6269" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[BHS]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Music]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:26 ICT" name="tearDown" finished-at="2024-07-01T02:51:27 ICT" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:27 ICT" name="launchApplication" finished-at="2024-07-01T02:51:28 ICT" duration-ms="1959" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:28 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:51:36 ICT" duration-ms="7347" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CZU]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Tools]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:36 ICT" name="tearDown" finished-at="2024-07-01T02:51:36 ICT" duration-ms="184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:36 ICT" name="launchApplication" finished-at="2024-07-01T02:51:38 ICT" duration-ms="2160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:38 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:51:44 ICT" duration-ms="6311" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[LLK]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Kids]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:44 ICT" name="tearDown" finished-at="2024-07-01T02:51:45 ICT" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:45 ICT" name="launchApplication" finished-at="2024-07-01T02:51:47 ICT" duration-ms="1917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:51:47 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:52:02 ICT" duration-ms="15095" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ZQN]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Baby]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="swal2-title"]"}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ab17b49671dd0707905bca14780f0b1e, findElement {using=xpath, value=//*[@id="swal2-title"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52739/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ab17b49671dd0707905bca14780f0b1e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="swal2-title"]"}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ab17b49671dd0707905bca14780f0b1e, findElement {using=xpath, value=//*[@id="swal2-title"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52739/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ab17b49671dd0707905bca14780f0b1e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
-at pos.pageobjects.productspage.CategoryPage.getSuccessMessage(CategoryPage.java:77)
-at pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest(CreateCategoryTest.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:02 ICT" name="tearDown" finished-at="2024-07-01T02:52:02 ICT" duration-ms="194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:02 ICT" name="launchApplication" finished-at="2024-07-01T02:52:04 ICT" duration-ms="1938" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:04 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:52:20 ICT" duration-ms="15732" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[WWT]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Movies]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="swal2-title"]"}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [acde6331dff6126b5e467903c3d83b4b, findElement {using=xpath, value=//*[@id="swal2-title"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52795/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: acde6331dff6126b5e467903c3d83b4b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="swal2-title"]"}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [acde6331dff6126b5e467903c3d83b4b, findElement {using=xpath, value=//*[@id="swal2-title"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52795/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: acde6331dff6126b5e467903c3d83b4b
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
-at pos.pageobjects.productspage.CategoryPage.getSuccessMessage(CategoryPage.java:77)
-at pos.tests.products.category.CreateCategoryTest.createSuccessCategoryTest(CreateCategoryTest.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:20 ICT" name="tearDown" finished-at="2024-07-01T02:52:20 ICT" duration-ms="121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:20 ICT" name="launchApplication" finished-at="2024-07-01T02:52:22 ICT" duration-ms="1787" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:22 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:52:29 ICT" duration-ms="6976" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[HSV]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sports]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:29 ICT" name="tearDown" finished-at="2024-07-01T02:52:29 ICT" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:29 ICT" name="launchApplication" finished-at="2024-07-01T02:52:31 ICT" duration-ms="1825" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:31 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:52:38 ICT" duration-ms="7307" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[OSW]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Computers]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:38 ICT" name="tearDown" finished-at="2024-07-01T02:52:38 ICT" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:38 ICT" name="launchApplication" finished-at="2024-07-01T02:52:41 ICT" duration-ms="2315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createSuccessCategoryTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:41 ICT" name="createSuccessCategoryTest" data-provider="categoryData" finished-at="2024-07-01T02:52:47 ICT" duration-ms="6740" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SZI]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Home]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSuccessCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:47 ICT" name="tearDown" finished-at="2024-07-01T02:52:48 ICT" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:48 ICT" name="launchApplication" finished-at="2024-07-01T02:52:50 ICT" duration-ms="2332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createFailedCategorySuccess(java.lang.String,java.lang.String)[pri:2, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:50 ICT" name="createFailedCategorySuccess" data-provider="singleCategoryData" finished-at="2024-07-01T02:52:57 ICT" duration-ms="7146" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ATM]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Automation]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createFailedCategorySuccess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.CreateCategoryTest@17bffc17]" started-at="2024-07-01T02:52:57 ICT" name="tearDown" finished-at="2024-07-01T02:52:57 ICT" duration-ms="164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.products.category.CreateCategoryTest -->
-      <class name="pos.tests.products.product.CreateProductTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:53:33 ICT" name="launchApplication" finished-at="2024-07-01T02:53:35 ICT" duration-ms="2068" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:53:35 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:53:52 ICT" duration-ms="16856" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@65b680b4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:53:52 ICT" name="tearDown" finished-at="2024-07-01T02:53:52 ICT" duration-ms="167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:53:52 ICT" name="launchApplication" finished-at="2024-07-01T02:53:54 ICT" duration-ms="2027" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:53:54 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:54:07 ICT" duration-ms="12416" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@7fdff56b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:07 ICT" name="tearDown" finished-at="2024-07-01T02:54:07 ICT" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:07 ICT" name="launchApplication" finished-at="2024-07-01T02:54:09 ICT" duration-ms="2098" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:09 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:54:21 ICT" duration-ms="12258" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@270be080]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:21 ICT" name="tearDown" finished-at="2024-07-01T02:54:21 ICT" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:21 ICT" name="launchApplication" finished-at="2024-07-01T02:54:23 ICT" duration-ms="1788" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:23 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:54:35 ICT" duration-ms="12014" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@3833897c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:35 ICT" name="tearDown" finished-at="2024-07-01T02:54:35 ICT" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:35 ICT" name="launchApplication" finished-at="2024-07-01T02:54:37 ICT" duration-ms="1770" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:37 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:54:49 ICT" duration-ms="12200" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@4088c5e6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:49 ICT" name="tearDown" finished-at="2024-07-01T02:54:49 ICT" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:49 ICT" name="launchApplication" finished-at="2024-07-01T02:54:51 ICT" duration-ms="1749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:54:51 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:55:03 ICT" duration-ms="12114" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@5de32e00]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:03 ICT" name="tearDown" finished-at="2024-07-01T02:55:04 ICT" duration-ms="150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:04 ICT" name="launchApplication" finished-at="2024-07-01T02:55:06 ICT" duration-ms="2086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:06 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:55:18 ICT" duration-ms="12692" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@5fa0943d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:18 ICT" name="tearDown" finished-at="2024-07-01T02:55:19 ICT" duration-ms="218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:19 ICT" name="launchApplication" finished-at="2024-07-01T02:55:21 ICT" duration-ms="2888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:21 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:55:34 ICT" duration-ms="12630" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@48d84d75]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:34 ICT" name="tearDown" finished-at="2024-07-01T02:55:34 ICT" duration-ms="191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:34 ICT" name="launchApplication" finished-at="2024-07-01T02:55:36 ICT" duration-ms="2092" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:36 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:55:48 ICT" duration-ms="11988" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@29511cf9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:48 ICT" name="tearDown" finished-at="2024-07-01T02:55:48 ICT" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:48 ICT" name="launchApplication" finished-at="2024-07-01T02:55:50 ICT" duration-ms="1918" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:55:50 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:56:02 ICT" duration-ms="11954" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@685280dd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:02 ICT" name="tearDown" finished-at="2024-07-01T02:56:02 ICT" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:02 ICT" name="launchApplication" finished-at="2024-07-01T02:56:04 ICT" duration-ms="1777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:04 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:56:16 ICT" duration-ms="12055" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@27002c5a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:16 ICT" name="tearDown" finished-at="2024-07-01T02:56:16 ICT" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:16 ICT" name="launchApplication" finished-at="2024-07-01T02:56:19 ICT" duration-ms="2453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:19 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:56:33 ICT" duration-ms="13906" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@3af1b643]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:33 ICT" name="tearDown" finished-at="2024-07-01T02:56:33 ICT" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:33 ICT" name="launchApplication" finished-at="2024-07-01T02:56:35 ICT" duration-ms="1910" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:35 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:56:47 ICT" duration-ms="11955" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@584f12eb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:47 ICT" name="tearDown" finished-at="2024-07-01T02:56:47 ICT" duration-ms="178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:47 ICT" name="launchApplication" finished-at="2024-07-01T02:56:49 ICT" duration-ms="1626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:56:49 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:57:01 ICT" duration-ms="11974" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@6705b98b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:01 ICT" name="tearDown" finished-at="2024-07-01T02:57:01 ICT" duration-ms="213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:01 ICT" name="launchApplication" finished-at="2024-07-01T02:57:03 ICT" duration-ms="1858" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:03 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:57:14 ICT" duration-ms="11510" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@5de25642]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:14 ICT" name="tearDown" finished-at="2024-07-01T02:57:14 ICT" duration-ms="185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:14 ICT" name="launchApplication" finished-at="2024-07-01T02:57:16 ICT" duration-ms="1900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:16 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:57:32 ICT" duration-ms="16142" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@5e22ac65]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate option with text: Movies
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Movies
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-at pos.pageobjects.productspage.ProductPage.selectCategory(ProductPage.java:61)
-at pos.tests.products.product.CreateProductTest.fillForm(CreateProductTest.java:46)
-at pos.tests.products.product.CreateProductTest.createProductTest(CreateProductTest.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:33 ICT" name="tearDown" finished-at="2024-07-01T02:57:33 ICT" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:33 ICT" name="launchApplication" finished-at="2024-07-01T02:57:34 ICT" duration-ms="1330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:34 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:57:45 ICT" duration-ms="11245" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@1177049c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:45 ICT" name="tearDown" finished-at="2024-07-01T02:57:46 ICT" duration-ms="223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:46 ICT" name="launchApplication" finished-at="2024-07-01T02:57:48 ICT" duration-ms="2393" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:57:48 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:58:00 ICT" duration-ms="12024" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@a256322]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:58:00 ICT" name="tearDown" finished-at="2024-07-01T02:58:00 ICT" duration-ms="180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:58:00 ICT" name="launchApplication" finished-at="2024-07-01T02:58:02 ICT" duration-ms="2048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:58:02 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:58:14 ICT" duration-ms="11695" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@aa9b6a8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:58:14 ICT" name="tearDown" finished-at="2024-07-01T02:58:14 ICT" duration-ms="184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:58:14 ICT" name="launchApplication" finished-at="2024-07-01T02:58:16 ICT" duration-ms="1891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createProductTest(pos.form.products.ProductForm)[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:58:16 ICT" name="createProductTest" data-provider="productData" finished-at="2024-07-01T02:58:28 ICT" duration-ms="11606" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.products.ProductForm@668f0ee]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.CreateProductTest@97e93f1]" started-at="2024-07-01T02:58:28 ICT" name="tearDown" finished-at="2024-07-01T02:58:28 ICT" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.products.product.CreateProductTest -->
-      <class name="pos.tests.products.product.DeleteProductTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.product.DeleteProductTest@4b520ea8]" started-at="2024-07-01T02:58:37 ICT" name="launchApplication" finished-at="2024-07-01T02:58:39 ICT" duration-ms="2070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="deleteProduct()[pri:0, instance:pos.tests.products.product.DeleteProductTest@4b520ea8]" started-at="2024-07-01T02:58:39 ICT" name="deleteProduct" finished-at="2024-07-01T02:58:45 ICT" duration-ms="6204" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.product.DeleteProductTest@4b520ea8]" started-at="2024-07-01T02:58:45 ICT" name="tearDown" finished-at="2024-07-01T02:58:46 ICT" duration-ms="165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.products.product.DeleteProductTest -->
-      <class name="pos.tests.products.category.UpdateCategoryTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.UpdateCategoryTest@7a6d7e92]" started-at="2024-07-01T02:53:05 ICT" name="launchApplication" finished-at="2024-07-01T02:53:07 ICT" duration-ms="2144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="updateCategorySuccessTest(java.lang.String,java.lang.String)[pri:0, instance:pos.tests.products.category.UpdateCategoryTest@7a6d7e92]" started-at="2024-07-01T02:53:07 ICT" name="updateCategorySuccessTest" data-provider="successData" finished-at="2024-07-01T02:53:14 ICT" duration-ms="7566" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[BLP]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Blackpink]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateCategorySuccessTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.UpdateCategoryTest@7a6d7e92]" started-at="2024-07-01T02:53:14 ICT" name="tearDown" finished-at="2024-07-01T02:53:15 ICT" duration-ms="194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.products.category.UpdateCategoryTest@7a6d7e92]" started-at="2024-07-01T02:53:15 ICT" name="launchApplication" finished-at="2024-07-01T02:53:17 ICT" duration-ms="2053" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="updateCategoryFailedTest(java.lang.String,java.lang.String)[pri:5, instance:pos.tests.products.category.UpdateCategoryTest@7a6d7e92]" started-at="2024-07-01T02:53:17 ICT" name="updateCategoryFailedTest" data-provider="failureData" finished-at="2024-07-01T02:53:24 ICT" duration-ms="7652" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ATM]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bangtan Boys]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateCategoryFailedTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.products.category.UpdateCategoryTest@7a6d7e92]" started-at="2024-07-01T02:53:24 ICT" name="tearDown" finished-at="2024-07-01T02:53:24 ICT" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.products.category.UpdateCategoryTest -->
-    </test> <!-- ProductsTest -->
-  </suite> <!-- product-test -->
+      </class> <!-- pos.tests.login.LoginFailedTest -->
+    </test> <!-- AdjustmentsTest -->
+  </suite> <!-- login-test -->
 </testng-results>
