@@ -7,9 +7,9 @@
     </listeners>
 
     <test name="LoginTest">
-        <parameter name="browser" value="Chrome"/>
-        <parameter name="ip" value="172.20.10.2"/>
-        <parameter name="port" value="5555"/>
+        <!--        <parameter name="browser" value="Chrome"/>-->
+        <!--        <parameter name="ip" value="172.20.10.2"/>-->
+        <!--        <parameter name="port" value="5555"/>-->
         <classes>
             <!--Login Test-->
             <class name="pos.tests.login.LoginFailedTest"/>
