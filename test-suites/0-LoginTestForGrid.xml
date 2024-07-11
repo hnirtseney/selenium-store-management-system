@@ -8,11 +8,11 @@
 
     <test name="LoginTest">
         <parameter name="browser" value="Chrome"/>
-        <parameter name="ip" value="192.168.1.14"/>
-        <parameter name="port" value="5555"/>
+        <parameter name="ip" value="172.16.2.135"/>
+        <parameter name="port" value="5562"/>
         <classes>
-            <!--Login Test
-            <class name="pos.tests.login.LoginFailedTest"/>-->
+            <!--Login Test -->
+            <class name="pos.tests.login.LoginFailedTest"/>
             <class name="pos.tests.login.LoginSuccessTest"/>
         </classes>
     </test>

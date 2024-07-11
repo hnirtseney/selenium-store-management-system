@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="expenses-test">
+
+    <listeners>
+        <listener class-name="pos.testcomponents.Listeners"/>
+    </listeners>
+
+    <test name="ExpensesTest">
+		<parameter name="browser" value="Chrome"/>
+        <parameter name="ip" value="172.16.2.137"/>
+        <parameter name="port" value="5555"/>
+        <classes>
+            <!--ExpenseCategoryTest-->
+            <class name="pos.tests.expenses.expensecategories.CreateExpenseCategoryTest"/>
+            <!--ExpenseTest-->
+            <class name="pos.tests.expenses.expense.CreateExpenseTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+

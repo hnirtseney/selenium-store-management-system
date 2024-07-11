@@ -1,0 +1,110 @@
+[
+  {
+    "productBySearchBox": "PR-01",
+    "productCategory": "",
+    "productCount": "15 Products",
+    "customerName": "Jennie",
+    "productQuantity": "1",
+    "productOrderTax": "0",
+    "productDiscount": "0",
+    "productShipping": "0",
+    "paymentMethod": "Cash",
+    "receivedAmount": "Partial"
+  },
+  {
+    "productBySearchBox": "PR-02",
+    "productCategory": "",
+    "productCount": "All Products",
+    "customerName": "Jisoo",
+    "productQuantity": "1",
+    "productOrderTax": "10",
+    "productDiscount": "0",
+    "productShipping": "0",
+    "paymentMethod": "Cash",
+    "receivedAmount": "Partial"
+  },
+  {
+    "productBySearchBox": "PR-03",
+    "productCategory": "",
+    "productCount": "All Products",
+    "customerName": "Lisa",
+    "productQuantity": "2",
+    "productOrderTax": "0",
+    "productDiscount": "20",
+    "productShipping": "0",
+    "paymentMethod": "Cash",
+    "receivedAmount": "Paid"
+  },
+  {
+    "productBySearchBox": "PR-06",
+    "productCategory": "",
+    "productCount": "All Products",
+    "customerName": "Rosé",
+    "productQuantity": "3",
+    "productOrderTax": "0",
+    "productDiscount": "0",
+    "productShipping": "30",
+    "paymentMethod": "Cheque",
+    "receivedAmount": "Partial"
+  },
+  {
+    "productBySearchBox": "",
+    "productCategory": "",
+    "productCount": "All Products",
+    "customerName": "V",
+    "productQuantity": "10",
+    "productOrderTax": "0",
+    "productDiscount": "10",
+    "productShipping": "0",
+    "paymentMethod": "Cash",
+    "receivedAmount": "Paid"
+  },
+  {
+    "productBySearchBox": "",
+    "productCategory": "Books",
+    "productCount": "All Products",
+    "customerName": "Jungkook",
+    "productQuantity": "2",
+    "productOrderTax": "0",
+    "productDiscount": "0",
+    "productShipping": "10",
+    "paymentMethod": "Bank Transfer",
+    "receivedAmount": "Partial"
+  },
+  {
+    "productBySearchBox": "",
+    "productCategory": "Health",
+    "productCount": "All Products",
+    "customerName": "Jimin",
+    "productQuantity": "5",
+    "productOrderTax": "0",
+    "productDiscount": "0",
+    "productShipping": "0",
+    "paymentMethod": "Cash",
+    "receivedAmount": "Paid"
+  },
+  {
+    "productBySearchBox": "",
+    "productCategory": "Shoes",
+    "productCount": "All Products",
+    "customerName": "Suga",
+    "productQuantity": "1",
+    "productOrderTax": "0",
+    "productDiscount": "0",
+    "productShipping": "0",
+    "paymentMethod": "Cash",
+    "receivedAmount": "Paid"
+  },
+  {
+    "productBySearchBox": "PR-20",
+    "productCategory": "",
+    "productCount": "All Products",
+    "customerName": "Kai",
+    "productQuantity": "1",
+    "productOrderTax": "50",
+    "productDiscount": "50",
+    "productShipping": "10",
+    "paymentMethod": "Credit Card",
+    "receivedAmount": "Partial"
+  }
+]

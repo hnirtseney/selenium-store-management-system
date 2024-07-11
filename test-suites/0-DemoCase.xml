@@ -4,36 +4,15 @@
 	<listeners>
         <listener class-name="pos.testcomponents.Listeners"/>
     </listeners>
-	
-    <test name="RolesTest">
-        <classes>
-            <class name="pos.tests.usermanagement.rolespermissions.CreateRoleTest"></class>
-        </classes>
-    </test>
-    <test name="UsersTest">
-        <classes>
-            <class name="pos.tests.usermanagement.users.CreateUserTest"/>
-        </classes>
-    </test>
-    <test name="LoginTest">
-        <classes>
-            <class name="pos.tests.login.LoginFailedTest"/>
-            <class name="pos.tests.login.LoginSuccessTest"/>
-        </classes>
-    </test>
-                <!--
+
     <test name="POSSystemTest">
+		<parameter name="browser" value="Chrome"/>
+        <parameter name="ip" value="172.16.2.135"/>
+        <parameter name="port" value="5555"/>
         <classes>
             <class name="pos.tests.possystem.CreateSaleByPosTest"/>
         </classes>
     </test>
-    <test name="DashboardTest">
-        <classes>
-            <class name="pos.tests.dashboard.DashboardChartTest"/>
-            <class name="pos.tests.dashboard.DashboardOverviewTest"/>
-        </classes>
-    </test>
-    -->
 </suite>
 
 

@@ -1,0 +1,222 @@
+[
+  {
+    "productCode": "PR-02",
+    "customerName": "Jennie",
+    "productQuantity": "2",
+    "saleTax": "0",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Cash",
+    "saleAmountReceived": "Partial"
+  },
+  {
+    "productCode": "PR-02",
+    "customerName": "Jisoo",
+    "productQuantity": "4",
+    "saleTax": "10",
+    "saleDiscount": "20",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-03",
+    "customerName": "Lisa",
+    "productQuantity": "1",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "40",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-04",
+    "customerName": "Rosé",
+    "productQuantity": "2",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Bank Transfer",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-05",
+    "customerName": "Kai",
+    "productQuantity": "3",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Cheque",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-06",
+    "customerName": "J-Hope",
+    "productQuantity": "4",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-07",
+    "customerName": "Suga",
+    "productQuantity": "2",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Partial"
+  },
+  {
+    "productCode": "PR-08",
+    "customerName": "Jimin",
+    "productQuantity": "2",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-09",
+    "customerName": "Jungkook",
+    "productQuantity": "1",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-10",
+    "customerName": "V",
+    "productQuantity": "10",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Completed",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-11",
+    "customerName": "Jennie",
+    "productQuantity": "12",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Shipped",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Partial"
+  },
+  {
+    "productCode": "PR-12",
+    "customerName": "Jennie",
+    "productQuantity": "2",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Shipped",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Partial"
+  },
+  {
+    "productCode": "PR-13",
+    "customerName": "Jisoo",
+    "productQuantity": "3",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Shipped",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-14",
+    "customerName": "V",
+    "productQuantity": "4",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "10",
+    "saleStatus": "Shipped",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-15",
+    "customerName": "V",
+    "productQuantity": "4",
+    "saleTax": "10",
+    "saleDiscount": "20",
+    "saleShipping": "10",
+    "saleStatus": "Shipped",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-16",
+    "customerName": "Kai",
+    "productQuantity": "4",
+    "saleTax": "0",
+    "saleDiscount": "5",
+    "saleShipping": "10",
+    "saleStatus": "Shipped",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-17",
+    "customerName": "Jisoo",
+    "productQuantity": "4",
+    "saleTax": "0",
+    "saleDiscount": "0",
+    "saleShipping": "0",
+    "saleStatus": "Pending",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-18",
+    "customerName": "Kai",
+    "productQuantity": "4",
+    "saleTax": "20",
+    "saleDiscount": "20",
+    "saleShipping": "40",
+    "saleStatus": "Pending",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Paid"
+  },
+  {
+    "productCode": "PR-19",
+    "customerName": "Jennie",
+    "productQuantity": "4",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "0",
+    "saleStatus": "Pending",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Partial"
+  },
+  {
+    "productCode": "PR-20",
+    "customerName": "Jennie",
+    "productQuantity": "4",
+    "saleTax": "10",
+    "saleDiscount": "10",
+    "saleShipping": "0",
+    "saleStatus": "Pending",
+    "salePaymentMethod": "Credit Card",
+    "saleAmountReceived": "Partial"
+  }
+]
