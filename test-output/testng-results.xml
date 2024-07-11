@@ -1,200 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-10T23:20:25 ICT" name="demo-test-suite" finished-at="2024-07-10T23:23:20 ICT" duration-ms="174593">
+  <suite started-at="2024-07-11T02:34:06 ICT" name="login-test" finished-at="2024-07-11T02:34:25 ICT" duration-ms="18744">
     <groups>
       <group name="LoginTest">
-        <method signature="LoginFailedTest.loginFailureTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:pos.tests.login.LoginFailedTest@d2de489]" name="loginFailureTest" class="pos.tests.login.LoginFailedTest"/>
-        <method signature="LoginSuccessTest.loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@14bdbc74]" name="loginSuccessTest" class="pos.tests.login.LoginSuccessTest"/>
+        <method signature="LoginSuccessTest.loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@710636b0]" name="loginSuccessTest" class="pos.tests.login.LoginSuccessTest"/>
       </group> <!-- LoginTest -->
     </groups>
-    <test started-at="2024-07-10T23:20:25 ICT" name="RolesTest" finished-at="2024-07-10T23:21:30 ICT" duration-ms="65088">
-      <class name="pos.tests.usermanagement.rolespermissions.CreateRoleTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:20:25 ICT" name="launchApplication" finished-at="2024-07-10T23:20:32 ICT" duration-ms="6354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createRoleTest(java.util.Map)[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:20:32 ICT" name="createRoleTest" data-provider="rolesData" finished-at="2024-07-10T23:20:48 ICT" duration-ms="16876" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{roleName=Manager, rolePermission={Dashboard=[Total Stats, Notifications, Month Overview, Weekly Sales & Purchases, Monthly Cashflow], User Mangement=[Own Profile], Products=[Access, Create, Delete, View, Edit, Category, Print Barcodes], Adjustments=[Access, Create, View, Delete, Edit], Quotaions=[Access, Create, View, Edit, Delete, Send Email, Sale From Quotation], Expenses=[Access, Create, Edit, Delete, Category], Customers=[Access, Create, View], Suppliers=[Access, Create, View], Sales=[Access, Create, View, Edit, Delete, POS System, Payments], Sale Returns=[Access, Create, View, Edit, Delete, Payments], Purchases=[Access, Create, View, Edit, Delete, Payments], Purchase Returns=[Access, Create, View, Edit, Delete, Payments], Reports=[Access]}}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createRoleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:20:48 ICT" name="tearDown" finished-at="2024-07-10T23:20:49 ICT" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:20:49 ICT" name="launchApplication" finished-at="2024-07-10T23:20:55 ICT" duration-ms="5984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createRoleTest(java.util.Map)[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:20:55 ICT" name="createRoleTest" data-provider="rolesData" finished-at="2024-07-10T23:21:10 ICT" duration-ms="15640" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{roleName=Sub-Manager, rolePermission={Dashboard=[Total Stats, Notifications, Month Overview, Weekly Sales & Purchases, Monthly Cashflow], User Mangement=[Own Profile], Products=[Access, Create, Delete, View, Edit, Category, Print Barcodes], Adjustments=[Access, Create, View, Delete, Edit], Quotaions=[Access, Create, View, Edit, Delete, Send Email, Sale From Quotation], Expenses=[Access, Create, Edit, Delete, Category], Customers=[Access, Create, View], Suppliers=[Access, Create, View], Sales=[Access, Create, View, Edit, Delete, POS System, Payments], Sale Returns=[Access, Create, View, Edit, Delete, Payments], Purchases=[Access, Create, View, Edit, Delete, Payments], Purchase Returns=[Access, Create, View, Edit, Delete, Payments]}}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createRoleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:21:10 ICT" name="tearDown" finished-at="2024-07-10T23:21:10 ICT" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:21:10 ICT" name="launchApplication" finished-at="2024-07-10T23:21:16 ICT" duration-ms="5739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createRoleTest(java.util.Map)[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:21:16 ICT" name="createRoleTest" data-provider="rolesData" finished-at="2024-07-10T23:21:30 ICT" duration-ms="14006" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{roleName=Staff, rolePermission={Dashboard=[Total Stats, Notifications], User Mangement=[Own Profile], Products=[Access, View], Adjustments=[Access, Create, View, Edit], Quotaions=[Access, Create, View, Edit, Delete, Send Email, Sale From Quotation], Customers=[Access, Create, View], Suppliers=[Access, Create, View], Sales=[Access, Create, View, Edit, Delete, POS System, Payments], Sale Returns=[Access, Create, View, Edit, Delete, Payments], Purchases=[Access, Create, View, Edit, Delete, Payments], Purchase Returns=[Access, Create, View, Edit, Delete], Reports=[Access]}}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createRoleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.rolespermissions.CreateRoleTest@6cb107fd]" started-at="2024-07-10T23:21:30 ICT" name="tearDown" finished-at="2024-07-10T23:21:30 ICT" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.usermanagement.rolespermissions.CreateRoleTest -->
-    </test> <!-- RolesTest -->
-    <test started-at="2024-07-10T23:21:31 ICT" name="UsersTest" finished-at="2024-07-10T23:22:39 ICT" duration-ms="68220">
-      <class name="pos.tests.usermanagement.users.CreateUserTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:21:31 ICT" name="launchApplication" finished-at="2024-07-10T23:21:37 ICT" duration-ms="6001" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createCustomerTest(pos.form.usermanagement.CreateUserForm)[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:21:37 ICT" name="createCustomerTest" data-provider="userData" finished-at="2024-07-10T23:21:42 ICT" duration-ms="5271" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.usermanagement.CreateUserForm@7f41d979]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCustomerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:21:42 ICT" name="tearDown" finished-at="2024-07-10T23:21:42 ICT" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:21:42 ICT" name="launchApplication" finished-at="2024-07-10T23:21:48 ICT" duration-ms="5936" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createCustomerTest(pos.form.usermanagement.CreateUserForm)[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:21:48 ICT" name="createCustomerTest" data-provider="userData" finished-at="2024-07-10T23:21:53 ICT" duration-ms="5349" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.usermanagement.CreateUserForm@61b0af9f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCustomerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:21:53 ICT" name="tearDown" finished-at="2024-07-10T23:21:53 ICT" duration-ms="75" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:21:53 ICT" name="launchApplication" finished-at="2024-07-10T23:21:59 ICT" duration-ms="6230" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createCustomerTest(pos.form.usermanagement.CreateUserForm)[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:21:59 ICT" name="createCustomerTest" data-provider="userData" finished-at="2024-07-10T23:22:05 ICT" duration-ms="5425" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.usermanagement.CreateUserForm@12eaa2cd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCustomerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:05 ICT" name="tearDown" finished-at="2024-07-10T23:22:05 ICT" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:05 ICT" name="launchApplication" finished-at="2024-07-10T23:22:11 ICT" duration-ms="5957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createCustomerTest(pos.form.usermanagement.CreateUserForm)[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:11 ICT" name="createCustomerTest" data-provider="userData" finished-at="2024-07-10T23:22:16 ICT" duration-ms="5213" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.usermanagement.CreateUserForm@2ae08750]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCustomerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:16 ICT" name="tearDown" finished-at="2024-07-10T23:22:16 ICT" duration-ms="90" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:16 ICT" name="launchApplication" finished-at="2024-07-10T23:22:22 ICT" duration-ms="5967" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createCustomerTest(pos.form.usermanagement.CreateUserForm)[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:22 ICT" name="createCustomerTest" data-provider="userData" finished-at="2024-07-10T23:22:27 ICT" duration-ms="5176" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.usermanagement.CreateUserForm@4d9cf71d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCustomerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:27 ICT" name="tearDown" finished-at="2024-07-10T23:22:28 ICT" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:28 ICT" name="launchApplication" finished-at="2024-07-10T23:22:33 ICT" duration-ms="5957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createCustomerTest(pos.form.usermanagement.CreateUserForm)[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:33 ICT" name="createCustomerTest" data-provider="userData" finished-at="2024-07-10T23:22:39 ICT" duration-ms="5220" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pos.form.usermanagement.CreateUserForm@4aadf144]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCustomerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.usermanagement.users.CreateUserTest@d23e042]" started-at="2024-07-10T23:22:39 ICT" name="tearDown" finished-at="2024-07-10T23:22:39 ICT" duration-ms="90" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.usermanagement.users.CreateUserTest -->
-    </test> <!-- UsersTest -->
-    <test started-at="2024-07-10T23:22:39 ICT" name="LoginTest" finished-at="2024-07-10T23:23:20 ICT" duration-ms="40832">
+    <test started-at="2024-07-11T02:34:06 ICT" name="LoginTest" finished-at="2024-07-11T02:34:25 ICT" duration-ms="18744">
       <class name="pos.tests.login.LoginSuccessTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginSuccessTest@14bdbc74]" started-at="2024-07-10T23:23:02 ICT" name="launchApplication" finished-at="2024-07-10T23:23:07 ICT" duration-ms="5660" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginSuccessTest@710636b0]" started-at="2024-07-11T02:34:06 ICT" name="launchApplication" finished-at="2024-07-11T02:34:13 ICT" duration-ms="6397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@14bdbc74]" started-at="2024-07-10T23:23:07 ICT" name="loginSuccessTest" data-provider="loginSuccessData" finished-at="2024-07-10T23:23:10 ICT" duration-ms="3112" status="PASS">
+        <test-method signature="loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@710636b0]" started-at="2024-07-11T02:34:13 ICT" name="loginSuccessTest" data-provider="loginSuccessData" finished-at="2024-07-11T02:34:16 ICT" duration-ms="2952" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginSuccessTest@14bdbc74]" started-at="2024-07-10T23:23:10 ICT" name="tearDown" finished-at="2024-07-10T23:23:10 ICT" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginSuccessTest@710636b0]" started-at="2024-07-11T02:34:16 ICT" name="tearDown" finished-at="2024-07-11T02:34:16 ICT" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginSuccessTest@14bdbc74]" started-at="2024-07-10T23:23:10 ICT" name="launchApplication" finished-at="2024-07-10T23:23:17 ICT" duration-ms="6240" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginSuccessTest@710636b0]" started-at="2024-07-11T02:34:16 ICT" name="launchApplication" finished-at="2024-07-11T02:34:22 ICT" duration-ms="5747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@14bdbc74]" started-at="2024-07-10T23:23:17 ICT" name="loginSuccessTest" data-provider="loginSuccessData" finished-at="2024-07-10T23:23:20 ICT" duration-ms="2868" status="PASS">
+        <test-method signature="loginSuccessTest(java.lang.String,java.lang.String)[pri:1, instance:pos.tests.login.LoginSuccessTest@710636b0]" started-at="2024-07-11T02:34:22 ICT" name="loginSuccessTest" data-provider="loginSuccessData" finished-at="2024-07-11T02:34:25 ICT" duration-ms="3080" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,100 +54,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginSuccessTest@14bdbc74]" started-at="2024-07-10T23:23:20 ICT" name="tearDown" finished-at="2024-07-10T23:23:20 ICT" duration-ms="68" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginSuccessTest@710636b0]" started-at="2024-07-11T02:34:25 ICT" name="tearDown" finished-at="2024-07-11T02:34:25 ICT" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- pos.tests.login.LoginSuccessTest -->
-      <class name="pos.tests.login.LoginFailedTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:22:39 ICT" name="launchApplication" finished-at="2024-07-10T23:22:45 ICT" duration-ms="6296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginFailureTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:22:45 ICT" name="loginFailureTest" data-provider="loginFailureData" finished-at="2024-07-10T23:22:47 ICT" duration-ms="1580" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[hotrinh.1314@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Trinh13052002]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[These credentials do not match our records.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFailureTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:22:47 ICT" name="tearDown" finished-at="2024-07-10T23:22:47 ICT" duration-ms="48" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:22:47 ICT" name="launchApplication" finished-at="2024-07-10T23:22:52 ICT" duration-ms="5682" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginFailureTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:22:52 ICT" name="loginFailureTest" data-provider="loginFailureData" finished-at="2024-07-10T23:22:54 ICT" duration-ms="1412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Trinh13052002]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[The email field is required.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFailureTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:22:54 ICT" name="tearDown" finished-at="2024-07-10T23:22:54 ICT" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:22:54 ICT" name="launchApplication" finished-at="2024-07-10T23:23:00 ICT" duration-ms="6209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginFailureTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:23:00 ICT" name="loginFailureTest" data-provider="loginFailureData" finished-at="2024-07-10T23:23:02 ICT" duration-ms="1380" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[hotrinh.1314@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[The password field is required.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFailureTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pos.tests.login.LoginFailedTest@d2de489]" started-at="2024-07-10T23:23:02 ICT" name="tearDown" finished-at="2024-07-10T23:23:02 ICT" duration-ms="69" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pos.tests.login.LoginFailedTest -->
     </test> <!-- LoginTest -->
-  </suite> <!-- demo-test-suite -->
+  </suite> <!-- login-test -->
 </testng-results>

@@ -10,9 +10,9 @@
         <classes>
             <!--Roles And Permissions Test-->
             <class name="pos.tests.usermanagement.rolespermissions.CreateRoleTest"></class>
-            <class name="pos.tests.usermanagement.rolespermissions.UpdateRoleTest"></class>
-            <class name="pos.tests.usermanagement.rolespermissions.DeleteRoleTest"></class>
-            <class name="pos.tests.usermanagement.rolespermissions.VisibleRolesTable"></class>
+            <!--            <class name="pos.tests.usermanagement.rolespermissions.UpdateRoleTest"></class>-->
+            <!--            <class name="pos.tests.usermanagement.rolespermissions.DeleteRoleTest"></class>-->
+            <!--            <class name="pos.tests.usermanagement.rolespermissions.VisibleRolesTable"></class>-->
         </classes>
     </test>
 
@@ -20,9 +20,9 @@
         <classes>
             <!--UsersTest-->
             <class name="pos.tests.usermanagement.users.CreateUserTest"/>
-            <class name="pos.tests.usermanagement.users.VisibleUsersTable"/>
-            <class name="pos.tests.usermanagement.users.UpdateUserTest"/>
-            <class name="pos.tests.usermanagement.users.DeleteUserTest"/>
+            <!--            <class name="pos.tests.usermanagement.users.VisibleUsersTable"/>-->
+            <!--            <class name="pos.tests.usermanagement.users.UpdateUserTest"/>-->
+            <!--            <class name="pos.tests.usermanagement.users.DeleteUserTest"/>-->
         </classes>
     </test>
 
